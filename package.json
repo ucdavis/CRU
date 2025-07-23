@@ -13,20 +13,23 @@
     "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@opennextjs/cloudflare": "^1.6.0",
+    "@ucdavis/gunrock-tailwind": "^2.4.0",
+    "daisyui": "^5.0.46",
     "next": "~15.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.3",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.11",
     "typescript": "^5",
     "wrangler": "^4.25.1"
   }
