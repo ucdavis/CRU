@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="border-b-1 border-cru-border">
+    <header className="fixed bg-dark-bg-100 inset-x-0 top-0 z-10 border-b-1 border-cru-border">
       <div className="container">
         <nav className="flex justify-between py-4">
           <Link className="flex items-center text-lg" href="/#">

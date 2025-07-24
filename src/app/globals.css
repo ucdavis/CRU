@@ -11,7 +11,7 @@
   --color-base-100: var(--color-dark-bg-100);
   --color-base-200: var(--color-dark-bg-200);
   --color-base-300: var(--color-dark-bg-300);
-  --color-base-content: var(--color-darkmode-primary-font);
+  --color-base-content: var(--color-light-font);
 }
 html {
   background-color: var(--color-dark-bg-100);
@@ -41,4 +41,9 @@ html {
       max-width: 1080px;
     }
   }
+}
+.bg-right-pattern {
+  background-image: url("/slash-pattern.svg");
+  background-repeat: repeat;
+  background-size: 24px 24px;
 }

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col" data-theme="gunrock">
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <Header />
           {children}
         </div>
