@@ -27,7 +27,7 @@ const Header: React.FC = () => {
 
             <Link
               className="relative text-light-font font-bold text-nav pe-2 me-2 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:scale-x-0 after:bg-light-font after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
-              href="/#selection"
+              href="/services"
             >
               Services
             </Link>

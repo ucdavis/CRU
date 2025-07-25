@@ -19,7 +19,11 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col" data-theme="gunrock">
         <div className="flex-1 flex flex-col">
           <Header />
-          {children}
+          <div className="grid grid-cols-[3%_94%_3%] flex-1 w-full">
+            <div className="border-r-1 border-cru-border"></div>
+            <div className="pt-25">{children}</div>
+            <div className="border-l-1 border-cru-border bg-right-pattern"></div>
+          </div>
         </div>
         <Footer />
       </body>
