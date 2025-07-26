@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>caret-pattern</title>
+    <g id="caret-pattern" stroke="none" fill="none" stroke-width="1">
+        <polyline id="Path" stroke="#29292E" points="7 16 13 10 7 4"></polyline>
+    </g>
+</svg>
