@@ -9,8 +9,8 @@ export default function services() {
         patternClassName="bg-caret-pattern"
       />
       <div className="container">
-        <div className="flex flex-col md:flex-row gap-4">
-          <div className="md:w-2/3 w-full">
+        <div className="flex flex-col md:flex-row gap-2">
+          <div className="md:w-1/2 w-full">
             <h2 className="mb-2">Help Desk/Infrastructure</h2>
             <p>
               The Help Desk and Infrastructure group provides computer support
@@ -22,8 +22,30 @@ export default function services() {
               providing computer security consulting and remediation for the
               college under the Cyber-Safety Program.
             </p>
+            <div className="avatar-group -space-x-6">
+              <div className="avatar">
+                <div className="w-12">
+                  <img src="https://img.daisyui.com/images/profile/demo/batperson@192.webp" />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-12">
+                  <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-12">
+                  <img src="https://img.daisyui.com/images/profile/demo/averagebulk@192.webp" />
+                </div>
+              </div>
+              <div className="avatar">
+                <div className="w-12">
+                  <img src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="md:w-1/3 w-full">33%</div>
+          <div className="md:w-1/2 w-full">33%</div>
         </div>
       </div>
     </>
