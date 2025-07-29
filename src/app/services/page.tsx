@@ -1,5 +1,10 @@
 import PageHeader from "../components/pageheader";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+};
 
 export default function Services() {
   return (
@@ -10,9 +15,19 @@ export default function Services() {
         patternClassName="bg-caret-pattern"
       />
       <div className="container">
-        <div className="flex flex-col md:flex-row gap-2">
+        <div className="flex flex-col md:flex-row gap-16 justify-between">
           {/* Left Col */}
-          <div className="md:w-1/2 w-full">
+          <div className="md:w-3/5 w-full">
+            <p className="text-lg">
+              The goal of the Computing Resources Unit is to provide the best
+              possible customer service, application development, and technology
+              infrastructure to support the business needs of the Dean’s Office
+              and the College of Agricultural & Environmental Sciences and its
+              departments.
+            </p>
+            <hr className="mt-8" />
+            <br />
+            <hr className="mb-8" />
             <h2 className="mb-2">Help Desk/Infrastructure</h2>
             <p>
               The Help Desk and Infrastructure group provides computer support
@@ -47,7 +62,7 @@ export default function Services() {
               ))}
             </div>
 
-            <h2 className="mb-2 mt-5">Business Application Development</h2>
+            <h2 className="mb-2 mt-16">Business Application Development</h2>
             <p>
               The Application Development group writes systems to automate
               critical business functions. The group retains close ties with
@@ -81,7 +96,7 @@ export default function Services() {
               ))}
             </div>
 
-            <h2 className="mb-2 mt-5">Web Design and Development</h2>
+            <h2 className="mb-2 mt-16">Web Design and Development</h2>
             <p>
               The web development group has nearly 40 websites in active use
               and/or development. These can be divided into the following types:
@@ -109,12 +124,26 @@ export default function Services() {
           </div>
 
           {/* Right Col */}
-          <div className="md:w-1/2 w-full">
-            <div className="bg-base-100 p-4 shadow rounded">
-              <h3 className="text-lg font-semibold mb-2">33% Column</h3>
-              <p className="text-sm">
-                You can place sidebar or summary content here.
-              </p>
+          <div className="md:w-1/3 w-full">
+            <div className="card border-t-5 border-r-5 border-cru-border bg-base-200 card-xl shadow-sm">
+              <div className="card-body">
+                <h2 className="card-title text-secondary">Rates</h2>
+                <p>
+                  <b>$122/hr</b> - Project Planning and Management
+                </p>
+                <p>
+                  <b>$84/hr</b> - Application Development
+                </p>
+                <p>
+                  <b>$70/hr</b> - Web Design and Development
+                </p>
+                <p>
+                  <b>$73/hr</b> - Network Systems
+                </p>
+                <p>
+                  <b>$67/hr</b> - Help Desk
+                </p>
+              </div>
             </div>
           </div>
         </div>

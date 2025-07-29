@@ -11,7 +11,7 @@ export default function PageHeader({
   patternClassName,
 }: PageHeaderProps) {
   return (
-    <div className="services-wrapper">
+    <div className="services-wrapper mb-8">
       <div className="border-b-1 border-cru-border pt-8">
         <div className="container">
           {subtitle && <h4>{subtitle}</h4>}
