@@ -26,6 +26,9 @@
   h4 {
     @apply text-sm font-medium text-light-font/55 uppercase leading-normal;
   }
+  .card {
+    @apply border-1 border-cru-border bg-base-200;
+  }
 }
 html {
   background-color: var(--color-dark-bg-100);
@@ -80,10 +83,20 @@ h4 {
   background-repeat: repeat;
   background-size: 14px 12px;
 }
+.bg-slant-pattern {
+  background-image: url("/slant-pattern.svg");
+  background-repeat: repeat;
+  background-size: 14px 12px;
+}
+.bg-plus-pattern {
+  background-image: url("/plus-pattern.svg");
+  background-repeat: repeat;
+  background-size: 14px 14px;
+}
 hr {
   border-color: #29292e;
 }
 #diamond-fill,
 #main-fill {
-  fill: var(--color-ucd-pinot);
+  fill: var(--color-ucd-sage);
 }

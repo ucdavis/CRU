@@ -125,7 +125,7 @@ export default function Services() {
 
           {/* Right Col */}
           <div className="md:w-1/3 w-full">
-            <div className="card border-1 border-cru-border bg-base-200 card-xl shadow-sm">
+            <div className="card card-xl shadow-sm">
               <div className="card-body">
                 <h2 className="card-title text-secondary">Rates</h2>
                 <p>
