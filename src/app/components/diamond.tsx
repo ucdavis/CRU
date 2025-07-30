@@ -95,71 +95,95 @@ const Diamond: React.FC = () => {
                 points="98.9956 162.9903 183.8946 63.0213 149.1206 63.0213 133.3216 94.4523"
               ></polygon>
             </g>
-            <polygon
-              id="main-fill"
-              fill="#0047BA"
-              transform="translate(188.2652, 24.7445) rotate(-150) translate(-188.2652, -24.7445)"
-              points="179.819029 18.6718218 188.338482 30.8172715 196.711357 24.4572451"
-            ></polygon>
-            <polygon
-              id="main-fill"
-              fill="#0047BA"
-              transform="translate(101.5958, 8.2525) rotate(-150) translate(-101.5958, -8.2525)"
-              points="95.9792886 10.1861929 99.4302515 14.5050701 107.212281 2"
-            ></polygon>
-            <polygon
-              id="main-fill"
-              fill="#0047BA"
-              transform="translate(10.2258, 59.2884) rotate(-150) translate(-10.2258, -59.2884)"
-              points="4.5647543 52.7777212 3 65.7990158 17.4516516 54.5590145"
-            ></polygon>
-            <polygon
-              id="main-fill"
-              fill="#0047BA"
-              transform="translate(99.9679, 185.508) rotate(-150) translate(-99.9679, -185.508)"
-              points="94.4679021 188.963406 98.9849039 180.008013 105.467902 191.008013"
-            ></polygon>
-            <polygon
-              id="main-fill"
-              fill="#0047BA"
-              transform="translate(202.5718, 95.145) rotate(-150) translate(-202.5718, -95.145)"
-              points="195.315212 100.350085 209.828393 87.8953027 206.315212 102.394692"
-            ></polygon>
-            <polygon
-              id="fill-dark"
-              fillOpacity="0"
-              fill="#000000"
-              transform="translate(188.2652, 24.7445) rotate(-150) translate(-188.2652, -24.7445)"
-              points="179.819029 18.6718218 188.338482 30.8172715 196.711357 24.4572451"
-            ></polygon>
-            <polygon
-              id="fill-darker"
-              fillOpacity="0.1"
-              fill="#000000"
-              transform="translate(101.5958, 8.2525) rotate(-150) translate(-101.5958, -8.2525)"
-              points="95.9792886 10.1861929 99.4302515 14.5050701 107.212281 2"
-            ></polygon>
-            <polygon
-              id="fill-darkest"
-              fillOpacity="0.2"
-              fill="#000000"
-              transform="translate(10.2258, 59.2884) rotate(-150) translate(-10.2258, -59.2884)"
-              points="4.5647543 52.7777212 3 65.7990158 17.4516516 54.5590145"
-            ></polygon>
-            <polygon
-              id="fill-darker"
-              fillOpacity="0.1"
-              fill="#000000"
-              transform="translate(99.9679, 185.508) rotate(-150) translate(-99.9679, -185.508)"
-              points="94.4679021 188.963406 98.9849039 180.008013 105.467902 191.008013"
-            ></polygon>
-            <polygon
-              id="fill-dark"
-              fillOpacity="0"
-              fill="#000000"
-              transform="translate(202.5718, 95.145) rotate(-150) translate(-202.5718, -95.145)"
-              points="195.315212 100.350085 209.828393 87.8953027 206.315212 102.394692"
-            ></polygon>
+            <g id="floatone">
+              <g transform="translate(0, 49.7777)">
+                <polygon
+                  id="main-fill"
+                  fill="#0047BA"
+                  transform="translate(10.2258, 9.5106) rotate(-150) translate(-10.2258, -9.5106)"
+                  points="4.5647543 3 3 16.0212945 17.4516516 4.78129332"
+                ></polygon>
+                <polygon
+                  id="fill-darkest"
+                  fillOpacity="0.2"
+                  fill="#000000"
+                  transform="translate(10.2258, 9.5106) rotate(-150) translate(-10.2258, -9.5106)"
+                  points="4.5647543 3 3 16.0212945 17.4516516 4.78129332"
+                ></polygon>
+              </g>
+            </g>
+
+            <g id="floattwo">
+              <g transform="translate(92.9793, 0)">
+                <polygon
+                  id="main-fill"
+                  fill="#0047BA"
+                  transform="translate(8.6165, 8.2525) rotate(-150) translate(-8.6165, -8.2525)"
+                  points="3 10.1861929 6.45096296 14.5050701 14.2329927 2"
+                ></polygon>
+                <polygon
+                  id="fill-darker"
+                  fillOpacity="0.1"
+                  fill="#000000"
+                  transform="translate(8.6165, 8.2525) rotate(-150) translate(-8.6165, -8.2525)"
+                  points="3 10.1861929 6.45096296 14.5050701 14.2329927 2"
+                ></polygon>
+              </g>
+            </g>
+
+            <g id="floatthree">
+              <g transform="translate(177.819, 14.6718)">
+                <polygon
+                  id="main-fill"
+                  fill="#0047BA"
+                  transform="translate(10.4462, 10.0727) rotate(-150) translate(-10.4462, -10.0727)"
+                  points="2 4 10.5194537 16.1454496 18.8923282 9.78542325"
+                ></polygon>
+                <polygon
+                  id="fill-dark"
+                  fillOpacity="0"
+                  fill="#000000"
+                  transform="translate(10.4462, 10.0727) rotate(-150) translate(-10.4462, -10.0727)"
+                  points="2 4 10.5194537 16.1454496 18.8923282 9.78542325"
+                ></polygon>
+              </g>
+            </g>
+
+            <g id="floatfour">
+              <g transform="translate(91.4679, 177.008)">
+                <polygon
+                  id="main-fill"
+                  fill="#0047BA"
+                  transform="translate(8.5, 8.5) rotate(-150) translate(-8.5, -8.5)"
+                  points="3 11.9553931 7.51700182 3 14 14"
+                ></polygon>
+                <polygon
+                  id="fill-darker"
+                  fillOpacity="0.1"
+                  fill="#000000"
+                  transform="translate(8.5, 8.5) rotate(-150) translate(-8.5, -8.5)"
+                  points="3 11.9553931 7.51700182 3 14 14"
+                ></polygon>
+              </g>
+            </g>
+
+            <g id="floatfive">
+              <g transform="translate(192.3152, 84.8953)">
+                <polygon
+                  id="main-fill"
+                  fill="#0047BA"
+                  transform="translate(10.2566, 10.2497) rotate(-150) translate(-10.2566, -10.2497)"
+                  points="3 15.4547826 17.5131811 3 14 17.4993895"
+                ></polygon>
+                <polygon
+                  id="fill-dark"
+                  fillOpacity="0"
+                  fill="#000000"
+                  transform="translate(10.2566, 10.2497) rotate(-150) translate(-10.2566, -10.2497)"
+                  points="3 15.4547826 17.5131811 3 14 17.4993895"
+                ></polygon>
+              </g>
+            </g>
           </g>
         </g>
       </g>

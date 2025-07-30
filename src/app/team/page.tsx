@@ -96,7 +96,7 @@ export default function TeamPage() {
                     {member.email ? (
                       <a
                         href={`mailto:${member.email}`}
-                        className="link link-hover text-secondary"
+                        className="link link-hover text-ucd-recpool"
                       >
                         {member.email}
                       </a>
@@ -107,14 +107,6 @@ export default function TeamPage() {
                 </tr>
               ))}
             </tbody>
-            <tfoot>
-              <tr>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Phone</th>
-                <th>Email</th>
-              </tr>
-            </tfoot>
           </table>
         </div>
       </div>

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @import "@ucdavis/gunrock-tailwind/imports.css";
+@import "./diamond.css";
 
 @theme {
   --color-cru-border: oklch(0.283 0.0091 285.81);
@@ -95,8 +96,4 @@ h4 {
 }
 hr {
   border-color: #29292e;
-}
-#diamond-fill,
-#main-fill {
-  fill: var(--color-ucd-sage);
 }

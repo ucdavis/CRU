@@ -1,0 +1,145 @@
+@keyframes fill-cycle {
+  0% {
+    fill: var(--color-ucd-recpool);
+  }
+  4.55% {
+    fill: var(--color-ucd-tahoe);
+  }
+  9.09% {
+    fill: var(--color-ucd-gunrock);
+  }
+  13.64% {
+    fill: var(--color-ucd-bodega);
+  }
+  18.18% {
+    fill: var(--color-ucd-rain);
+  }
+  22.73% {
+    fill: var(--color-ucd-arboretum);
+  }
+  27.27% {
+    fill: var(--color-ucd-putahcreek);
+  }
+  31.82% {
+    fill: var(--color-ucd-delta);
+  }
+  36.36% {
+    fill: var(--color-ucd-farmersmarket);
+  }
+  40.91% {
+    fill: var(--color-ucd-sage);
+  }
+  45.45% {
+    fill: var(--color-ucd-quad);
+  }
+  50% {
+    fill: var(--color-ucd-redwood);
+  }
+  54.55% {
+    fill: var(--color-ucd-goldenstate);
+  }
+  59.09% {
+    fill: var(--color-ucd-sunflower);
+  }
+  63.64% {
+    fill: var(--color-ucd-poppy);
+  }
+  68.18% {
+    fill: var(--color-ucd-california);
+  }
+  72.73% {
+    fill: var(--color-ucd-rose);
+  }
+  77.27% {
+    fill: var(--color-ucd-strawberry);
+  }
+  81.82% {
+    fill: var(--color-ucd-doubledecker);
+  }
+  86.36% {
+    fill: var(--color-ucd-merlot);
+  }
+  90.91% {
+    fill: var(--color-ucd-thiebauldicing);
+  }
+  95.45% {
+    fill: var(--color-ucd-redbud);
+  }
+  100% {
+    fill: var(--color-ucd-pinot);
+  }
+}
+
+@keyframes float1 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes float2 {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-2px) translateX(2px);
+  }
+}
+@keyframes float3 {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-2px, -1.5px);
+  }
+  50% {
+    transform: translate(1.5px, -3px);
+  }
+  75% {
+    transform: translate(-1px, -1.5px);
+  }
+}
+@keyframes float4 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes float5 {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+#floatfive {
+  animation: float5 5.5s ease-in-out infinite;
+}
+#floatone {
+  animation: float1 4s ease-in-out infinite;
+}
+#floattwo {
+  animation: float2 5s ease-in-out infinite;
+}
+#floatthree {
+  animation: float3 6s ease-in-out infinite;
+}
+#floatfour {
+  animation: float4 3.5s ease-in-out infinite;
+}
+
+#diamond-fill,
+#main-fill {
+  animation: fill-cycle 60s infinite linear;
+}

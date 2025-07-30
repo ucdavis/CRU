@@ -1,10 +1,6 @@
 import PageHeader from "../components/pageheader";
 import Image from "next/image";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Services",
-};
+import React from "react";
 
 export default function Services() {
   return (
