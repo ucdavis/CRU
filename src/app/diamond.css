@@ -66,7 +66,7 @@
     fill: var(--color-ucd-redbud);
   }
   100% {
-    fill: var(--color-ucd-pinot);
+    fill: var(--color-ucd-recpool);
   }
 }
 

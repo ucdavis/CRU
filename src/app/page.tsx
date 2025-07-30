@@ -1,4 +1,5 @@
 import Diamond from "./components/diamond";
+import QuicklinkList from "./components/quicklinklist";
 
 export default function Home() {
   return (
@@ -23,9 +24,12 @@ export default function Home() {
         </div>
       </div>
       <div className="container">
-        <div className="flex flex-col md:flex-row justify-between gap-6">
-          <div className="md:1/2 w-full">Recent</div>
-          <div className="md:1/2 w-full">Quick Links</div>
+        <div className="flex flex-col md:flex-row justify-between gap-6 py-8">
+          <div className="md:w-1/2 w-full">Recent</div>
+          <div className="md:w-1/2 w-full">
+            <h2>Quick Links</h2>
+            <QuicklinkList />
+          </div>
         </div>
       </div>
     </div>
