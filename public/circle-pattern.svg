@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>circle-pattern</title>
     <g id="circle-pattern" stroke="none" fill="none" stroke-width="1">
-        <path d="M12,7.5 L12,7.5 C12,5.025 9.975,3 7.5,3 C5.025,3 3,5.025 3,7.5 C3,9.975 5.025,12 7.5,12 C9.975,12 12,9.975 12,7.5 Z" id="Path" stroke="#29292E"></path>
-        <path d="M27,7.5 L27,7.5 C27,5.025 24.975,3 22.5,3 C20.025,3 18,5.025 18,7.5 C18,9.975 20.025,12 22.5,12 C24.975,12 27,9.975 27,7.5 Z" id="Path-Copy" stroke="#29292E"></path>
-        <path d="M12,22.5 L12,22.5 C12,20.025 9.975,18 7.5,18 C5.025,18 3,20.025 3,22.5 C3,24.975 5.025,27 7.5,27 C9.975,27 12,24.975 12,22.5 Z" id="Path-Copy-2" stroke="#29292E"></path>
-        <path d="M27,22.5 L27,22.5 C27,20.025 24.975,18 22.5,18 C20.025,18 18,20.025 18,22.5 C18,24.975 20.025,27 22.5,27 C24.975,27 27,24.975 27,22.5 Z" id="Path-Copy-3" stroke="#29292E"></path>
+        <path d="M14,9.5 L14,9.5 C14,7.025 11.975,5 9.5,5 C7.025,5 5,7.025 5,9.5 C5,11.975 7.025,14 9.5,14 C11.975,14 14,11.975 14,9.5 Z" id="Path-Copy-3" stroke="#00B2E3"></path>
     </g>
 </svg>

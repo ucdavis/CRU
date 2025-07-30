@@ -34,6 +34,12 @@ html {
 b {
   font-family: proxima-nova-b, sans-serif;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+}
 .container {
   padding: 0;
   width: 94%;
@@ -67,8 +73,17 @@ b {
 .bg-caret-pattern {
   background-image: url("/caret-pattern.svg");
   background-repeat: repeat;
-  background-size: 16px 16px;
+  background-size: 14px 12px;
+}
+.bg-circle-pattern {
+  background-image: url("/circle-pattern.svg");
+  background-repeat: repeat;
+  background-size: 14px 12px;
 }
 hr {
   border-color: #29292e;
+}
+#diamond-fill,
+#main-fill {
+  fill: var(--color-ucd-recpool);
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>slant-pattern</title>
+    <g id="slant-pattern" stroke="none" fill="none" stroke-width="1">
+        <line x1="5" y1="5" x2="14" y2="14" id="Path" stroke="#00C4B3" transform="translate(9.5, 9.5) scale(-1, 1) translate(-9.5, -9.5)"></line>
+    </g>
+</svg>
