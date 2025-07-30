@@ -1,12 +1,14 @@
 import PageHeader from "../components/pageheader";
 import Image from "next/image";
-import { Metadata } from "next";
+import { getCurrentTeamMembers } from "@/lib/team";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Team",
 };
 
-export default function Team() {
+export default function TeamPage() {
+  const team = getCurrentTeamMembers();
+
   return (
     <>
       <PageHeader
@@ -39,9 +41,83 @@ export default function Team() {
           </div>
         </div>
       </div>
-      <hr />
-      <br />
-      <hr />
+      <hr className="my-12" />
+      <div className="container py-16">
+        <div className="md:w-2/3 w-full mx-auto">
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Phone #</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              {team.map((member) => (
+                <tr key={member.slug}>
+                  <td>
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle h-12 w-12">
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={48}
+                            height={48}
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <b>{member.name}</b>
+                          <br />
+                          {member.pronouns}
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <span className="badge">{member.role}</span>
+                  </td>
+                  <td>
+                    {member.phone ? (
+                      <a
+                        href={`tel:${member.phone}`}
+                        className="link link-hover"
+                      >
+                        {member.phone}
+                      </a>
+                    ) : (
+                      <span className="text-gray-400 italic">—</span>
+                    )}
+                  </td>
+                  <td>
+                    {member.email ? (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="link link-hover text-secondary"
+                      >
+                        {member.email}
+                      </a>
+                    ) : (
+                      <span className="text-gray-400 italic">—</span>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Phone</th>
+                <th>Email</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
     </>
   );
 }
