@@ -13,13 +13,19 @@ export default function Home() {
               </h4>
               <h1>
                 Top tier application development, <br /> technology
-                infrastructure <br /> & customer service
+                infrastructure, <br /> & customer service
               </h1>
             </div>
             <div>
               <Diamond />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="flex flex-col md:flex-row justify-between gap-6">
+          <div className="md:1/2 w-full">Recent</div>
+          <div className="md:1/2 w-full">Quick Links</div>
         </div>
       </div>
     </div>
