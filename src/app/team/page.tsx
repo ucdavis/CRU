@@ -6,7 +6,7 @@ export const metadata = {
   title: "Team",
 };
 
-export default function TeamPage() {
+export default async function TeamPage() {
   const team = getCurrentTeamMembers();
 
   return (
