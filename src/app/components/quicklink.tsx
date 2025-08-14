@@ -19,7 +19,7 @@ export function Quicklink({
         href={href}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
-        className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-200 transition-colors duration-200 text-lg"
+        className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
       >
         {icon}
         <span>{label}</span>
