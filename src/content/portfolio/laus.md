@@ -1,0 +1,15 @@
+---
+
+title: "Labs"
+type: "Web Application"
+audience: "CAES"
+description: "Website for managing Labs (primarily access via prox cards) for CAESDO."
+image: "default"
+url: "https://github.com/ucdavis/labs"
+date: 2019-06-07
+developers:
+
+- Scott Kirkland
+- River Holstege
+
+---

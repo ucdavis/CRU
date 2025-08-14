@@ -45,7 +45,7 @@ export default async function TeamPage() {
       <div className="container py-16">
         <div className="md:w-2/3 w-full mx-auto">
           <table className="table">
-            <thead>
+            <thead className="text-base-content/65">
               <tr>
                 <th>Name</th>
                 <th>Role</th>
@@ -89,7 +89,7 @@ export default async function TeamPage() {
                         {member.phone}
                       </a>
                     ) : (
-                      <span className="text-gray-400 italic">—</span>
+                      <span className="text-base-300 italic">—</span>
                     )}
                   </td>
                   <td>
