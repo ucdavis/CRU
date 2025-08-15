@@ -25,10 +25,80 @@ export default function Home() {
       </div>
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-6 py-8">
-          <div className="md:w-1/2 w-full">Recent</div>
+          <div className="md:w-1/2 w-full">
+            <h2>Recent</h2>
+          </div>
           <div className="md:w-1/2 w-full">
             <h2>Quick Links</h2>
             <QuicklinkList />
+          </div>
+        </div>
+      </div>
+      <div className="border-t-1 py-8 border-cru-border">
+        <div className="container">
+          <h2>Contact</h2>
+          <div className="flex flex-col md:flex-row gap-6 py-8">
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h2 className="card-title">Help Desk</h2>
+                <div className="grid grid-cols-2 gap-y-2">
+                  <span className="font-semibold text-base-content/70">
+                    Location
+                  </span>
+                  <span>150 Mrak Hall First Floor</span>
+
+                  <span className="font-semibold text-base-content/70">
+                    Phone
+                  </span>
+                  <span>(530) 754-7122</span>
+
+                  <span className="font-semibold text-base-content/70">
+                    Email
+                  </span>
+                  <a
+                    href="mailto:support@caes.ucdavis.edu"
+                    className="link link-hover text-ucd-recpool"
+                  >
+                    support@caes.ucdavis.edu
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h2 className="card-title">Web and App Support</h2>
+                <div className="grid grid-cols-2 gap-y-2">
+                  <span className="font-semibold text-base-content/70">
+                    Location
+                  </span>
+                  <span>38 Mrak Hall Basement</span>
+
+                  <span className="font-semibold text-base-content/70">
+                    Phone
+                  </span>
+                  <span>(530) 754-7122</span>
+
+                  <span className="font-semibold text-base-content/70">
+                    Email
+                  </span>
+                  <div>
+                    <a
+                      href="mailto:apprequests@caes.ucdavis.edu"
+                      className="link link-hover text-ucd-recpool"
+                    >
+                      apprequests@caes.ucdavis.edu
+                    </a>
+                    <br />
+                    <a
+                      href="mailto:webrequests@caes.ucdavis.edu"
+                      className="link link-hover text-ucd-recpool"
+                    >
+                      webrequests@caes.ucdavis.edu
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
