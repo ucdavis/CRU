@@ -1,6 +1,7 @@
 // app/portfolio/page.tsx
 import PageHeader from "../components/pageheader";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { getAllPortfolio } from "@/lib/portfolio";
 
@@ -20,10 +21,19 @@ export default function Portfolio() {
       />
 
       <div className="container">
-        <div className="flex flex-col md:flex-row gap-16 items-center justify-between py-8" />
+        <div className="flex flex-col justify-between py-8">
+          <div className="md:w-3/5 w-full">
+            <p className="text-lg">
+              From small centers and departments to projects that span the whole
+              campus, we’ve worked with a wide variety of groups. Take a look
+              below to see the range of our work.
+            </p>
+          </div>
+          <hr className="mt-8" />
+          <br />
+          <hr className="mb-8" />
+        </div>
       </div>
-
-      <hr className="my-12" />
 
       <div className="container py-16">
         <div className="w-full mx-auto overflow-x-auto">
@@ -41,20 +51,28 @@ export default function Portfolio() {
             <tbody>
               {items.map((p) => (
                 <tr key={p.slug}>
-                  <td className="w-8">{/* blank cell per your layout */}</td>
-                  <td className="font-medium">
+                  <td className="w-16 align-top">
+                    {p.image ? (
+                      <Image
+                        width={128}
+                        height={128}
+                        className="rounded"
+                        alt={`${p.title} logo`}
+                        src={`/portfolio/${p.image}.png`}
+                      />
+                    ) : (
+                      <div className="w-[128px] h-[58px] bg-gray-200 rounded" />
+                    )}
+                  </td>
+                  <td className="align-top">
                     <div className="flex flex-col">
-                      <span>{p.title}</span>
+                      <p className="text-xl">{p.title}</p>
                       {p.date && (
                         <span className="text-base-content/75">
                           {new Date(p.date).toLocaleDateString()}
                         </span>
                       )}
-                      {p.description && (
-                        <span className="text-base-content">
-                          {p.description}
-                        </span>
-                      )}
+                      {p.description && <p className="mt-2">{p.description}</p>}
                     </div>
                   </td>
                   <td>
