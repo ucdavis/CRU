@@ -1,6 +1,6 @@
 ---
 title: "Employee Salary Review & Analysis (ESRA)"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "System to analyze salaries among titles/personnel and formulate/propose salary adjustments due to equity considerations or reclassification. It pulls together information from a variety of sources and provides personnel analysts with a single-source portal to be able to view employee salary and title."
 image: "cru"

@@ -1,17 +1,16 @@
-// app/portfolio/page.tsx
 import PageHeader from "../components/pageheader";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import { getAllPortfolio } from "@/lib/portfolio";
+import { getCurrentTeamMembers } from "@/lib/team";
 
-export const metadata: Metadata = {
-  title: "Portfolio",
-};
+export const metadata: Metadata = { title: "Portfolio" };
 
 export default function Portfolio() {
-  const items = getAllPortfolio(); // server-side read at build/runtime
-
+  const items = getAllPortfolio();
+  const team = getCurrentTeamMembers();
+  const teamByName = new Map(team.map((m) => [m.name.toLowerCase().trim(), m]));
   return (
     <>
       <PageHeader
@@ -42,7 +41,7 @@ export default function Portfolio() {
               <tr>
                 <th></th>
                 <th>Info</th>
-                <th>URL</th>
+
                 <th>Team</th>
                 <th>Audience</th>
                 <th>Type</th>
@@ -64,7 +63,7 @@ export default function Portfolio() {
                       <div className="w-[128px] h-[58px] bg-gray-200 rounded" />
                     )}
                   </td>
-                  <td className="align-top">
+                  <td className="w-186 align-top">
                     <div className="flex flex-col">
                       <p className="text-xl">{p.title}</p>
                       {p.date && (
@@ -73,27 +72,83 @@ export default function Portfolio() {
                         </span>
                       )}
                       {p.description && <p className="mt-2">{p.description}</p>}
+                      {p.url ? (
+                        <Link
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link link-hover text-ucd-arboretum"
+                        >
+                          {p.url}
+                        </Link>
+                      ) : (
+                        "—"
+                      )}
                     </div>
                   </td>
+
                   <td>
-                    {p.url ? (
-                      <Link
-                        href={p.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link link-hover text-ucd-arboretum"
+                    {p.developers?.length ? (
+                      <div
+                        className={`flex ${
+                          p.developers.length > 1
+                            ? "avatar-group -space-x-2 mt-2"
+                            : "items-center"
+                        }`}
                       >
-                        {p.url}
-                      </Link>
+                        {p.developers.map((dev) => {
+                          const m = teamByName.get(dev.toLowerCase().trim());
+                          const initials = dev
+                            .split(/\s+/)
+                            .map((s) => s[0]?.toUpperCase() ?? "")
+                            .slice(0, 2)
+                            .join("");
+
+                          return (
+                            <div className="avatar" key={dev}>
+                              <div className="mask mask-squircle h-8 w-8 ring ring-base-100 ring-offset-1">
+                                {m?.image ? (
+                                  <Image
+                                    src={m.image}
+                                    alt={m.name}
+                                    width={32}
+                                    height={32}
+                                    className="object-cover"
+                                  />
+                                ) : (
+                                  <div className="flex h-8 w-8 items-center justify-center bg-base-300 text-xs font-semibold">
+                                    {initials || "—"}
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     ) : (
                       "—"
                     )}
                   </td>
-                  <td>
-                    {p.developers?.length ? p.developers.join(", ") : "—"}
-                  </td>
                   <td>{p.audience || "—"}</td>
-                  <td>{p.type || "Web Application"}</td>
+                  <td>
+                    {p.type ? (
+                      <span
+                        className={`badge ${
+                          p.type.toLowerCase() === "web app"
+                            ? "badge badge-outline badge-secondary"
+                            : p.type.toLowerCase() === "static site"
+                            ? "badge badge-outline badge-info"
+                            : p.type.toLowerCase() === "sitefarm"
+                            ? "badge badge-outline badge-success"
+                            : "badge-ghost"
+                        }`}
+                      >
+                        {p.type}
+                      </span>
+                    ) : (
+                      <span className="badge badge-ghost">Unknown</span>
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>

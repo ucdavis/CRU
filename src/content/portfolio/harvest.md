@@ -1,6 +1,6 @@
 ---
 title: "Harvest"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Field management system for tracking agricultural experiments throughout their lifecycles -- including quote approval workflows, expense reporting, and automated billing."
 image: "caes"

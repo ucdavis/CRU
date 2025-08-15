@@ -1,6 +1,6 @@
 ---
 title: "Plant Transformation Facility"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Plant Transformation Facility: Online ordering system for the Plant Transformation Facility. Features online ordering from clients, inventory management, and online billing integration."
 image: "cru"

@@ -1,6 +1,6 @@
 ---
 title: "Labs"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Website for managing Labs (primarily access via prox cards) for CAESDO."
 image: "cru"

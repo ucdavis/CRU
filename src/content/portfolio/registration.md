@@ -1,6 +1,6 @@
 ---
 title: "Registration"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "Allows campus staff to create and promote conferences and other events and handles payments (Credit Card/Checks) for those events."
 image: "cru"

@@ -1,6 +1,6 @@
 ---
 title: "ACE (Course Evaluations)"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "Online course evaluations for UC Davis, enabling staff and faculty to quickly define and distribute evaluations and receive secure feedback rapidly through drastically less effort than using paper evaluations. Used quarterly by almost every student on campus."
 image: "cru"

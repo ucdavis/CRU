@@ -1,6 +1,6 @@
 ---
 title: "Chart of Accounts picker: Finjector"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "Small web application to help users find their new Common chart of accounts."
 image: "finjector"

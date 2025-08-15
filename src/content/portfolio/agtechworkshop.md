@@ -1,6 +1,6 @@
 ---
 title: "AgTech Workshop"
-type: "Web Application"
+type: "Sitefarm"
 audience: "CAES"
 description: "Sitefarm site for the AgTech Workshop"
 image: "caes"

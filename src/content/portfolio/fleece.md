@@ -1,6 +1,6 @@
 ---
 title: "Faculty Directory"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Faculty List tool for organizing faculty content and syncing with sitefarm"
 image: "fleece"

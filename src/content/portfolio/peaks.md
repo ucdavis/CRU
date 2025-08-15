@@ -1,6 +1,6 @@
 ---
 title: "PEAKS"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "The goal of PEAKS is to provide a centralized system where teams can plan and track their most critical resources, enabling them to answer difficult questions like exactly which keys and computers are assigned to a specific person, when they acknowledged receipt of those items, what rooms they can access with those keys, and much, much more."
 image: "cru"

@@ -1,6 +1,6 @@
 ---
 title: "Student Information Management"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Student Information Management System: Used by CA&ES academic counselors. Features include transcript pdf storage, student form tracking, and ability to run student reports against Banner."
 image: "cru"

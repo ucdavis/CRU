@@ -1,6 +1,6 @@
 ---
 title: "Gift Tracking"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "Process and track campus donations in a centralized system, including complex payment processing, document management, and workflow history."
 image: "cru"

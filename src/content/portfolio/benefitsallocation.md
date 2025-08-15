@@ -1,6 +1,6 @@
 ---
 title: "Benefits Allocation"
-type: "Web Application"
+type: "Web App"
 audience: "UC Davis"
 description: "A Project for Automating General Ledger Current Budget Adjustments necessitated by campus' de-centralization of benefits allocation credits and expenses."
 image: "cru"

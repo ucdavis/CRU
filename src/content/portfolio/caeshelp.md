@@ -1,6 +1,6 @@
 ---
 title: "CAES Help"
-type: "Web Application"
+type: "Web App"
 audience: "CAES"
 description: "Online Ticket submission for our three helpdesk teams"
 image: "cru"
