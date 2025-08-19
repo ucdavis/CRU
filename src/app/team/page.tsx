@@ -17,9 +17,9 @@ export default async function TeamPage() {
         patternClassName="bg-circle-pattern"
       />
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-between py-8">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 w-full">
-            <p className="text-xl">
+            <p className="text-xl mb-8 md:mb-0">
               One Lab Supporter in the Laboratory,
               <br /> Two Client Supporters under the sky,
               <br /> Two System Administrators in their cubicles of stone,

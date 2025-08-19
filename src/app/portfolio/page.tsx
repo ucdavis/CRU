@@ -20,7 +20,7 @@ export default function Portfolio() {
       />
 
       <div className="container">
-        <div className="flex flex-col justify-between py-8">
+        <div className="flex flex-col justify-between">
           <div className="md:w-3/5 w-full">
             <p className="text-lg">
               From small centers and departments to projects that span the whole
