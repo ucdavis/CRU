@@ -47,19 +47,51 @@ export default function Home() {
                   </span>
                   <span>150 Mrak Hall First Floor</span>
 
-                  <span className="font-semibold text-base-content/70">
+                  {/* <span className="font-semibold text-base-content/70">
                     Phone
                   </span>
-                  <span>(530) 754-7122</span>
+                  <span>(530) 754-7122</span> */}
 
                   <span className="font-semibold text-base-content/70">
-                    Email
+                    Link
                   </span>
+
                   <a
-                    href="mailto:support@caes.ucdavis.edu"
+                    href="https://caeshelp.ucdavis.edu/"
                     className="link link-hover text-ucd-recpool"
                   >
-                    support@caes.ucdavis.edu
+                    caeshelp.ucdavis.edu
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card bg-base-200">
+              <div className="card-body">
+                <h2 className="card-title">Lab Support</h2>
+                <div className="grid grid-cols-2 gap-y-2">
+                  <span className="font-semibold text-base-content/70">
+                    Location
+                  </span>
+                  <p>
+                    1137 PES Calendar
+                    <br />
+                    253 Hunt Calendar
+                  </p>
+
+                  {/* <span className="font-semibold text-base-content/70">
+                    Phone
+                  </span>
+                  <span>(530) 752-1823</span> */}
+
+                  <span className="font-semibold text-base-content/70">
+                    Link
+                  </span>
+
+                  <a
+                    href="https://ic.ucdavis.edu/"
+                    className="link link-hover text-ucd-recpool"
+                  >
+                    ic.ucdavis.edu
                   </a>
                 </div>
               </div>
@@ -72,28 +104,16 @@ export default function Home() {
                     Location
                   </span>
                   <span>38 Mrak Hall Basement</span>
-
                   <span className="font-semibold text-base-content/70">
-                    Phone
-                  </span>
-                  <span>(530) 754-7122</span>
-
-                  <span className="font-semibold text-base-content/70">
-                    Email
+                    Link
                   </span>
                   <div>
                     <a
-                      href="mailto:apprequests@caes.ucdavis.edu"
+                      href="https://caeshelp.ucdavis.edu/"
                       className="link link-hover text-ucd-recpool"
+                      target="_blank"
                     >
-                      apprequests@caes.ucdavis.edu
-                    </a>
-                    <br />
-                    <a
-                      href="mailto:webrequests@caes.ucdavis.edu"
-                      className="link link-hover text-ucd-recpool"
-                    >
-                      webrequests@caes.ucdavis.edu
+                      caeshelp.ucdavis.edu
                     </a>
                   </div>
                 </div>
