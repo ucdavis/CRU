@@ -13,6 +13,9 @@
   --color-base-200: var(--color-dark-bg-200);
   --color-base-300: var(--color-dark-bg-300);
   --color-base-content: var(--color-light-font);
+  --color-primary: var(--color-ucd-recpool);
+  --color-primary-content: var(--color-dark-font);
+  --color-secondary: var(--color-ucd-goldenstate);
 }
 @layer base {
   h1 {
@@ -96,4 +99,7 @@ h4 {
 }
 hr {
   border-color: #29292e;
+}
+.btn {
+  font-family: proxima-nova-b, sans-serif;
 }

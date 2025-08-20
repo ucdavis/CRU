@@ -58,7 +58,7 @@ export default function Home() {
 
                   <a
                     href="https://caeshelp.ucdavis.edu/"
-                    className="link link-hover text-ucd-recpool"
+                    className="link link-hover text-primary"
                   >
                     caeshelp.ucdavis.edu
                   </a>
@@ -89,7 +89,7 @@ export default function Home() {
 
                   <a
                     href="https://ic.ucdavis.edu/"
-                    className="link link-hover text-ucd-recpool"
+                    className="link link-hover text-primary"
                   >
                     ic.ucdavis.edu
                   </a>
@@ -110,7 +110,7 @@ export default function Home() {
                   <div>
                     <a
                       href="https://caeshelp.ucdavis.edu/"
-                      className="link link-hover text-ucd-recpool"
+                      className="link link-hover text-primary"
                       target="_blank"
                     >
                       caeshelp.ucdavis.edu
