@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
               height={30}
               className="opacity-75"
               alt={"UCDAVIS CA&ES logo"}
-              src="./caes.svg"
+              src="/caes.svg"
             />
           </Link>
         </div>

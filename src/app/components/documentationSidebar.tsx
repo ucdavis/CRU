@@ -6,14 +6,16 @@ const documentationSidebar: React.FC = () => {
     <div className="md:w-1/3 w-full">
       <div className="card card-xl shadow-sm">
         <div className="card-body">
-          <h2 className="card-title text-primary">Create a ticket</h2>
+          <h2 className="card-title text-documentation brightness-150">
+            Create a ticket
+          </h2>
           <p>
             Unable find what you need? make a ticket and we will get back to you
             as soon as possible.
           </p>
           <br />
           <Link
-            className="btn btn-primary"
+            className="btn btn-documentation"
             href={"https://caeshelp.ucdavis.edu/"}
           >
             Create a ticket

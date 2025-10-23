@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="flex min-h-screen flex-col" data-theme="gunrock">
+    <html data-theme="gunrock" lang="en">
+      <body className="flex min-h-screen flex-col">
         <div className="flex-1 flex flex-col">
           <Header />
           <div className="grid grid-cols-[3%_94%_3%] flex-1 w-full">

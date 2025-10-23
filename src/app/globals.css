@@ -5,6 +5,10 @@
 
 @theme {
   --color-cru-border: oklch(0.283 0.0091 285.81);
+  --color-documentation: var(--color-ucd-gunrock);
+  --color-team: var(--color-ucd-tahoe);
+  --color-portfolio: var(--color-ucd-arboretum);
+  --color-services: var(--color-ucd-sunflower);
 }
 
 @plugin "daisyui/theme" {
@@ -16,6 +20,10 @@
   --color-primary: var(--color-ucd-recpool);
   --color-primary-content: var(--color-dark-font);
   --color-secondary: var(--color-ucd-goldenstate);
+  --color-documentation: var(--color-ucd-gunrock);
+  --color-team: var(--color-ucd-tahoe);
+  --color-portfolio: var(--color-ucd-arboretum);
+  --color-services: var(--color-ucd-sunflower);
 }
 @layer base {
   h1 {
@@ -41,12 +49,7 @@ html {
 b {
   font-family: proxima-nova-b, sans-serif;
 }
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 100;
-}
+
 .container {
   padding: 0;
   width: 94%;
@@ -102,4 +105,19 @@ hr {
 }
 .btn {
   font-family: proxima-nova-b, sans-serif;
+}
+.btn-documentation {
+  background-color: var(--color-ucd-gunrock);
+}
+.btn-documentation:hover {
+  filter: brightness(0.9);
+}
+/* Markdown styles */
+article ul li {
+  list-style-type: disc;
+  margin-left: 3rem;
+}
+article h2 {
+  margin-bottom: 8px;
+  margin-top: 4px;
 }

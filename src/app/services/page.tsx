@@ -123,7 +123,7 @@ export default function Services() {
           <div className="md:w-1/3 w-full">
             <div className="card card-xl shadow-sm">
               <div className="card-body">
-                <h2 className="card-title text-secondary">Rates</h2>
+                <h2 className="card-title text-services">Rates</h2>
                 <p>
                   <b>$122/hr</b> - Project Planning and Management
                 </p>
