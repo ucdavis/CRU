@@ -16,12 +16,9 @@ export default function DocumentationLayout({
         patternClassName="bg-plus-pattern"
       />
       <div className="container">
-        <div className="flex flex-col md:flex-row gap-16 items-center justify-between">
-          <div className="flex flex-col md:flex-row gap-16 justify-between">
-            {/* Left Col */}
-            <div className="md:w-3/5 w-full">{children}</div>
-            <DocumentationSidebar />
-          </div>
+        <div className="flex flex-col md:flex-row gap-16 justify-between">
+          <div className="md:w-3/5 w-full">{children}</div>
+          <DocumentationSidebar />
         </div>
       </div>
     </div>

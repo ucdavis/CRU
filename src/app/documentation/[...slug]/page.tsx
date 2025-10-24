@@ -8,7 +8,8 @@ import {
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
-import { EnvelopeIcon, PaperClipIcon } from "@heroicons/react/24/solid";
+import { getCurrentTeamMembers } from "@/lib/team";
+import DocActions from "@/app/components/DocActions";
 
 type Props = {
   params: Promise<{ slug: string[] }>;
@@ -36,9 +37,6 @@ export async function generateStaticParams() {
   return [...docPaths, ...sectionPaths];
 }
 
-/**
- * 🔗 Breadcrumbs Component
- */
 function Breadcrumbs({ slugParts }: { slugParts: string[] }) {
   const segments = ["documentation", ...slugParts];
   const links = segments.map((part, index) => {
@@ -75,15 +73,15 @@ export default async function DocumentationPage({ params }: Props) {
   const slug = slugArray.join("/");
   const allDocs = getAllDocumentation();
 
-  // 1️⃣ Try to get a full markdown file
   const doc = getDocumentationBySlug(slug);
+  const teamMembers = getCurrentTeamMembers();
+  const author = teamMembers.find((m) => m.name === doc?.author);
 
   if (doc) {
     return (
       <article>
         <Breadcrumbs slugParts={slugArray} />
 
-        {/* 🏷️ Metadata Block */}
         <h1 className="mb-2">{doc.title}</h1>
         <p className="text-lg">{doc.description}</p>
 
@@ -97,27 +95,35 @@ export default async function DocumentationPage({ params }: Props) {
             </span>
           )}
           <div className="flex justify-between items-center border-b-1 border-cru-border py-5 mb-3">
-            <div>
-              {doc.author && (
-                <p className="text-lg">
-                  <b>{doc.author}</b>
-                </p>
+            <div className="flex items-center gap-4">
+              {author?.image && (
+                <Image
+                  src={author.image}
+                  alt={author.name}
+                  width={44}
+                  height={44}
+                  className="rounded-full border border-gray-300"
+                />
               )}
-              {doc.date && (
-                <p>
-                  {new Date(doc.date).toLocaleDateString(undefined, {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </p>
-              )}
+              <div>
+                {doc.author && (
+                  <p className="text-lg">
+                    <b>{doc.author}</b>
+                  </p>
+                )}
+                {doc.date && (
+                  <p>
+                    {new Date(doc.date).toLocaleDateString(undefined, {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
+                  </p>
+                )}
+              </div>
             </div>
 
-            <div className="flex">
-              <EnvelopeIcon className="w-5 h-5 mr-4 text-documentation" />
-              <PaperClipIcon className="w-5 h-5 text-documentation" />
-            </div>
+            <DocActions />
           </div>
         </div>
 
@@ -135,7 +141,7 @@ export default async function DocumentationPage({ params }: Props) {
                   alt={alt}
                   width={1200}
                   height={600}
-                  className="my-4 rounded-md height-auto max-w-full"
+                  className="my-4 rounded-sm height-auto max-w-full"
                 />
               );
             },
@@ -166,8 +172,12 @@ export default async function DocumentationPage({ params }: Props) {
       <Breadcrumbs slugParts={slugArray} />
       <div>
         <h1>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
-        <p className="text-lg">Select a document below:</p>
-        <hr className="mt-6" />
+        <p className="text-lg mt-4">
+          Find all of our{" "}
+          {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}{" "}
+          articles below
+        </p>
+        <hr className="mt-4" />
         <br />
         <hr className="mb-6" />
       </div>
@@ -176,10 +186,12 @@ export default async function DocumentationPage({ params }: Props) {
         {sectionDocs.map((child) => (
           <li className="mb-4" key={child.slug}>
             <Link
-              className="text-lg border-b-2 border-base-100 hover:border-documentation transition-colors duration-100"
+              className="border-b-2 border-base-100 hover:border-documentation transition-colors duration-100"
               href={`/documentation/${child.slug}`}
             >
-              <strong>{child.title}</strong>
+              <span className="text-xl">
+                <strong>{child.title}</strong>
+              </span>
               <span className="text-base-content/60">
                 {child.description && <p>{child.description}</p>}
               </span>
