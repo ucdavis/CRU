@@ -5,7 +5,7 @@
 
 @theme {
   --color-cru-border: oklch(0.283 0.0091 285.81);
-  --color-documentation: var(--color-ucd-gunrock);
+  --color-documentation: var(--color-ucd-strawberry);
   --color-team: var(--color-ucd-tahoe);
   --color-portfolio: var(--color-ucd-arboretum);
   --color-services: var(--color-ucd-sunflower);
@@ -20,7 +20,7 @@
   --color-primary: var(--color-ucd-recpool);
   --color-primary-content: var(--color-dark-font);
   --color-secondary: var(--color-ucd-goldenstate);
-  --color-documentation: var(--color-ucd-gunrock);
+  --color-documentation: var(--color-ucd-strawberry);
   --color-team: var(--color-ucd-tahoe);
   --color-portfolio: var(--color-ucd-arboretum);
   --color-services: var(--color-ucd-sunflower);
@@ -98,7 +98,7 @@ b {
 .bg-plus-pattern {
   background-image: url("/plus-pattern.svg");
   background-repeat: repeat;
-  background-size: 14px 14px;
+  background-size: 14px 12px;
 }
 hr {
   border-color: #29292e;
@@ -107,7 +107,7 @@ hr {
   font-family: proxima-nova-b, sans-serif;
 }
 .btn-documentation {
-  background-color: var(--color-ucd-gunrock);
+  background-color: var(--color-documentation);
 }
 .btn-documentation:hover {
   filter: brightness(0.9);
@@ -120,4 +120,13 @@ article ul li {
 article h2 {
   margin-bottom: 8px;
   margin-top: 4px;
+}
+article a {
+  color: var(--color-documentation);
+  filter: brightness(150%);
+}
+article a:hover {
+  color: var(--color-documentation);
+  text-decoration: underline;
+  filter: brightness(200%);
 }

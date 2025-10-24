@@ -1,10 +1,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   getAllDocumentation,
   getDocumentationBySlug,
 } from "@/lib/documentation";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 import { EnvelopeIcon, PaperClipIcon } from "@heroicons/react/24/solid";
 
 type Props = {
@@ -83,6 +86,7 @@ export default async function DocumentationPage({ params }: Props) {
         {/* 🏷️ Metadata Block */}
         <h1 className="mb-2">{doc.title}</h1>
         <p className="text-lg">{doc.description}</p>
+
         <div>
           {doc.category && (
             <span>
@@ -111,13 +115,34 @@ export default async function DocumentationPage({ params }: Props) {
             </div>
 
             <div className="flex">
-              <EnvelopeIcon className="w-5 h-5 mr-4" />
-              <PaperClipIcon className="w-5 h-5" />
+              <EnvelopeIcon className="w-5 h-5 mr-4 text-documentation" />
+              <PaperClipIcon className="w-5 h-5 text-documentation" />
             </div>
           </div>
         </div>
 
-        <ReactMarkdown>{doc.content}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+          components={{
+            img({ ...props }) {
+              const src = props.src || "";
+              const alt = props.alt || "";
+
+              return (
+                <Image
+                  src={src as string}
+                  alt={alt}
+                  width={1200}
+                  height={600}
+                  className="my-4 rounded-md height-auto max-w-full"
+                />
+              );
+            },
+          }}
+        >
+          {doc.content}
+        </ReactMarkdown>
       </article>
     );
   }
@@ -139,20 +164,26 @@ export default async function DocumentationPage({ params }: Props) {
   return (
     <section>
       <Breadcrumbs slugParts={slugArray} />
-      <h1>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
-      <p>Select a document below:</p>
+      <div>
+        <h1>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
+        <p className="text-lg">Select a document below:</p>
+        <hr className="mt-6" />
+        <br />
+        <hr className="mb-6" />
+      </div>
 
       <ul>
         {sectionDocs.map((child) => (
-          <li key={child.slug}>
-            <Link href={`/documentation/${child.slug}`}>
+          <li className="mb-4" key={child.slug}>
+            <Link
+              className="text-lg border-b-2 border-base-100 hover:border-documentation transition-colors duration-100"
+              href={`/documentation/${child.slug}`}
+            >
               <strong>{child.title}</strong>
+              <span className="text-base-content/60">
+                {child.description && <p>{child.description}</p>}
+              </span>
             </Link>
-            {child.description && <p>{child.description}</p>}
-            <div style={{ fontSize: "0.85rem", color: "#666" }}>
-              {child.category && <span>📁 {child.category}</span>}
-              {child.author && <span> — ✍️ {child.author}</span>}
-            </div>
           </li>
         ))}
       </ul>

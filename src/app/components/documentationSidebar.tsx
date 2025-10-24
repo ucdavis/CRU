@@ -4,10 +4,10 @@ import { ArrowDownOnSquareIcon } from "@heroicons/react/24/outline";
 const documentationSidebar: React.FC = () => {
   return (
     <div className="md:w-1/3 w-full">
-      <div className="card card-xl shadow-sm">
+      <div className="card card-md">
         <div className="card-body">
-          <h2 className="card-title text-documentation brightness-150">
-            Create a ticket
+          <h2 className="card-title text-documentation">
+            <b>Create a ticket</b>
           </h2>
           <p>
             Unable find what you need? make a ticket and we will get back to you
