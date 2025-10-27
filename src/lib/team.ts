@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const teamDirectory = path.join(process.cwd(), "content", "team");
+const CONTENT_DIR = path.join(process.cwd(), "content", "team");
 
 export type TeamMember = {
   name: string;
@@ -16,15 +16,15 @@ export type TeamMember = {
 };
 
 export function getCurrentTeamMembers(): TeamMember[] {
-  if (!fs.existsSync(teamDirectory)) return [];
+  if (!fs.existsSync(CONTENT_DIR)) return [];
 
-  const filenames = fs.readdirSync(teamDirectory);
+  const filenames = fs.readdirSync(CONTENT_DIR);
 
   return filenames
     .filter((file) => file.endsWith(".md"))
     .map((filename) => {
       const slug = filename.replace(/\.md$/, "");
-      const filePath = path.join(teamDirectory, filename);
+      const filePath = path.join(CONTENT_DIR, filename);
       const fileContents = fs.readFileSync(filePath, "utf8");
       const { data } = matter(fileContents);
 
