@@ -38,7 +38,6 @@ export default function Services() {
             <div className="flex avatar-group -space-x-2 mt-2">
               {[
                 { name: "Dj", src: "/team/dj.png" },
-                { name: "Surina", src: "/team/surina.png" },
                 { name: "Jackie", src: "/team/jackie.png" },
                 { name: "Steven", src: "/team/steven.png" },
                 { name: "Shuka", src: "/team/shuka.png" },

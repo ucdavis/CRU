@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+
 import PageHeader from "../components/pageheader";
 import Link from "next/link";
 import Image from "next/image";
