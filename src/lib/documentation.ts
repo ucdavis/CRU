@@ -13,7 +13,7 @@ export type DocumentationItem = {
   filepath: string; // full file path (optional, useful for debugging)
 };
 
-const CONTENT_DIR = path.join(process.cwd(), "src", "content", "documentation");
+const CONTENT_DIR = path.join(process.cwd(), "content", "documentation");
 
 /**
  * Recursively collect all markdown files (.md or .markdown) under the documentation directory.

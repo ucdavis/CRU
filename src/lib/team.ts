@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const teamDirectory = path.join(process.cwd(), "src", "content", "team");
+const teamDirectory = path.join(process.cwd(), "content", "team");
 
 export type TeamMember = {
   name: string;

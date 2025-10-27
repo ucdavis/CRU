@@ -15,7 +15,7 @@ export type PortfolioItem = {
   developers?: string[];
 };
 
-const CONTENT_DIR = path.join(process.cwd(), "src", "content", "portfolio");
+const CONTENT_DIR = path.join(process.cwd(), "content", "portfolio");
 
 export function getAllPortfolio(): PortfolioItem[] {
   const files = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
