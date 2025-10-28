@@ -116,6 +116,7 @@ hr {
 article ul li {
   list-style-type: disc;
   margin-left: 3rem;
+  margin-bottom: 1rem;
 }
 article h2 {
   margin-bottom: 8px;

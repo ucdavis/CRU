@@ -1,49 +1,54 @@
 import Link from "next/link";
 import { ArrowDownOnSquareIcon } from "@heroicons/react/24/outline";
 
-const documentationSidebar: React.FC = () => {
+const DocumentationSidebar: React.FC = () => {
   return (
     <div className="md:w-1/3 w-full">
-      <div className="card card-md">
-        <div className="card-body">
-          <h2 className="card-title text-documentation">
-            <b>Create a ticket</b>
-          </h2>
-          <p>
-            Unable find what you need? make a ticket and we will get back to you
-            as soon as possible.
-          </p>
-          <br />
-          <Link
-            className="btn btn-documentation"
-            href={"https://caeshelp.ucdavis.edu/"}
-          >
-            Create a ticket
-          </Link>
+      <div className="md:sticky md:top-20">
+        <div className="card card-md">
+          <div className="card-body">
+            <h2 className="card-title text-documentation">
+              <b>Create a ticket</b>
+            </h2>
+            <p>
+              Unable to find what you need? Make a ticket and we will get back
+              to you as soon as possible.
+            </p>
+            <br />
+            <Link
+              className="btn btn-documentation"
+              href="https://caeshelp.ucdavis.edu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Create a ticket
+            </Link>
+          </div>
         </div>
+
+        <ul className="pt-6">
+          <li className="w-max">
+            <a
+              href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
+            >
+              <ArrowDownOnSquareIcon className="h-5 w-5" />
+              <span>Information Technology Resource Guidelines</span>
+            </a>
+          </li>
+          <li className="w-max">
+            <a
+              href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
+            >
+              <ArrowDownOnSquareIcon className="h-5 w-5" />
+              <span>Emeriti and Staff Retirees IT Support Guidelines</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul className="pt-6">
-        <li className="w-max">
-          <a
-            href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
-          >
-            <ArrowDownOnSquareIcon className="h-5 w-5" />
-            <span>Information Technology Resource Guidelines</span>
-          </a>
-        </li>
-        <li className="w-max">
-          <a
-            href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
-          >
-            <ArrowDownOnSquareIcon className="h-5 w-5" />
-            <span>Emeriti and Staff Retirees IT Support Guidelines</span>
-          </a>
-        </li>
-      </ul>
     </div>
   );
 };
 
-export default documentationSidebar;
+export default DocumentationSidebar;
