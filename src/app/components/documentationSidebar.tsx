@@ -5,7 +5,7 @@ const DocumentationSidebar: React.FC = () => {
   return (
     <div className="md:w-1/3 w-full">
       <div className="md:sticky md:top-20">
-        <div className="card card-md">
+        <div className="card card-lg">
           <div className="card-body">
             <h2 className="card-title text-documentation">
               <b>Create a ticket</b>

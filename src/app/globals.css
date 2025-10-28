@@ -117,12 +117,17 @@ article h2 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
-article a {
+.markdown-wrapper p a,
+.markdown-wrapper li a {
   color: var(--color-documentation);
   filter: brightness(150%);
 }
-article a:hover {
+.markdown-wrapper p a:hover,
+.markdown-wrapper li a:hover {
   color: var(--color-documentation);
   text-decoration: underline;
   filter: brightness(200%);
+}
+.markdown-nav {
+  margin-top: 2rem;
 }

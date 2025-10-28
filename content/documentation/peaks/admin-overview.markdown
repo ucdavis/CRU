@@ -45,7 +45,7 @@ Then open the Bulk load people form:
 ![Bulk Load People](/peaks/admin-bulk-load.png "Bulk Load People")
 
 More information on the people asset can be found here :
-[People](https://computing.caes.ucdavis.edu/documentation/peaks/people)
+[People](/documentation/peaks/people)
 
 ## Step 3
 

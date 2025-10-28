@@ -90,7 +90,7 @@ export default async function DocumentationPage({ params }: Props) {
 
         {categorySlug && (
           <Link
-            className="badge badge-outline badge-md badge-error"
+            className="btn btn-sm my-2 btn-error tracking-wider uppercase"
             href={`/documentation/${categorySlug}`}
           >
             {categoryLabel}
@@ -132,29 +132,30 @@ export default async function DocumentationPage({ params }: Props) {
             <DocActions />
           </div>
         </div>
+        <div className="markdown-wrapper">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              img({ ...props }) {
+                const src = props.src || "";
+                const alt = props.alt || "";
 
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeRaw]}
-          components={{
-            img({ ...props }) {
-              const src = props.src || "";
-              const alt = props.alt || "";
-
-              return (
-                <Image
-                  src={src as string}
-                  alt={alt}
-                  width={1200}
-                  height={600}
-                  className="my-4 rounded-sm height-auto max-w-full"
-                />
-              );
-            },
-          }}
-        >
-          {doc.content}
-        </ReactMarkdown>
+                return (
+                  <Image
+                    src={src as string}
+                    alt={alt}
+                    width={1200}
+                    height={600}
+                    className="my-4 rounded-sm height-auto max-w-full"
+                  />
+                );
+              },
+            }}
+          >
+            {doc.content}
+          </ReactMarkdown>
+        </div>
       </article>
     );
   }

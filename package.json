@@ -18,6 +18,8 @@
     "@ucdavis/gunrock-tailwind": "^2.4.0",
     "daisyui": "^5.0.46",
     "gray-matter": "^4.0.3",
+    "html-react-parser": "^5.2.7",
+    "marked": "^16.4.1",
     "next": "~15.3.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
