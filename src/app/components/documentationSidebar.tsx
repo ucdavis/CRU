@@ -27,7 +27,7 @@ const DocumentationSidebar: React.FC = () => {
         </div>
 
         <ul className="pt-6">
-          <li className="w-max">
+          <li>
             <a
               href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
               className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
@@ -36,7 +36,7 @@ const DocumentationSidebar: React.FC = () => {
               <span>Information Technology Resource Guidelines</span>
             </a>
           </li>
-          <li className="w-max">
+          <li>
             <a
               href="/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf"
               className="inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg"
