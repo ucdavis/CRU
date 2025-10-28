@@ -5,8 +5,6 @@ author: "Jason Sylvestre"
 date: 2019-05-21
 ---
 
-# Bulk Edit People
-
 The bulk edit can be access from the admin menu:
 
 ![Bulk Edit Menu](/peaks/admin-bulk-edit-menu.png "Bulk Edit Menu")

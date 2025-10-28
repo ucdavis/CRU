@@ -20,10 +20,10 @@
   --color-primary: var(--color-ucd-recpool);
   --color-primary-content: var(--color-dark-font);
   --color-secondary: var(--color-ucd-goldenstate);
-  --color-documentation: var(--color-ucd-strawberry);
-  --color-team: var(--color-ucd-tahoe);
-  --color-portfolio: var(--color-ucd-arboretum);
-  --color-services: var(--color-ucd-sunflower);
+  --color-error: var(--color-documentation); /* using for Documentation */
+  --color-info: var(--color-team); /* using for Teams */
+  --color-success: var(--color-portfolio); /* using for Portfolio */
+  --color-warning: var(--color-services); /* using for Services */
 }
 @layer base {
   h1 {
@@ -106,12 +106,7 @@ hr {
 .btn {
   font-family: proxima-nova-b, sans-serif;
 }
-.btn-documentation {
-  background-color: var(--color-documentation);
-}
-.btn-documentation:hover {
-  filter: brightness(0.9);
-}
+
 /* Markdown styles */
 article ul li {
   list-style-type: disc;
@@ -119,8 +114,8 @@ article ul li {
   margin-bottom: 1rem;
 }
 article h2 {
-  margin-bottom: 8px;
-  margin-top: 4px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 article a {
   color: var(--color-documentation);

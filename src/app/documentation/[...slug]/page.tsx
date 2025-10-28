@@ -78,22 +78,28 @@ export default async function DocumentationPage({ params }: Props) {
   const author = teamMembers.find((m) => m.name === doc?.author);
 
   if (doc) {
+    const categorySlug = doc.category ?? doc.slug.split("/")[0]; // fallback to first folder
+
+    const categoryLabel =
+      categorySlug.charAt(0).toUpperCase() +
+      categorySlug.slice(1).replace(/-/g, " ");
+
     return (
       <article>
         <Breadcrumbs slugParts={slugArray} />
 
+        {categorySlug && (
+          <Link
+            className="badge badge-outline badge-md badge-error"
+            href={`/documentation/${categorySlug}`}
+          >
+            {categoryLabel}
+          </Link>
+        )}
         <h1 className="mb-2">{doc.title}</h1>
         <p className="text-lg">{doc.description}</p>
 
         <div>
-          {doc.category && (
-            <span>
-              <strong>Category:</strong>{" "}
-              <Link href={`/documentation/${doc.category}`}>
-                {doc.category.charAt(0).toUpperCase() + doc.category.slice(1)}
-              </Link>
-            </span>
-          )}
           <div className="flex justify-between items-center border-b-1 border-cru-border py-5 mb-3">
             <div className="flex items-center gap-4">
               {author?.image && (

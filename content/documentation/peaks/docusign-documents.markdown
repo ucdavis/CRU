@@ -5,8 +5,6 @@ author: "Jason Sylvestre"
 date: 2021-03-22
 ---
 
-# DocuSign:
-
 First, please keep in mind that if you assign documents to be signed on the test site, they will actually send emails to that person.
 
 ## Adding your account to PEAKS

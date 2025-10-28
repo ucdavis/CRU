@@ -6,8 +6,6 @@ date: 2019-09-05 11:10:00
 permalink: /documentation/peaks/roadmap
 ---
 
-# Planned Features and Changes
-
 ## Near Term
 
 - Create more reports

@@ -16,7 +16,7 @@ const DocumentationSidebar: React.FC = () => {
             </p>
             <br />
             <Link
-              className="btn btn-documentation"
+              className="btn btn-error"
               href="https://caeshelp.ucdavis.edu/"
               target="_blank"
               rel="noopener noreferrer"
