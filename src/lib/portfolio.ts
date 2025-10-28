@@ -1,4 +1,3 @@
-// /lib/portfolio.ts
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
@@ -6,12 +5,12 @@ import matter from "gray-matter";
 export type PortfolioItem = {
   slug: string;
   title: string;
-  type: string; // "Web Application"
-  audience: string; // "UC Davis", "CAES", etc.
+  type: string;
+  audience: string;
   description?: string;
   image?: string;
   url?: string;
-  date?: string; // YYYY-MM-DD
+  date?: string;
   developers?: string[];
 };
 
@@ -41,7 +40,6 @@ export function getAllPortfolio(): PortfolioItem[] {
     return item;
   });
 
-  // Sort: newest first by date, then title
   items.sort((a, b) => {
     const da = a.date ? new Date(a.date).getTime() : 0;
     const db = b.date ? new Date(b.date).getTime() : 0;

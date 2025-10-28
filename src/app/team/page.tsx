@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default async function TeamPage() {
-  const team = getCurrentTeamMembers(); // ✅ Runs at build time only
+  const team = getCurrentTeamMembers();
 
   return (
     <>
