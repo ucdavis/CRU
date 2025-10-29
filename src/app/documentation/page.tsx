@@ -26,8 +26,7 @@ export default function Documentation() {
   return (
     <>
       <p className="text-lg">
-        This section is your go-to guide for learning how to use our apps and
-        computing resources.
+        Choose a section below to find helpful articles and resources.
       </p>
 
       <hr className="my-8" />

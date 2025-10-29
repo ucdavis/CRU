@@ -94,3 +94,30 @@ export function getDocumentationBySlug(slug: string): DocumentationItem | null {
     filepath: fullPath,
   };
 }
+export function getCategoryMetadata(): Record<
+  string,
+  { label: string; description?: string; url?: string }
+> {
+  const categoriesDir = fs.readdirSync(CONTENT_DIR, { withFileTypes: true });
+
+  const categoryData: Record<
+    string,
+    { label: string; description?: string; url?: string }
+  > = {};
+
+  categoriesDir.forEach((entry) => {
+    if (entry.isDirectory()) {
+      const metaPath = path.join(CONTENT_DIR, entry.name, "_category.json");
+      if (fs.existsSync(metaPath)) {
+        const data = JSON.parse(fs.readFileSync(metaPath, "utf8")) as {
+          label: string;
+          description?: string;
+          url?: string;
+        };
+        categoryData[entry.name] = data;
+      }
+    }
+  });
+
+  return categoryData;
+}
