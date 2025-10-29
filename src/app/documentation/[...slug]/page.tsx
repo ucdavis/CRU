@@ -179,11 +179,6 @@ export default async function DocumentationPage({ params }: Props) {
       <Breadcrumbs slugParts={slugArray} />
       <div>
         <h1>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
-        <p className="text-lg mt-4">
-          Find all of our{" "}
-          {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}{" "}
-          articles below
-        </p>
         <hr className="mt-4" />
         <br />
         <hr className="mb-6" />

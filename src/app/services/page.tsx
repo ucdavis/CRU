@@ -120,24 +120,26 @@ export default function Services() {
 
           {/* Right Col */}
           <div className="md:w-1/3 w-full">
-            <div className="card card-xl shadow-sm">
-              <div className="card-body">
-                <h2 className="card-title text-services">Rates</h2>
-                <p>
-                  <b>$122/hr</b> - Project Planning and Management
-                </p>
-                <p>
-                  <b>$84/hr</b> - Application Development
-                </p>
-                <p>
-                  <b>$70/hr</b> - Web Design and Development
-                </p>
-                <p>
-                  <b>$73/hr</b> - Network Systems
-                </p>
-                <p>
-                  <b>$67/hr</b> - Help Desk
-                </p>
+            <div className="md:sticky md:top-20">
+              <div className="card card-xl shadow-sm">
+                <div className="card-body">
+                  <h2 className="card-title text-services">Rates</h2>
+                  <p>
+                    <b>$122/hr</b> - Project Planning and Management
+                  </p>
+                  <p>
+                    <b>$84/hr</b> - Application Development
+                  </p>
+                  <p>
+                    <b>$70/hr</b> - Web Design and Development
+                  </p>
+                  <p>
+                    <b>$73/hr</b> - Network Systems
+                  </p>
+                  <p>
+                    <b>$67/hr</b> - Help Desk
+                  </p>
+                </div>
               </div>
             </div>
           </div>

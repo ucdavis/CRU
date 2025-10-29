@@ -41,6 +41,9 @@
   .card {
     @apply border-1 border-cru-border bg-base-200;
   }
+  .fancy-list {
+    @apply inline-flex items-center gap-2 px-3 py-2 rounded hover:bg-base-300 transition-colors duration-200 text-lg;
+  }
 }
 html {
   background-color: var(--color-dark-bg-100);
@@ -108,7 +111,8 @@ hr {
 }
 
 /* Markdown styles */
-article ul li {
+article ul li,
+article ol li {
   list-style-type: disc;
   margin-left: 3rem;
   margin-bottom: 1rem;
@@ -130,4 +134,81 @@ article h2 {
 }
 .markdown-nav {
   margin-top: 2rem;
+}
+
+.approved-software-table th,
+.approved-software-table td {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
+
+.approved-software-table tr th {
+  font-weight: bold;
+}
+
+.approved-software-table tr td {
+  border-top: 1px solid var(--color-cru-border);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.approved-software-table tr td:first-child {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.approved-software-table tr td:nth-child(2) {
+  color: var(--color-ucd-gunrock);
+}
+
+.approved-software-table tr td:nth-child(3) {
+  color: var(--color-ucd-quad);
+}
+
+.approved-software-table tr td:nth-child(4) {
+  color: var(--color-ucd-sunflower);
+}
+
+.approved-software-table tr td:nth-child(5) {
+  color: var(--color-ucd-poppy);
+}
+
+.approved-software-table tr td:nth-child(6) {
+  color: var(--color-ucd-doubledecker);
+}
+
+/* ------------------------------------ */
+/* SOFTWARE STATUS TABLE                */
+/* ------------------------------------ */
+
+.software-status-table {
+  border: 1px solid var(--color-cru-border);
+  margin-bottom: 8px;
+}
+
+.software-status-table th,
+.software-status-table td {
+  font-size: 1.4rem;
+  padding: 4px 8px;
+}
+
+.software-status-table th:nth-child(1) {
+  color: var(--color-ucd-gunrock);
+}
+
+.software-status-table th:nth-child(2) {
+  color: var(--color-ucd-quad);
+}
+
+.software-status-table th:nth-child(3) {
+  color: var(--color-ucd-sunflower);
+}
+
+.software-status-table th:nth-child(4) {
+  color: var(--color-ucd-poppy);
+}
+
+.software-status-table th:nth-child(5) {
+  color: var(--color-ucd-doubledecker);
 }
