@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 
+import Script from "next/script";
 export const metadata: Metadata = {
   title: {
     default: "CRU – Computing Resources Unit",
@@ -19,6 +20,18 @@ export default function RootLayout({
 }>) {
   return (
     <html data-theme="gunrock" lang="en">
+      <head>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+      </head>
       <body className="flex min-h-screen flex-col">
         <div className="flex-1 flex flex-col">
           <Header />
