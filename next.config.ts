@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  output: "export",
   outputFileTracingIncludes: {
     "/**/*": [path.resolve("./src/content/**/*")],
   },
@@ -15,6 +16,7 @@ const nextConfig: NextConfig = {
   },
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
