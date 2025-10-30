@@ -73,6 +73,7 @@ export default function Services() {
               {[
                 { name: "Spruce", src: "/team/spruce.png" },
                 { name: "Rob", src: "/team/rob.png" },
+                { name: "Arista", src: "/team/arista.png" },
                 { name: "Jason", src: "/team/jason.png" },
                 { name: "Scott", src: "/team/scott.png" },
               ].map(({ name, src }) => (
