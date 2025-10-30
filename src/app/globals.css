@@ -121,6 +121,9 @@ article h2 {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+.markdown-wrapper p {
+  margin-bottom: 1rem;
+}
 .markdown-wrapper p a,
 .markdown-wrapper li a {
   color: var(--color-documentation);
