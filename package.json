@@ -6,15 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "cf:build": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf:typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@opennextjs/cloudflare": "^1.6.0",
     "@ucdavis/gunrock-tailwind": "^2.4.0",
     "daisyui": "^5.0.46",
     "gray-matter": "^4.0.3",
@@ -37,7 +32,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.3",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5",
-    "wrangler": "^4.25.1"
+    "typescript": "^5"
   }
 }
