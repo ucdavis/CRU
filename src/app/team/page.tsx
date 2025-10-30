@@ -17,8 +17,8 @@ export default async function TeamPage() {
         patternClassName="bg-circle-pattern"
       />
       <div className="container">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          {/* <div className="md:w-1/2 w-full">
             <p className="text-xl mb-8 md:mb-0">
               One Lab Supporter in the Laboratory,
               <br /> Two Client Supporters under the sky,
@@ -29,7 +29,7 @@ export default async function TeamPage() {
               <br /> One Director to bring them all and in the basement bind
               them <br /> In the land of Davis where agriculture rules.
             </p>
-          </div>
+          </div> */}
           <div className="md:w-1/2 w-full md:px-16 xl:px-24">
             <Image
               src="/team/team.png"

@@ -26,7 +26,7 @@ export default function Home() {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-6 py-8">
           <div className="md:w-1/2 w-full">
-            <h2>Recent</h2>
+            <h2>Recent Projects</h2>
           </div>
           <div className="md:w-1/2 w-full">
             <h2>Quick Links</h2>

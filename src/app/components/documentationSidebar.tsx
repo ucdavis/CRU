@@ -1,5 +1,18 @@
 import Link from "next/link";
-import { AcademicCapIcon, DocumentIcon } from "@heroicons/react/24/outline";
+import {
+  AcademicCapIcon,
+  BookOpenIcon,
+  BriefcaseIcon,
+  ComputerDesktopIcon,
+  CreditCardIcon,
+  CurrencyDollarIcon,
+  DocumentIcon,
+  EnvelopeIcon,
+  KeyIcon,
+  NumberedListIcon,
+  PencilIcon,
+  SunIcon,
+} from "@heroicons/react/24/outline";
 
 const DocumentationSidebar: React.FC = () => {
   return (
@@ -55,10 +68,11 @@ const DocumentationSidebar: React.FC = () => {
           <h4>Quick Nav</h4>
           <li>
             <Link
-              href="/documentation/help-desk"
+              href="/documentation/helpdesk"
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <ComputerDesktopIcon className="h-5 w-5 mr-1" />
               Help Desk
             </Link>
           </li>
@@ -69,6 +83,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <CurrencyDollarIcon className="h-5 w-5 mr-1" />
               Finjector
             </Link>
           </li>
@@ -78,6 +93,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <BookOpenIcon className="h-5 w-5 mr-1" />
               Ace
             </Link>
           </li>
@@ -87,6 +103,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <BriefcaseIcon className="h-5 w-5 mr-1" />
               Purchasing
             </Link>
           </li>
@@ -96,6 +113,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <KeyIcon className="h-5 w-5 mr-1" />
               Peaks
             </Link>
           </li>
@@ -105,6 +123,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <EnvelopeIcon className="h-5 w-5 mr-1" />
               Registration
             </Link>
           </li>
@@ -114,6 +133,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <CreditCardIcon className="h-5 w-5 mr-1" />
               Payments
             </Link>
           </li>
@@ -123,6 +143,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <SunIcon className="h-5 w-5 mr-1" />
               Harvest
             </Link>
           </li>
@@ -132,6 +153,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
+              <NumberedListIcon className="h-5 w-5 mr-1" />
               Policies
             </Link>
           </li>

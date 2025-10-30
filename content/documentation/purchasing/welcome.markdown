@@ -55,4 +55,4 @@ When an order is denied or cancelled, you cannot resubmit. To make corrections, 
 
 Enter as much information as you can to help all the people who will be reviewing and approving your order.
 
-More detailed information about routing may be found here: [https://computing.caes.ucdavis.edu/documentation/purchasing/approval-routing](/documentation/purchasing/approval-routing)
+More detailed information about routing may be found here: [/documentation/purchasing/approval-routing](/documentation/purchasing/approval-routing)
