@@ -1,8 +1,11 @@
 import Link from "next/link";
 import {
   AcademicCapIcon,
+  BookmarkIcon,
+  BookmarkSquareIcon,
   BookOpenIcon,
   BriefcaseIcon,
+  CalendarDaysIcon,
   ComputerDesktopIcon,
   CreditCardIcon,
   CurrencyDollarIcon,
@@ -11,6 +14,7 @@ import {
   KeyIcon,
   NumberedListIcon,
   PencilIcon,
+  ShoppingCartIcon,
   SunIcon,
 } from "@heroicons/react/24/outline";
 
@@ -93,7 +97,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
-              <BookOpenIcon className="h-5 w-5 mr-1" />
+              <BookmarkSquareIcon className="h-5 w-5 mr-1" />
               Ace
             </Link>
           </li>
@@ -103,7 +107,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
-              <BriefcaseIcon className="h-5 w-5 mr-1" />
+              <ShoppingCartIcon className="h-5 w-5 mr-1" />
               Purchasing
             </Link>
           </li>
@@ -113,7 +117,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
-              <KeyIcon className="h-5 w-5 mr-1" />
+              <BriefcaseIcon className="h-5 w-5 mr-1" />
               Peaks
             </Link>
           </li>
@@ -123,7 +127,7 @@ const DocumentationSidebar: React.FC = () => {
               rel="noopener noreferrer"
               className="fancy-list"
             >
-              <EnvelopeIcon className="h-5 w-5 mr-1" />
+              <CalendarDaysIcon className="h-5 w-5 mr-1" />
               Registration
             </Link>
           </li>
