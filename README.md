@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+It deploys a static site to the out/ directory which we'll host on Cloudflare Pages.
+
 ## Getting Started
 
 Make sure you do an npm install before you run for the first time:
