@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Documentation",
 };
 
+// Force static generation at build time
+export const dynamic = "force-static";
+
 export default function Documentation() {
   const docs = getAllDocumentation();
   const categoryMeta = getCategoryMetadata();

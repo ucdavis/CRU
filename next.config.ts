@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
-import path from "path";
 
 const nextConfig: NextConfig = {
-  outputFileTracingIncludes: {
-    "/**/*": [path.resolve("./src/content/**/*")],
-  },
+  // Remove outputFileTracingIncludes since we're using static generation
+  // outputFileTracingIncludes: {
+  //   "/**/*": [path.resolve("./content/**/*")],
+  // },
 
   webpack: (config) => {
     config.module.rules.push({

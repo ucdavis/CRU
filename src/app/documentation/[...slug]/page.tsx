@@ -15,6 +15,9 @@ type Props = {
   params: Promise<{ slug: string[] }>;
 };
 
+// Force static generation at build time
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   const docs = getAllDocumentation();
 

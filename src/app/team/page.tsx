@@ -6,6 +6,9 @@ export const metadata = {
   title: "Team",
 };
 
+// Force static generation at build time
+export const dynamic = "force-static";
+
 export default async function TeamPage() {
   const team = getCurrentTeamMembers();
 

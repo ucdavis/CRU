@@ -1,5 +1,3 @@
-export const runtime = "nodejs";
-
 import PageHeader from "../components/pageheader";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,6 +6,9 @@ import { getAllPortfolio } from "@/lib/portfolio";
 import { getCurrentTeamMembers } from "@/lib/team";
 
 export const metadata: Metadata = { title: "Portfolio" };
+
+// Force static generation at build time
+export const dynamic = "force-static";
 
 export default function Portfolio() {
   const items = getAllPortfolio();
