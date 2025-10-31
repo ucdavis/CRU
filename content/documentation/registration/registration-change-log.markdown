@@ -3,6 +3,7 @@ title: "New Features and Changes."
 description: "Stay up to date with all the new features and changes."
 author: "Jason Sylvestre"
 date: 2022-01-10
+featured: true
 ---
 
 ## Jan 10, 2022

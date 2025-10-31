@@ -72,6 +72,7 @@ export default async function DocumentationPage({ params }: Props) {
   const { slug: slugArray } = await params;
   const slug = slugArray.join("/");
   const allDocs = getAllDocumentation();
+  const featuredDocs = allDocs.filter((d) => d.featured).slice(0, 3);
 
   const doc = getDocumentationBySlug(slug);
   const teamMembers = getCurrentTeamMembers();
@@ -183,7 +184,30 @@ export default async function DocumentationPage({ params }: Props) {
         <br />
         <hr className="mb-6" />
       </div>
-
+      {featuredDocs.length > 0 && (
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold mb-4">Featured Articles</h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {featuredDocs.map((doc) => (
+              <Link
+                key={doc.slug}
+                href={`/documentation/${doc.slug}`}
+                className="card border border-cru-border shadow-sm hover:shadow-md hover:border-documentation transition p-6 flex flex-col justify-between"
+              >
+                <h3 className="text-lg font-semibold mb-2">{doc.title}</h3>
+                {doc.description && (
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {doc.description}
+                  </p>
+                )}
+                <span className="text-sm text-documentation mt-auto">
+                  Read more →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
       <ul>
         {sectionDocs.map((child) => (
           <li className="mb-4" key={child.slug}>

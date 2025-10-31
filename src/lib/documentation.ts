@@ -11,6 +11,7 @@ export type DocumentationItem = {
   category?: string;
   content: string;
   filepath: string;
+  featured?: boolean;
 };
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "documentation");
@@ -52,6 +53,7 @@ export function getAllDocumentation(): DocumentationItem[] {
       author: data.author ? String(data.author) : undefined,
       date: data.date ? String(data.date) : undefined,
       category: data.category ? String(data.category) : undefined,
+      featured: data.featured === true,
       content,
       filepath: filePath,
     };
@@ -90,6 +92,7 @@ export function getDocumentationBySlug(slug: string): DocumentationItem | null {
     author: data.author ? String(data.author) : undefined,
     date: data.date ? String(data.date) : undefined,
     category: data.category ? String(data.category) : undefined,
+    featured: data.featured === true,
     content,
     filepath: fullPath,
   };
