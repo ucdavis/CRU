@@ -52,7 +52,7 @@ export default function Portfolio() {
             <tbody>
               {items.map((p) => (
                 <tr key={p.slug}>
-                  <td className="w-16 align-top">
+                  <td className="w-[160px] align-top">
                     {p.image ? (
                       <Image
                         width={128}
