@@ -72,7 +72,6 @@ export default async function DocumentationPage({ params }: Props) {
   const { slug: slugArray } = await params;
   const slug = slugArray.join("/");
   const allDocs = getAllDocumentation();
-  const featuredDocs = allDocs.filter((d) => d.featured).slice(0, 3);
 
   const doc = getDocumentationBySlug(slug);
   const teamMembers = getCurrentTeamMembers();
@@ -146,8 +145,8 @@ export default async function DocumentationPage({ params }: Props) {
                   <Image
                     src={src as string}
                     alt={alt}
-                    width={1200}
-                    height={600}
+                    width={800}
+                    height={400}
                     className="my-4 rounded-sm height-auto max-w-full"
                   />
                 );
@@ -161,7 +160,6 @@ export default async function DocumentationPage({ params }: Props) {
     );
   }
 
-  // 2️⃣ Otherwise render section index (like /documentation/peaks)
   const sectionDocs = allDocs.filter(
     (d) =>
       d.slug.startsWith(slug + "/") &&
@@ -170,10 +168,15 @@ export default async function DocumentationPage({ params }: Props) {
 
   if (sectionDocs.length === 0) return notFound();
 
-  // 🧭 Derive category name (use slug if no explicit category)
   const categoryName =
     sectionDocs[0]?.category ??
     slugArray[slugArray.length - 1].replace(/-/g, " ");
+
+  const featuredDocs = allDocs.filter(
+    (d) =>
+      d.featured &&
+      (d.category === slugArray[0] || d.slug.startsWith(`${slugArray[0]}/`))
+  );
 
   return (
     <section>

@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html data-theme="gunrock" lang="en">
       <head>
-        {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-P7TG6TXWK0`}
           strategy="afterInteractive"
