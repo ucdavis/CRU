@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     default: "CRU – Computing Resources Unit",
     template: "%s | CRU",
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
   description: "Computing Resources Unit at CAES UC Davis",
 };
 
