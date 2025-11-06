@@ -56,7 +56,7 @@ export default function Home() {
                           <Image
                             width={128}
                             height={128}
-                            className="rounded"
+                            className="rounded-md"
                             alt={`${p.title} logo`}
                             src={`/portfolio/${p.image}.png`}
                           />

@@ -57,6 +57,7 @@ export default function Portfolio() {
                       <Image
                         width={128}
                         height={128}
+                        className="rounded-md"
                         alt={`${p.title} logo`}
                         src={`/portfolio/${p.image}.png`}
                       />
