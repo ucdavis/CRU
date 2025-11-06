@@ -13,6 +13,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "CRU – Computing Resources Unit",
+    description: "Computing Resources Unit at CAES UC Davis",
+    url: "https://computing.caes.ucdavis.edu/",
+    siteName: "CRU – UC Davis",
+    images: [
+      {
+        url: "/thumbnail.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CRU – Computing Resources Unit at UC Davis",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   description: "Computing Resources Unit at CAES UC Davis",
 };
 
