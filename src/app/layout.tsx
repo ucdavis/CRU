@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "CRU – UC Davis",
     images: [
       {
-        url: "/thumbnail.jpg",
+        url: "https://computing.caes.ucdavis.edu/thumbnail.jpg",
         width: 1200,
         height: 600,
         alt: "CRU – Computing Resources Unit at UC Davis",
