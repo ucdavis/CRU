@@ -57,7 +57,6 @@ export default function Portfolio() {
                       <Image
                         width={128}
                         height={128}
-                        className="rounded w-[128px] h-[128px]"
                         alt={`${p.title} logo`}
                         src={`/portfolio/${p.image}.png`}
                       />

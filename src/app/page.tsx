@@ -51,7 +51,7 @@ export default function Home() {
                 <tbody>
                   {projects.map((p) => (
                     <tr key={p.slug}>
-                      <td className="w-16 align-top">
+                      <td className="w-36 align-top">
                         {p.image ? (
                           <Image
                             width={128}
@@ -61,7 +61,7 @@ export default function Home() {
                             src={`/portfolio/${p.image}.png`}
                           />
                         ) : (
-                          <div className="w-[128px] h-[58px] bg-gray-200 rounded" />
+                          <div className="w-[128px] h-[104px] bg-gray-200 rounded" />
                         )}
                       </td>
 
