@@ -10,10 +10,10 @@ published: false
 
 <h3>Request Forms (supervisor)</h3>
 <ul>
-<li>Computing Account Request Form - Dean's Office [<a href="/media/files/Computing-Account-Request-Form-v1.6-DO.docx" title="Computing Account Request Form - Dean's Office">doc</a>]</li>
+<li>Computing Account Request Form - Dean's Office [<a href="/files/Computing-Account-Request-Form-v1.6-DO.docx" title="Computing Account Request Form - Dean's Office">doc</a>]</li>
 </ul>
 <h3>To be signed by the new user:</h3>
 <ul>
-<li>Deans Office Computing Policy Agreement [<a href="/media/files/Policy-Deans-Office Computing-Policy Agreement.doc" title="PolicyDeansOfficeComputing">doc</a>]</li>
-<li>CA&amp;ES Information Security Policy [<a href="/media/files/Policy-Deans-Office Information-Security-Policy.docx" title="Information Security Policy.doc">doc</a>] [<a href="/media/files/Forms-CA-ES Information-Security-Policy.pdf" target="_blank" title="Information Security Policy.pdf">pdf</a>]</li>
+<li>Deans Office Computing Policy Agreement [<a href="/files/Policy-Deans-Office Computing-Policy Agreement.doc" title="PolicyDeansOfficeComputing">doc</a>]</li>
+<li>CA&amp;ES Information Security Policy [<a href="/files/Policy-Deans-Office Information-Security-Policy.docx" title="Information Security Policy.doc">doc</a>] [<a href="/files/Forms-CA-ES Information-Security-Policy.pdf" target="_blank" title="Information Security Policy.pdf">pdf</a>]</li>
 </ul>

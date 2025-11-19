@@ -9,7 +9,7 @@ date: 2020-03-13 09:59:00
 <br />
 
 <h3>How to sign into Zoom through a browser:</h3>
-<img src="/media/helpdesk/zoomscreenshot.png" alt="zoom screenshot">
+<img src="/helpdesk/zoomscreenshot.png" alt="zoom screenshot">
 <ol >
   <li>Open a browser and go to <a class="external-link" href="https://ucdavis.zoom.us" target="_blank">https://ucdavis.zoom.us</a></li>
   <li>Click the <b>Sign In</b> button</li>

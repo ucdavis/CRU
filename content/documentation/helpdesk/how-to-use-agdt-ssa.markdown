@@ -11,7 +11,7 @@ date: 2020-10-22 09:59:00
 <br />
 <h3>How to install an application through Aggie Desktop SSA</h3>
 <ol >
-  <li>Open the Self-Service Application (SSA) using the UC Davis "C-Horse" icon (<img src="/media/helpdesk/c-horse.png" alt="UC Davis C-Horse">).
+  <li>Open the Self-Service Application (SSA) using the UC Davis "C-Horse" icon (<img src="/helpdesk/c-horse.png" alt="UC Davis C-Horse">).
     <ul >
       <li>Windows: The icon will be located in the System Tray by the clock, usually in the lower right corner.</li>
       <li>Mac: The icon will be located in the Menu Bar at the top of the screen.</li>

@@ -13,13 +13,13 @@ import { Quicklink } from "./quicklink";
 
 const links = [
   {
-    href: "/media/files/CAESInformationTechnologyResourcesGuidelines22.pdf",
+    href: "/files/CAESInformationTechnologyResourcesGuidelines22.pdf",
     label: "Technology Resource Guidelines",
     icon: <DocumentIcon className="w-5 h-5" />,
     isExternal: true,
   },
   {
-    href: "/media/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf",
+    href: "/files/EmeritiandStaffRetireeITsupportguidelinesFINAL.pdf",
     label: "Emeriti and Staff Retirees IT Support Guidelines",
     icon: <AcademicCapIcon className="w-5 h-5" />,
     isExternal: true,
