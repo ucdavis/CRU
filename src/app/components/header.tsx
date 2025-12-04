@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SearchButton from "./searchButton";
 
 const Header: React.FC = () => {
   return (
@@ -16,6 +17,8 @@ const Header: React.FC = () => {
             />
             CRU
           </Link>
+
+          <SearchButton />
 
           <ul className="nav-links">
             <Link
