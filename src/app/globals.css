@@ -227,6 +227,7 @@ article h2 {
   --docsearch-icon-color: var(--color-primary);
   --docsearch-background-color: var(--color-dark-bg-200);
   --docsearch-subtle-color: var(--color-cru-border);
+  --docsearch-container-background: rgba(42, 48, 60, 0.66);
 
   /* Modal background / surface */
   --docsearch-modal-background: var(--color-dark-bg-200);
@@ -245,13 +246,10 @@ article h2 {
 
   /* Highlight/tag colors */
   --docsearch-highlight-color: var(--color-primary);
-  --docsearch-keyboard-background: #f9fafb;
-  --docsearch-keyboard-text-color: #6b7280;
+  --docsearch-keyboard-background: var(--color-dark-bg-200);
+  --docsearch-keyboard-text-color: var(--color-light-font);
 
   /* Footer / logo */
   --docsearch-footer-background: var(--color-dark-bg-200);
   --docsearch-logo-color: var(--color-primary);
-}
-.DocSearch-Logo {
-  display: none;
 }
