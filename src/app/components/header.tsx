@@ -7,18 +7,19 @@ const Header: React.FC = () => {
     <header className="fixed bg-base-100 inset-x-0 top-0 z-10 border-b-1 border-cru-border">
       <div className="container">
         <nav className="flex justify-between py-4">
-          <Link className="flex items-center text-lg" href="/#">
-            <Image
-              className="mr-2"
-              src="/cru_icon.svg"
-              alt="Logo"
-              width={24}
-              height={24}
-            />
-            CRU
-          </Link>
-
-          <SearchButton />
+          <div className="flex">
+            <Link className="flex items-center text-lg me-4" href="/#">
+              <Image
+                className="mr-2"
+                src="/cru_icon.svg"
+                alt="Logo"
+                width={24}
+                height={24}
+              />
+              CRU
+            </Link>
+            <SearchButton />
+          </div>
 
           <ul className="nav-links">
             <Link

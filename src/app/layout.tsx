@@ -3,8 +3,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
 
-import "./globals.css";
 import "@docsearch/css";
+import "./globals.css";
 
 import Script from "next/script";
 import Search from "./components/search";
