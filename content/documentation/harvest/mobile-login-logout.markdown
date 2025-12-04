@@ -5,8 +5,6 @@ author: "Cal Doval"
 date: 2025-12-04
 ---
 
-## Prerequisites
-
 Before you begin, make sure you have:
 
 1. The **UC Davis Harvest** application installed on your iPhone
