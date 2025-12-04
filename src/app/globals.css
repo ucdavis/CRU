@@ -8,6 +8,7 @@
   --color-documentation: var(--color-ucd-strawberry);
   --color-team: var(--color-ucd-tahoe);
   --color-portfolio: var(--color-ucd-arboretum);
+  --font-proxima-bold: "proxima-nova-b", sans-serif;
   --color-services: var(--color-ucd-sunflower);
 }
 
@@ -48,9 +49,6 @@
 html {
   background-color: var(--color-dark-bg-100);
   scroll-behavior: smooth;
-}
-b {
-  font-family: proxima-nova-b, sans-serif;
 }
 
 .container {
@@ -114,6 +112,11 @@ hr {
 article ul li,
 article ol li {
   list-style-type: disc;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+article ol li {
+  list-style-type: decimal;
   margin-left: 3rem;
   margin-bottom: 1rem;
 }
@@ -214,4 +217,8 @@ article h2 {
 
 .software-status-table th:nth-child(5) {
   color: var(--color-ucd-doubledecker);
+}
+
+strong {
+  @apply font-proxima-bold;
 }
