@@ -488,6 +488,14 @@ date: 2025-07-02 14:55
         <td></td>
     </tr>
     <tr>
+        <td>R for Windows</td>
+        <td>•</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>RStudio Desktop</td>
         <td>•</td>
         <td></td>
