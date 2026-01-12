@@ -35,6 +35,7 @@ date: 2021-03-22
   - D = DECLINE - Was declined, usually because of an address verification issue
   - E = ERROR - Some other error, we would have to investigate
   - C = CANCEL - User canceled the payment once it went to the CyberSource portal
+  - R = REJECTED - Transaction failed after authorization and had a full reversal. Similar to DECLINE. 
 
 ## Deactivate/Activate
 
