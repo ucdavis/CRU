@@ -20,7 +20,11 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * Other than the above, anyone with a CAS login and the link to the payment page may do the payment approval step. This can involve entering or editing chart strings and approving.
 ### Payment Step
 * The payment approval step does not have a reject option.
-* 
+* The payment page allows valid debit chart strings to be entered and edited.
+* Each chart string may have optional notes.
+* Each chart string must have a valid $ amount.
+* All amounts must add up the 100% of the invoice total.
+* Invoices my not have coupons applied to them.
 ### Financial Approval Step
 * The Financial Approval step only allows financial approvers determined by Aggie Enterprise's settings for the chart strings to act.
 * Only valid chart strings may be entered and approved.
@@ -33,12 +37,22 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * There is a system configurable number of days where any pending Financial Approvals will by auto approved by the system. Currently this is 7 days. These will by logged and visible.
 * When all chart strings are approved, the invoice will move along for the actual money movement.
 
-
-## Functionality
-
 ## Workflow
 
+## Functionality
+* You may filter the existing list of invoices to either recharge or credit cards by typing recharge or credit into the search field.
+* You may filter the invoices by any of the status listed in the filter. There are some new ones for recharges. Filters are sticky.
+
 ## Emails
+
+## New Status Codes
+* *Pending Approval* : Awaiting Financial Approval step
+* *Approved* : Approved by all financial approvers, awaiting job to move the money
+* *Rejected* : Rejected by either a financial approver, an automated check if a chart string has become invalid, or not approved in our application that actually moves the money around.
+
+## Screen Shots
+### Invoice List
+![Invoice List](/payments/invoice-list.png "Invoice List")
 
 
 
