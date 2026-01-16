@@ -18,6 +18,10 @@ The team's access can be viewed from the settings menu. A badge shows the access
 ## Basic Rules
 * If you enter the recharge invoice, and supply the debit chart strings, and enter your own email as the customer, then you can't do the payment approval step.
 * Other than the above, anyone with a CAS login and the link to the payment page may do the payment approval step. This can involve entering or editing chart strings and approving.
+* Recharges do not have tax or coupons. If you entered these for a credit card and switch to a recharge, they will be cleared out.
+* A recharge requires a valid credit chart string. This is not defaulted.
+* The natural account portion of the chart string may be replaced automatically to either 775000 or 770006.
+* If debit chart strings are entered, they must be valid and must match the total of the invoice.
 ### Payment Step
 * The payment approval step does not have a reject option.
 * The payment page allows valid debit chart strings to be entered and edited.
@@ -42,6 +46,7 @@ The team's access can be viewed from the settings menu. A badge shows the access
 ## Functionality
 * You may filter the existing list of invoices to either recharge or credit cards by typing recharge or credit into the search field.
 * You may filter the invoices by any of the status listed in the filter. There are some new ones for recharges. Filters are sticky.
+* You may enter a % for the cart string and it will try to update the amount. But it is the amount that is the saved field.
 
 ## Emails
 
@@ -53,7 +58,14 @@ The team's access can be viewed from the settings menu. A badge shows the access
 ## Screen Shots
 ### Invoice List
 ![Invoice List](/payments/invoice-list.png "Invoice List")
+### Email warning
+* Recharges should email ucdavis.edu emails as you need to login to approve.
+  
+![Email Warning](/payments/email-warning.png "Email Warning")
+### View Details
+* You can click on View Details to expand the section for more info.
 
+![View Details](/payments/history-view-details.png "View Details")
 
 
 
