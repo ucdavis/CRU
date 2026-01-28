@@ -2,10 +2,14 @@
 title: "What's new."
 description: "New features and changes to the Finjector Application."
 author: "Jason Sylvestre"
-date: 2024-04-17
+date: 2026-01-28
 ---
 
 - This is not a complete list of changes, just some of the more significant ones.
+
+## 2026-01-28
+
+- Bulk Validate. We recommend that this be run from the finjector website vs. a popup window like what can appear from an application like PrePurchasing. You may validate up to 200 unique chart strings. They need to be separated by either a new line, space, or comma. When validated, you may also see warnings such as an award ending within the month. PPM strings can't be in POETAF/POET format. They must be in PTOE/PTOEAF format.
 
 ## 2024-04-17
 
