@@ -17,10 +17,11 @@ The team's access can be viewed from the settings menu. A badge shows the access
 
 ## Basic Rules
 * If you enter the recharge invoice, and supply the debit chart strings, and enter your own email as the customer, then you can't do the payment approval step.
-* Other than the above, anyone with a CAS login and the link to the payment page may do the payment approval step. This can involve entering or editing chart strings and approving.
+* Other than the above, anyone with a CAS login and the link to the payment page may do the payment approval step. This can involve entering or editing chart strings, notes, and approving.
 * Recharges do not have tax or coupons. If you entered these for a credit card and switch to a recharge, they will be cleared out.
-* A recharge requires a valid credit chart string. This is not defaulted.
+* Any chart string entered must be valid.
 * The natural account portion of the chart string may be replaced automatically to either 775000 or 770006.
+* One or more credit chart strings must be entered. They are not defaulted and the total must match the invoice total.
 * If debit chart strings are entered, they must be valid and must match the total of the invoice.
 ### Payment Step
 * The payment approval step does not have a reject option.
@@ -42,6 +43,14 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * When all chart strings are approved, the invoice will move along for the actual money movement.
 
 ## Workflow
+* Create recharge invoice.
+* Save or Send invoice.
+* Edit saved invoice.
+* Send unsent invoice.
+* Customer gets email, opens CAS protected Payment page.
+* Customer approves, or edits and approves invoice.
+* Financial Approvers determined by Aggie Enterprise and debit chart strings used gets emails.
+* Approvers 
 
 ## Functionality
 * You may filter the existing list of invoices to either recharge or credit cards by typing recharge or credit into the search field.
