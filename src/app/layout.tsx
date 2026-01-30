@@ -64,7 +64,9 @@ export default function RootLayout({
           <Header />
           <div className="grid grid-cols-[3%_94%_3%] flex-1 w-full">
             <div className="border-r-1 border-cru-border"></div>
-            <main className="pt-25 pb-12">{children}</main>
+            <main id="main" className="pt-25 pb-12">
+              {children}
+            </main>
             <div className="border-l-1 border-cru-border bg-slash-pattern"></div>
           </div>
         </div>
