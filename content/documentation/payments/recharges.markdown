@@ -58,6 +58,11 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * You may enter a % for the cart string and it will try to update the amount. But it is the amount that is the saved field.
 
 ## Emails
+### Customer notification:
+![Customer Email Notification](/payments/recharge-customer-email.png "Customer Email Notification")
+### Financial Approver notification:
+![Financial Approver Email Notification](/payments/recharge-financial-approver-email.png "Financial Approver Email Notification")
+
 
 ## New Status Codes
 * *Pending Approval* : Awaiting Financial Approval step
