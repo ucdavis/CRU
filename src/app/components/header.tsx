@@ -49,7 +49,7 @@ const Header: React.FC = () => {
               <Image
                 className="mr-2"
                 src="/cru_icon.svg"
-                alt="Logo"
+                alt="CRU circuitboard CAES logo"
                 width={24}
                 height={24}
                 priority
