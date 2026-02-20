@@ -253,3 +253,7 @@ article h2 {
   --docsearch-footer-background: var(--color-dark-bg-200);
   --docsearch-logo-color: var(--color-primary);
 }
+
+.DocSearch.DocSearch-Button {
+  display: none;
+}
