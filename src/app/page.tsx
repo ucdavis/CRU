@@ -23,10 +23,10 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center pb-16">
             <div className="md:1/2 w-full">
-              <h4>
+              <p className="text-sm font-medium text-light-font/55 uppercase leading-normal">
                 Computing Resources Unit College of Agricultural and
                 Environmental Sciences at UC Davis
-              </h4>
+              </p>
               <h1>
                 Top tier application development, <br /> technology
                 infrastructure, <br /> & customer service
@@ -45,9 +45,6 @@ export default function Home() {
             <h2>Recent Projects</h2>
             <div className="overflow-x-auto mt-4">
               <table className="table">
-                <thead className="text-base-content/65">
-                  <tr></tr>
-                </thead>
                 <tbody>
                   {projects.map((p) => (
                     <tr key={p.slug}>
@@ -102,7 +99,7 @@ export default function Home() {
                           >
                             {p.developers.map((dev) => {
                               const m = teamByName.get(
-                                dev.toLowerCase().trim()
+                                dev.toLowerCase().trim(),
                               );
                               const initials = dev
                                 .split(/\s+/)
@@ -164,7 +161,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-6 py-8">
             <div className="card bg-base-200">
               <div className="card-body">
-                <h2 className="card-title">Help Desk</h2>
+                <h3 className="card-title">Help Desk</h3>
                 <div className="grid grid-cols-2 gap-y-2">
                   <span className="font-semibold text-base-content/70">
                     Location
@@ -191,7 +188,7 @@ export default function Home() {
             </div>
             <div className="card bg-base-200">
               <div className="card-body">
-                <h2 className="card-title">Lab Support</h2>
+                <h3 className="card-title">Lab Support</h3>
                 <div className="grid grid-cols-2 gap-y-2">
                   <span className="font-semibold text-base-content/70">
                     Location
@@ -222,7 +219,7 @@ export default function Home() {
             </div>
             <div className="card bg-base-200">
               <div className="card-body">
-                <h2 className="card-title">Web and App Support</h2>
+                <h3 className="card-title">Web and App Support</h3>
                 <div className="grid grid-cols-2 gap-y-2">
                   <span className="font-semibold text-base-content/70">
                     Location
