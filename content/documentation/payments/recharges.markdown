@@ -2,7 +2,7 @@
 title: "Internal Recharges"
 description: "Ability to create invoices that allow recharges using UCD chart strings for payment."
 author: "Jason Sylvestre"
-date: 2026-01-15
+date: 2026-01-23
 permalink: /documentation/payments/recharges
 ---
 
@@ -16,7 +16,7 @@ The team's access can be viewed from the settings menu. A badge shows the access
 ![Team Access](/payments/team-invoice-type-access.png "Teams Access to Invoice Types")
 
 ## Basic Rules
-* If you enter the recharge invoice, and supply the debit chart strings, and enter your own email as the customer, then you can't do the payment approval step.
+* You can't approve on both the Payment Approval and Financial Approval pages. If this is unavoidable, the Financial Approval step will be completed with the auto-approve step currently set for 7 days.
 * Other than the above, anyone with a CAS login and the link to the payment page may do the payment approval step. This can involve entering or editing chart strings, notes, and approving.
 * Recharges do not have tax or coupons. If you entered these for a credit card and switch to a recharge, they will be cleared out.
 * Any chart string entered must be valid.
@@ -25,11 +25,11 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * If debit chart strings are entered, they must be valid and must match the total of the invoice.
 ### Payment Step
 * The payment approval step does not have a reject option.
-* The payment page allows valid debit chart strings to be entered and edited.
+* The payment page allows valid debit chart strings to be entered and edited. Existing debit chart strings may be deleted if there are more than one listed.
 * Each chart string may have optional notes.
 * Each chart string must have a valid $ amount.
 * All amounts must add up the 100% of the invoice total.
-* Invoices my not have coupons applied to them.
+* Invoices may not have coupons applied to them.
 ### Financial Approval Step
 * The Financial Approval step only allows financial approvers determined by Aggie Enterprise's settings for the chart strings to act.
 * Only valid chart strings may be entered and approved.
@@ -50,12 +50,15 @@ The team's access can be viewed from the settings menu. A badge shows the access
 * Customer gets email, opens CAS protected Payment page.
 * Customer approves, or edits and approves invoice.
 * Financial Approvers determined by Aggie Enterprise and debit chart strings used gets emails.
-* Approvers 
+* Financial Approvers Approve or Reject invoice. Reject requires a reason and can be done up until all chart strings have been approved.
+* Rejected invoices may be edited and re-sent.
 
 ## Functionality
 * You may filter the existing list of invoices to either recharge or credit cards by typing recharge or credit into the search field.
 * You may filter the invoices by any of the status listed in the filter. There are some new ones for recharges. Filters are sticky.
 * You may enter a % for the cart string and it will try to update the amount. But it is the amount that is the saved field.
+* You can't tab to the % field to avoid accidentally changing the $ amount when tabbing off it. You must use the mouse to enter the % field.
+* Recharge and Credit Card invoices may be duplicated. This will be logged in the history of both the original invoice and the new one.
 
 ## Emails
 ### Customer notification:
