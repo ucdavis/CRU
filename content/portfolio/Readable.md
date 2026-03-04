@@ -9,4 +9,5 @@ date: 2026-02-19
 developers:
   - Scott Kirkland
   - Cal Doval
+  - Jason Sylvestre
 ---
