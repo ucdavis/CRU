@@ -1,5 +1,5 @@
 ---
-title: "Sloth
+title: "Sloth"
 type: "Web App"
 audience: "CAES"
 description: "Secure Ledger Online Transaction Hub"
