@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center pb-16">
             <div className="md:1/2 w-full">
-              <p className="text-sm font-medium text-light-font/55 uppercase leading-normal">
+              <p className="text-sm font-medium text-light-font/75 uppercase leading-normal">
                 Computing Resources Unit College of Agricultural and
                 Environmental Sciences at UC Davis
               </p>

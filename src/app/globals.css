@@ -38,7 +38,7 @@
     @apply text-2xl font-semibold leading-snug;
   }
   h4 {
-    @apply text-sm font-medium text-light-font/55 uppercase leading-normal;
+    @apply text-sm font-medium text-light-font/75 uppercase leading-normal;
   }
   .card {
     @apply border-1 border-cru-border bg-base-200;

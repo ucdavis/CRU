@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <footer className="border-t-1 border-cru-border">
       <div className="container">
         <div className="flex justify-between py-4">
-          <p className="text-light-font/55">
+          <p className="text-light-font/75">
             © Copyright 2025 All Rights Reserved
           </p>
           <Link href="https://caes.ucdavis.edu/">
