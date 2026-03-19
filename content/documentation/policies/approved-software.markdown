@@ -216,10 +216,10 @@ date: 2025-07-02 14:55
         <td></td>
     </tr>
     <tr>
-        <td>CleanMyMac Business</td>
-        <td></td>
-        <td></td>
+        <td>CleanMyMac</td>
         <td>•</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
     </tr>
