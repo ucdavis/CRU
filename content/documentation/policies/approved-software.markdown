@@ -376,6 +376,14 @@ date: 2025-07-02 14:55
         <td></td>
     </tr>
     <tr>
+        <td>Microsoft 365 Copilot</td>
+        <td>•</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Microsoft Defender</td>
         <td></td>
         <td></td>
@@ -396,6 +404,14 @@ date: 2025-07-02 14:55
         <td></td>
         <td></td>
         <td>•</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Microsoft PowerBI</td>
+        <td>•</td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
     </tr>
