@@ -1,5 +1,5 @@
 ---
-title: "FAQ."
+title: "FAQ"
 description: "Frequently asked questions."
 author: "Rob Martinsen"
 date: 2026-05-11
