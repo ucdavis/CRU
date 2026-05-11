@@ -1,17 +1,17 @@
 ---
 title: "Basic Use"
-description: "A tour of the pages and tables available to PIs and Account Managers in Walter"
+description: "A tour of the pages and tables available to PIs and Fiscal Officers in Walter"
 author: "Rob Martinsen"
 date: 2026-04-17
 ---
 
 ## Overview
 
-Walter is the Warehouse Analytics and Ledger Tools for Enterprise Reporting. This guide walks Principal Investigators (PIs) and Account Managers through the pages and tables they will use most often. Most pages are the same for both roles, though some may differ between Account Managers and PIs.
+Walter is the Warehouse Analytics and Ledger Tools for Enterprise Reporting. This guide walks Principal Investigators (PIs) and Fiscal Officers through the pages and tables they will use most often. Most pages are the same for both roles, though some may differ between Fiscal Officers and PIs.
 
 ## All Projects Summary
 
-The All Projects Summary is your main overview in Walter. For PIs, it shows *your* projects. For Account Managers, it shows projects for the PI selected from the landing page. At a glance, it shows how many projects and personnel are associated, the combined Total Budget, and the remaining Balance. Below the summary cards, the Funding Breakdown chart splits the available balance between Sponsored and Internal funding sources.
+The All Projects Summary is your main overview in Walter. For PIs, it shows *your* projects. For Fiscal Officers, it shows projects for the PI selected from the landing page. At a glance, it shows how many projects and personnel are associated, the combined Total Budget, and the remaining Balance. Below the summary cards, the Funding Breakdown chart splits the available balance between Sponsored and Internal funding sources.
 
 ![All Projects Summary dashboard](/walter/dashboard.png "All Projects Summary")
 
@@ -67,7 +67,7 @@ Use the search box to filter across all columns. The **Export** button downloads
 
 ## GL/PPM Reconciliation
 
-> **Note:** GL/PPM Reconciliation is only available to Account Managers. PIs do not have access to this page.
+> **Note:** GL/PPM Reconciliation is only available to Fiscal Officers. PIs do not have access to this page.
 
 If a project has a GL/PPM discrepancy, a warning banner appears on the Project Detail page. Click the warning to jump to the reconciliation report.
 
