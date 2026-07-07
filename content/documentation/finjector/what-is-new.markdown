@@ -2,10 +2,17 @@
 title: "What's new."
 description: "New features and changes to the Finjector Application."
 author: "Jason Sylvestre"
-date: 2026-01-28
+date: 2026-07-07
 ---
 
 - This is not a complete list of changes, just some of the more significant ones.
+
+## 2026-07-07
+- Multi Select in the folder view. <a href="/documentation/finjector/multiselect">More Info </a>
+
+## 2026-05-27
+- Finjector now shows Valid, Invalid, and warning icons on the lists, Color just matches PPM or GL.
+To avoid overloading the AE API, we only check them when they become visible (Scroll, search, etc.) so there is a little delay. They are also cached for a short time.
 
 ## 2026-01-28
 
