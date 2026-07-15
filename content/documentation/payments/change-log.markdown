@@ -7,6 +7,7 @@ permalink: /documentation/payments/change-log
 ---
 
 ## July 15, 2026
+### Version 1.0.2 (On the support page)
 
 This update makes Payments more flexible for teams, improves connections with other systems, and smooths out several common invoice workflows.
 
