@@ -13,6 +13,10 @@ This update makes Payments more flexible for teams, improves connections with ot
 
 > This summary highlights the changes most relevant to day-to-day use. Other improvements and behind-the-scenes updates have also been made since our last update and are not included here.
 
+### Populate Cyber Source with First and Last names correctly.
+
+Previously, the first and last names were just listed on the CS payment form in the first name field. We will break this apart so it populates correctly.
+
 ### More flexibility for credit card income accounts
 
 Authorized team members can now select an **Income Account Override** when creating or editing a credit card invoice. The financial segment string can be entered directly or selected with the Finjector CCOA picker, and Payments validates it before the invoice can be saved or sent.
