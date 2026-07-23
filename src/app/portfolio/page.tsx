@@ -46,7 +46,7 @@ export default function Portfolio() {
 
                 <th>Team</th>
                 <th>Audience</th>
-                <th>Type</th>
+                <th className="text-center">Type</th>
               </tr>
             </thead>
             <tbody>
@@ -132,7 +132,7 @@ export default function Portfolio() {
                     )}
                   </td>
                   <td>{p.audience || "—"}</td>
-                  <td className="align-top whitespace-nowrap">
+                  <td className="align-middle text-center whitespace-nowrap">
                     {p.type ? (
                       <span
                         className={`badge shrink-0 whitespace-nowrap ${
