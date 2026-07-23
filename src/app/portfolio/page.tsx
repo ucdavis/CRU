@@ -132,10 +132,10 @@ export default function Portfolio() {
                     )}
                   </td>
                   <td>{p.audience || "—"}</td>
-                  <td>
+                  <td className="align-top whitespace-nowrap">
                     {p.type ? (
                       <span
-                        className={`badge ${
+                        className={`badge shrink-0 whitespace-nowrap ${
                           p.type.toLowerCase() === "web app"
                             ? "badge badge-outline badge-secondary"
                             : p.type.toLowerCase() === "static site"
@@ -148,7 +148,9 @@ export default function Portfolio() {
                         {p.type}
                       </span>
                     ) : (
-                      <span className="badge badge-ghost">Unknown</span>
+                      <span className="badge badge-ghost shrink-0 whitespace-nowrap">
+                        Unknown
+                      </span>
                     )}
                   </td>
                 </tr>
