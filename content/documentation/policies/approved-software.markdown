@@ -14,9 +14,9 @@ date: 2025-07-02 14:55
 		<th>Blocked</th>
 	</tr>
 	<tr>
-		<td>Available by request, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception</a>.  Best Effort support available.</td>
-		<td>Available by request, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception</a>.  Full support available.</td>
-		<td>Available by default, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception</a>.  Full support available.</td>
+		<td>Available by request, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception Request</a>.  Best Effort support available.</td>
+		<td>Available by request, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception Request</a>.  Full support available.</td>
+		<td>Available by default, without an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception Request</a>.  Full support available.</td>
 		<td>Available by <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception Request</a> <b>ONLY</b>.  Best Effort support available.</td>
 		<td><b>NOT</b> permitted for use, and uninstalled if discovered, unless approved through an <a href="https://kb.ucdavis.edu/?id=07295" target="_blank">Exception Request</a>.  No support available.</td>
 	</tr>
