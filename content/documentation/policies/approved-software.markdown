@@ -208,6 +208,14 @@ date: 2025-07-02 14:55
         <td></td>
     </tr>
     <tr>
+        <td>Canonical Landscape</td>
+        <td>•</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Cisco Jabber</td>
         <td></td>
         <td></td>
