@@ -376,6 +376,14 @@ date: 2025-07-02 14:55
         <td></td>
     </tr>
     <tr>
+        <td>LM Studio</td>
+        <td>•</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Mendeley Desktop</td>
         <td></td>
         <td></td>
