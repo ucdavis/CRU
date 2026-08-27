@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | CRU",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
   },
   openGraph: {
     title: "CRU – Computing Resources Unit",
