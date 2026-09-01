@@ -49,7 +49,7 @@ function Breadcrumbs({ slugParts }: { slugParts: string[] }) {
       <span key={href}>
         {!isLast ? (
           <>
-            <Link className="text-documentation brightness-150" href={href}>
+            <Link className="text-primary-color brightness-150" href={href}>
               {label}
             </Link>
             <span> / </span>
@@ -195,7 +195,7 @@ export default async function DocumentationPage({ params }: Props) {
               <Link
                 key={doc.slug}
                 href={`/documentation/${doc.slug}`}
-                className="card border border-cru-border shadow-sm hover:shadow-md hover:border-documentation transition p-6 flex flex-col justify-between"
+                className="card border border-cru-border shadow-sm hover:shadow-md hover:border-primary-color transition p-6 flex flex-col justify-between"
               >
                 <h3 className="text-lg font-semibold mb-2">{doc.title}</h3>
                 {doc.description && (
@@ -203,7 +203,7 @@ export default async function DocumentationPage({ params }: Props) {
                     {doc.description}
                   </p>
                 )}
-                <span className="text-sm text-documentation mt-auto">
+                <span className="text-sm text-primary-color mt-auto">
                   Read more →
                 </span>
               </Link>
@@ -215,7 +215,7 @@ export default async function DocumentationPage({ params }: Props) {
         {sectionDocs.map((child) => (
           <li className="mb-4" key={child.slug}>
             <Link
-              className="border-b-2 border-base-100 hover:border-documentation transition-colors duration-100"
+              className="border-b-2 border-base-100 hover:border-primary-color transition-colors duration-100"
               href={`/documentation/${child.slug}`}
             >
               <span className="text-xl">

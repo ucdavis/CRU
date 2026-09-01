@@ -41,7 +41,7 @@ export default function Documentation() {
           <Link
             key={section.slug}
             href={section.url ?? `/documentation/${section.slug}`}
-            className="card border border-cru-border shadow-sm hover:shadow-md hover:border-documentation transition p-6 flex flex-col justify-between"
+            className="card border border-cru-border shadow-sm hover:shadow-md hover:border-primary-color transition p-6 flex flex-col justify-between"
           >
             <div>
               <h2 className="font-bold text-xl mb-2">{section.label}</h2>

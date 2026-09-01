@@ -79,7 +79,7 @@ export default function Portfolio() {
                           href={p.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="link link-hover text-ucd-arboretum"
+                          className="link link-hover text-primary-color"
                         >
                           {p.url}
                         </Link>
@@ -139,10 +139,8 @@ export default function Portfolio() {
                           p.type.toLowerCase() === "web app"
                             ? "badge badge-outline badge-secondary"
                             : p.type.toLowerCase() === "static site"
-                            ? "badge badge-outline badge-info"
-                            : p.type.toLowerCase() === "sitefarm"
-                            ? "badge badge-outline badge-success"
-                            : "badge-ghost"
+                              ? "badge badge-outline badge-info"
+                              : "badge-ghost"
                         }`}
                       >
                         {p.type}

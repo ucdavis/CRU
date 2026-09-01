@@ -24,7 +24,7 @@ const DocumentationSidebar: React.FC = () => {
       <div className="md:sticky md:top-20">
         <div className="card card-lg">
           <div className="card-body">
-            <h2 className="card-title text-documentation">
+            <h2 className="card-title text-primary-color">
               <b>Create a ticket</b>
             </h2>
             <p>

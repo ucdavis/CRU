@@ -124,7 +124,7 @@ export default function Services() {
             <div className="md:sticky md:top-20">
               <div className="card card-xl shadow-sm">
                 <div className="card-body">
-                  <h2 className="card-title text-services">Rates</h2>
+                  <h2 className="card-title text-primary-color">Rates</h2>
                   <p>
                     <b>$122/hr</b> - Project Planning and Management
                   </p>
