@@ -30,4 +30,4 @@ date: 2020-10-28
 - Quantity level questions are those that get asked once for each "quantity" in the registration. If you report on quantity level questions, the report will have one line for each of the quantity responses. Any transaction or property questions will be duplicated for these.
 - Property level questions are related to a single registration.
 
-<div class="markdown-nav"><a href="/documentation/registration/details-checks" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/details-refunds" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/details-checks" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/details-refunds" class="btn btn-outline btn-primary">Next </a></div>

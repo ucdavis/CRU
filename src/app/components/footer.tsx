@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="flex justify-between py-4">
           <p className="text-light-font/75">
-            © Copyright 2025 All Rights Reserved
+            © Copyright {new Date().getFullYear()} All Rights Reserved
           </p>
           <Link href="https://caes.ucdavis.edu/">
             <Image

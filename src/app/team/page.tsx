@@ -1,6 +1,9 @@
 import PageHeader from "../components/pageheader";
 import Image from "next/image";
+import TeamPortrait, { hasTeamPortrait } from "../components/teamPortrait";
 import { getCurrentTeamMembers } from "@/lib/team";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/siteMetadata";
 
 const teamSprites = [
   { name: "Odin", src: "/team/isolated/odin.png", width: 1254, height: 1254, left: "-5.35%", top: "8.04%", size: "25.26%", zIndex: 1 },
@@ -17,9 +20,11 @@ const teamSprites = [
   { name: "DJ", src: "/team/isolated/dj.png?v=6", width: 1254, height: 1254, left: "69.97%", top: "23.90%", size: "44.88%", zIndex: 8 },
 ];
 
-export const metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Team",
-};
+  description: "Meet the Computing Resources Unit team at UC Davis CAES.",
+  path: "/team",
+});
 
 export default async function TeamPage() {
   const team = getCurrentTeamMembers();
@@ -100,7 +105,9 @@ export default async function TeamPage() {
       <hr className="my-12" />
       <div className="container py-16">
         <div className="md:w-2/3 w-full mx-auto">
-          <table className="table">
+          <div className="overflow-x-auto">
+          <table aria-label="CRU team members" className="table min-w-[640px]">
+            <caption className="sr-only">Current CRU team members</caption>
             <thead className="text-base-content/65">
               <tr>
                 <th>Name</th>
@@ -110,20 +117,24 @@ export default async function TeamPage() {
               </tr>
             </thead>
             <tbody>
-              {team.map((member) => (
-                <tr key={member.slug}>
-                  <td>
-                    <div className="flex items-center gap-3">
-                      <div className="avatar">
-                        <div className="mask mask-squircle h-12 w-12">
+              {team.filter((member) => member.slug !== "odin").map((member) => {
+                const portrait = hasTeamPortrait(member.slug);
+
+                return (
+                  <tr key={member.slug}>
+                    <td>
+                      <div className="flex items-center gap-3">
+                        {portrait ? (
+                          <TeamPortrait slug={member.slug} name={member.name} />
+                        ) : (
                           <Image
                             src={member.image}
                             alt={member.name}
                             width={48}
                             height={48}
+                            className="h-12 w-12 rounded-xl"
                           />
-                        </div>
-                      </div>
+                        )}
                       <div>
                         <div>
                           <b>{member.name}</b>
@@ -132,38 +143,40 @@ export default async function TeamPage() {
                         </div>
                       </div>
                     </div>
-                  </td>
-                  <td>
-                    <span className="badge">{member.role}</span>
-                  </td>
-                  <td>
-                    {member.phone ? (
-                      <a
-                        href={`tel:${member.phone}`}
-                        className="link link-hover"
-                      >
-                        {member.phone}
-                      </a>
-                    ) : (
-                      <span className="text-base-300 italic">—</span>
-                    )}
-                  </td>
-                  <td>
-                    {member.email ? (
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="link link-hover text-primary-color"
-                      >
-                        {member.email}
-                      </a>
-                    ) : (
-                      <span className="text-gray-400 italic">—</span>
-                    )}
-                  </td>
-                </tr>
-              ))}
+                    </td>
+                    <td>
+                      <span className="badge">{member.role}</span>
+                    </td>
+                    <td>
+                      {member.phone ? (
+                        <a
+                          href={`tel:${member.phone}`}
+                          className="link link-hover"
+                        >
+                          {member.phone}
+                        </a>
+                      ) : (
+                        <span className="text-base-300 italic">—</span>
+                      )}
+                    </td>
+                    <td>
+                      {member.email ? (
+                        <a
+                          href={`mailto:${member.email}`}
+                          className="link link-hover text-primary-color"
+                        >
+                          {member.email}
+                        </a>
+                      ) : (
+                        <span className="text-gray-400 italic">—</span>
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </>

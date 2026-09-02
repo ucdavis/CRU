@@ -35,7 +35,7 @@ date: 2021-03-22
   - D = DECLINE - Was declined, usually because of an address verification issue
   - E = ERROR - Some other error, we would have to investigate
   - C = CANCEL - User canceled the payment once it went to the CyberSource portal
-  - R = REJECTED - Transaction failed after authorization and had a full reversal. Similar to DECLINE. 
+  - R = REJECTED - Transaction failed after authorization and had a full reversal. Similar to DECLINE.
 
 ## Deactivate/Activate
 
@@ -44,4 +44,4 @@ date: 2021-03-22
 - You can't deactivate a registration if it is paid.
 - Activate just uses the amount sold.
 
-<div class="markdown-nav"><a href="/documentation/registration/coupons" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/details-checks" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/coupons" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/details-checks" class="btn btn-outline btn-primary">Next </a></div>

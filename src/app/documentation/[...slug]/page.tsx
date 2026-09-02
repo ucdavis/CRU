@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -10,6 +11,8 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import { getCurrentTeamMembers } from "@/lib/team";
 import DocActions from "@/app/components/DocActions";
+import TeamPortrait, { hasTeamPortrait } from "@/app/components/teamPortrait";
+import { createPageMetadata } from "@/lib/siteMetadata";
 
 type Props = {
   params: Promise<{ slug: string[] }>;
@@ -30,11 +33,32 @@ export async function generateStaticParams() {
           parts.pop();
           return parts.join("/");
         })
-        .filter(Boolean)
-    )
+        .filter(Boolean),
+    ),
   ).map((slug) => ({ slug: slug.split("/") }));
 
   return [...docPaths, ...sectionPaths];
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const path = slug.join("/");
+  const doc = getDocumentationBySlug(path);
+
+  if (!doc) {
+    return createPageMetadata({
+      title: path.split("/").at(-1)?.replace(/-/g, " ") ?? "Documentation",
+      description: "Documentation from the CRU team at UC Davis CAES.",
+      path: `/documentation/${path}`,
+    });
+  }
+
+  return createPageMetadata({
+    title: doc.title,
+    description:
+      doc.description ?? "Documentation from the CRU team at UC Davis CAES.",
+    path: `/documentation/${doc.slug}`,
+  });
 }
 
 function Breadcrumbs({ slugParts }: { slugParts: string[] }) {
@@ -49,7 +73,7 @@ function Breadcrumbs({ slugParts }: { slugParts: string[] }) {
       <span key={href}>
         {!isLast ? (
           <>
-            <Link className="text-primary-color brightness-150" href={href}>
+            <Link className="text-primary-color" href={href}>
               {label}
             </Link>
             <span> / </span>
@@ -90,7 +114,7 @@ export default async function DocumentationPage({ params }: Props) {
 
         {categorySlug && (
           <Link
-            className="btn btn-sm my-2 btn-error tracking-wider uppercase"
+            className="btn btn-sm my-2 btn-primary tracking-wider uppercase"
             href={`/documentation/${categorySlug}`}
           >
             {categoryLabel}
@@ -102,7 +126,13 @@ export default async function DocumentationPage({ params }: Props) {
         <div>
           <div className="flex justify-between items-center border-b-1 border-cru-border py-5 mb-3">
             <div className="flex items-center gap-4">
-              {author?.image && (
+              {author && hasTeamPortrait(author.slug) ? (
+                <TeamPortrait
+                  className="h-11 w-11"
+                  name={author.name}
+                  slug={author.slug}
+                />
+              ) : author?.image ? (
                 <Image
                   src={author.image}
                   alt={author.name}
@@ -110,7 +140,7 @@ export default async function DocumentationPage({ params }: Props) {
                   height={44}
                   className="rounded-full border border-gray-300"
                 />
-              )}
+              ) : null}
               <div>
                 {doc.author && (
                   <p className="text-lg">
@@ -163,7 +193,7 @@ export default async function DocumentationPage({ params }: Props) {
   const sectionDocs = allDocs.filter(
     (d) =>
       d.slug.startsWith(slug + "/") &&
-      d.slug.split("/").length === slug.split("/").length + 1
+      d.slug.split("/").length === slug.split("/").length + 1,
   );
 
   if (sectionDocs.length === 0) return notFound();
@@ -175,7 +205,7 @@ export default async function DocumentationPage({ params }: Props) {
   const featuredDocs = allDocs.filter(
     (d) =>
       d.featured &&
-      (d.category === slugArray[0] || d.slug.startsWith(`${slugArray[0]}/`))
+      (d.category === slugArray[0] || d.slug.startsWith(`${slugArray[0]}/`)),
   );
 
   return (

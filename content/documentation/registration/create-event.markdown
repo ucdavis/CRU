@@ -145,4 +145,4 @@ date: 2020-07-22
 
 - Currently, tag functionality does not appear to be working and will probably be removed completely in the near future.
 
-<div class="markdown-nav"><a href="/documentation/registration/important-bits" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/add-map" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/important-bits" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/add-map" class="btn btn-outline btn-primary">Next </a></div>

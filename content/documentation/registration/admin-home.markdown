@@ -15,4 +15,4 @@ date: 2020-07-20
 - Admin Help Ticket: This is for admins only. It is not for the general public. You need CAS authentication to submit help ticket. As an admin of events, you are expected to be the primary contact for questions from those registering for events.
 - The More Actions allows a basic lookup for orders placed in your events, it isn't particularly useful. You may also submit help tickets from here and log out of CAS.
 
-<div class="markdown-nav"><a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/important-bits" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/important-bits" class="btn btn-outline btn-primary">Next </a></div>

@@ -1,7 +1,7 @@
 ---
 name: Jason Sylvestre
 email: jsylvestre@ucdavis.edu
-role: Applications Developer
+role: Application Development
 pronouns: he/him
 image: /team/jason.png
 categories:

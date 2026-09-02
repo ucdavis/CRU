@@ -17,11 +17,12 @@
   --color-base-content: var(--color-light-font);
   --color-primary: var(--color-primary-color);
   --color-primary-content: var(--color-dark-font);
-  --color-secondary: var(--color-ucd-goldenstate);
+  --color-secondary: #8198b2;
   --color-error: var(--color-primary-color);
-  --color-info: var(--color-primary-color);
+  --color-info: #ffd966;
   --color-success: var(--color-primary-color);
   --color-warning: var(--color-primary-color);
+  --noise: 0;
 }
 @layer base {
   h1 {

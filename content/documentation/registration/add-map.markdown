@@ -15,4 +15,4 @@ date: 2020-07-23
 - End users can see a map with directions if you have multiple pins.
 - Not shown in the video, the map location for the end user is in a differ position for mobile devices.
 
-<div class="markdown-nav"><a href="/documentation/registration/create-event" class="btn btn-outline btn-error btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/manage-editors" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/create-event" class="btn btn-outline btn-primary btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/manage-editors" class="btn btn-outline btn-primary">Next </a></div>

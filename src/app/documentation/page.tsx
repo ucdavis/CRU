@@ -2,10 +2,13 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { getAllDocumentation, getCategoryMetadata } from "@/lib/documentation";
 import { DocumentIcon } from "@heroicons/react/24/outline";
+import { createPageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Documentation",
-};
+  description: "Guides, policies, and support resources from the UC Davis CAES Computing Resources Unit.",
+  path: "/documentation",
+});
 
 export default function Documentation() {
   const docs = getAllDocumentation();

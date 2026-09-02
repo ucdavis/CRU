@@ -1,15 +1,72 @@
 @keyframes fill-cycle {
   0% {
-    fill: #ffbf00;
+    fill: var(--color-ucd-recpool);
+  }
+  4.55% {
+    fill: var(--color-ucd-tahoe);
+  }
+  9.09% {
+    fill: var(--color-ucd-gunrock);
+  }
+  13.64% {
+    fill: var(--color-ucd-bodega);
+  }
+  18.18% {
+    fill: var(--color-ucd-rain);
+  }
+  22.73% {
+    fill: var(--color-ucd-arboretum);
+  }
+  27.27% {
+    fill: var(--color-ucd-putahcreek);
+  }
+  31.82% {
+    fill: var(--color-ucd-delta);
+  }
+  36.36% {
+    fill: var(--color-ucd-farmersmarket);
+  }
+  40.91% {
+    fill: var(--color-ucd-sage);
+  }
+  45.45% {
+    fill: var(--color-ucd-quad);
   }
   50% {
-    fill: #ffecb2;
+    fill: var(--color-ucd-redwood);
   }
-  60% {
-    fill: #ffecb2;
+  54.55% {
+    fill: var(--color-ucd-goldenstate);
+  }
+  59.09% {
+    fill: var(--color-ucd-sunflower);
+  }
+  63.64% {
+    fill: var(--color-ucd-poppy);
+  }
+  68.18% {
+    fill: var(--color-ucd-california);
+  }
+  72.73% {
+    fill: var(--color-ucd-rose);
+  }
+  77.27% {
+    fill: var(--color-ucd-strawberry);
+  }
+  81.82% {
+    fill: var(--color-ucd-doubledecker);
+  }
+  86.36% {
+    fill: var(--color-ucd-merlot);
+  }
+  90.91% {
+    fill: var(--color-ucd-thiebauldicing);
+  }
+  95.45% {
+    fill: var(--color-ucd-redbud);
   }
   100% {
-    fill: #ffbf00;
+    fill: var(--color-ucd-recpool);
   }
 }
 
@@ -84,5 +141,5 @@
 
 #diamond-fill,
 #main-fill {
-  animation: fill-cycle 12s infinite linear;
+  animation: fill-cycle 60s infinite linear;
 }

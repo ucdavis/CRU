@@ -34,4 +34,4 @@ date: 2020-10-28
 - The Accepted column for checks indicates in the check has been deactivated.
 - Corrections/Donation amounts are not listed on this page.
 
-<div class="markdown-nav"><a href="/documentation/registration/details-transactions" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/details-reports" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/details-transactions" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/details-reports" class="btn btn-outline btn-primary">Next </a></div>
