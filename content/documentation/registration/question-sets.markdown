@@ -18,4 +18,4 @@ date: 2020-07-27
 - You don't need to create any question sets or create multiple ones, it just depends on what information you want to gather. We recommend creating a test event on the _test_ site to see what things will look like and avooid cluttering up the production site.
 - As long as no one has registered for your event, you can remove and edit your question sets.
 
-<div class="markdown-nav"><a href="/documentation/registration/manage-editors" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a> <a href="/documentation/registration/questions" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/manage-editors" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a> <a href="/documentation/registration/questions" class="btn btn-outline btn-primary">Next </a></div>

@@ -99,13 +99,13 @@ export function getDocumentationBySlug(slug: string): DocumentationItem | null {
 }
 export function getCategoryMetadata(): Record<
   string,
-  { label: string; description?: string; url?: string }
+  { label: string; description?: string; url?: string; link?: string }
 > {
   const categoriesDir = fs.readdirSync(CONTENT_DIR, { withFileTypes: true });
 
   const categoryData: Record<
     string,
-    { label: string; description?: string; url?: string }
+    { label: string; description?: string; url?: string; link?: string }
   > = {};
 
   categoriesDir.forEach((entry) => {
@@ -116,6 +116,7 @@ export function getCategoryMetadata(): Record<
           label: string;
           description?: string;
           url?: string;
+          link?: string;
         };
         categoryData[entry.name] = data;
       }

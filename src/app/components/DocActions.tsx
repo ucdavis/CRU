@@ -34,7 +34,7 @@ export default function DocActions() {
         className="hover:scale-110 transition-transform"
         title="Share via email"
       >
-        <EnvelopeIcon className="w-6 h-6 mr-4 text-documentation" />
+        <EnvelopeIcon className="w-6 h-6 mr-4 text-primary-color" />
       </button>
 
       <button
@@ -42,7 +42,7 @@ export default function DocActions() {
         className="hover:scale-110 transition-transform"
         title="Copy link"
       >
-        <PaperClipIcon className="w-6 h-6 text-documentation" />
+        <PaperClipIcon className="w-6 h-6 text-primary-color" />
       </button>
     </div>
   );

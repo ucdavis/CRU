@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import { getAllDocumentation, getCategoryMetadata } from "@/lib/documentation";
-import { DocumentIcon } from "@heroicons/react/24/outline";
+import DocumentationCategoryIcon from "@/app/components/documentationCategoryIcon";
+import { createPageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: "Documentation",
-};
+  description: "Guides, policies, and support resources from the UC Davis CAES Computing Resources Unit.",
+  path: "/documentation",
+});
 
 export default function Documentation() {
   const docs = getAllDocumentation();
@@ -41,9 +44,13 @@ export default function Documentation() {
           <Link
             key={section.slug}
             href={section.url ?? `/documentation/${section.slug}`}
-            className="card border border-cru-border shadow-sm hover:shadow-md hover:border-documentation transition p-6 flex flex-col justify-between"
+            className="card flex flex-col justify-between border border-cru-border p-6 shadow-sm transition hover:border-primary-color hover:shadow-md"
           >
             <div>
+              <DocumentationCategoryIcon
+                category={section.slug}
+                className="mb-4 h-10 w-10"
+              />
               <h2 className="font-bold text-xl mb-2">{section.label}</h2>
               {section.description && (
                 <p className="text-sm text-muted-foreground mb-4">
@@ -51,8 +58,8 @@ export default function Documentation() {
                 </p>
               )}
             </div>
-            <div className="flex">
-              <DocumentIcon className="h-5 w-5 mr-1" /> {section.count} article
+            <div className="text-sm">
+              {section.count} article
               {section.count !== 1 ? "s" : ""}
             </div>
           </Link>

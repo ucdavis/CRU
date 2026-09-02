@@ -9,12 +9,17 @@ import "./globals.css";
 import Script from "next/script";
 import Search from "./components/search";
 export const metadata: Metadata = {
+  metadataBase: new URL("https://computing.caes.ucdavis.edu"),
   title: {
     default: "CRU – Computing Resources Unit",
     template: "%s | CRU",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   openGraph: {
     title: "CRU – Computing Resources Unit",
@@ -59,12 +64,18 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="flex min-h-screen flex-col">
+        <a
+          className="sr-only fixed left-4 top-4 z-50 rounded bg-base-100 px-4 py-2 text-base-content shadow focus:not-sr-only"
+          href="#main"
+        >
+          Skip to main content
+        </a>
         <Search />
         <div className="flex-1 flex flex-col">
           <Header />
           <div className="grid grid-cols-[3%_94%_3%] flex-1 w-full">
             <div className="border-r-1 border-cru-border"></div>
-            <main id="main" className="pt-25 pb-12">
+            <main id="main" className="scroll-mt-25 pt-25 pb-12" tabIndex={-1}>
               {children}
             </main>
             <div className="border-l-1 border-cru-border bg-slash-pattern"></div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ace</title>
+    <defs>
+        <path d="M15.8,27 L13,24.2378918 L20,20.7852565 Z" id="path-1"></path>
+    </defs>
+    <g id="ace" stroke="none" fill="none" xlink:href="#path-1" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g id="Group" transform="translate(13, 5)" stroke="#000000">
+            <polyline id="Path" stroke-width="1.3810541" points="0 19.2378918 2.8 22 7 15.7852565"></polyline>
+            <path d="M3.5,0 L3.5,6.9052705 M7,3.45263525 L0,3.45263525" id="Shape" stroke-width="1.3810541"></path>
+            <line x1="0.233333333" y1="11.579755" x2="6.76666667" y2="11.579755" id="Path" stroke-width="1.3810541"></line>
+        </g>
+    </g>
+</svg>

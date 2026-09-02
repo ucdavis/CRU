@@ -8,6 +8,5 @@ url: "https://gifts.ucdavis.edu/"
 date: 2016-05-05
 developers:
   - Scott Kirkland
-  - John Knoll
   - Jason Sylvestre
 ---

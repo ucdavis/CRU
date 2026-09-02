@@ -11,5 +11,4 @@ developers:
   - Jason Sylvestre
   - Spruce Weber-Milne
   - Cal Doval
-  - River Holstege
 ---

@@ -6,11 +6,7 @@
 @theme {
   --color-cru-border: oklch(0.283 0.0091 285.81);
 
-  --color-primary: var(--color-ucd-recpool);
-  --color-documentation: var(--color-ucd-strawberry);
-  --color-team: var(--color-ucd-tahoe);
-  --color-portfolio: var(--color-ucd-arboretum);
-  --color-services: var(--color-ucd-sunflower);
+  --color-primary-color: #ffc519;
 }
 
 @plugin "daisyui/theme" {
@@ -19,13 +15,14 @@
   --color-base-200: var(--color-dark-bg-200);
   --color-base-300: var(--color-dark-bg-300);
   --color-base-content: var(--color-light-font);
-  --color-primary: var(--color-ucd-recpool);
+  --color-primary: var(--color-primary-color);
   --color-primary-content: var(--color-dark-font);
-  --color-secondary: var(--color-ucd-goldenstate);
-  --color-error: var(--color-documentation); /* using for Documentation */
-  --color-info: var(--color-team); /* using for Teams */
-  --color-success: var(--color-portfolio); /* using for Portfolio */
-  --color-warning: var(--color-services); /* using for Services */
+  --color-secondary: #8198b2;
+  --color-error: var(--color-primary-color);
+  --color-info: #ffd966;
+  --color-success: var(--color-primary-color);
+  --color-warning: var(--color-primary-color);
+  --noise: 0;
 }
 @layer base {
   h1 {
@@ -84,7 +81,21 @@ b {
   background-image: url("/slash-pattern.svg");
   background-repeat: repeat;
   background-size: 24px 24px;
+  animation: slash-pattern-drift 75s linear infinite;
 }
+
+@keyframes slash-pattern-drift {
+  to {
+    background-position: 24px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-slash-pattern {
+    animation: none;
+  }
+}
+
 .bg-caret-pattern {
   background-image: url("/caret-pattern.svg");
   background-repeat: repeat;
@@ -105,6 +116,276 @@ b {
   background-repeat: repeat;
   background-size: 14px 12px;
 }
+
+/* Spruce's five-frame sheet animates only the steam and an occasional blink. */
+.team-sprite-sheet {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 500% 100%;
+  height: auto;
+  image-rendering: pixelated;
+  width: 100%;
+}
+
+.team-sprite-sheet--spruce {
+  aspect-ratio: 1124 / 1399;
+  animation: team-sprite-steam 5.8s step-end infinite;
+  background-image: url("/team/sprites/spruce-animated.png?v=2");
+}
+
+.team-sprite-sheet--dj {
+  animation: team-sprite-dj 6.9s step-end infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/dj-animated.png?v=7");
+  background-size: 700% 100%;
+}
+
+.team-sprite-sheet--rob {
+  animation: team-sprite-rob 5.6s step-end infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/rob-animated.png?v=2");
+}
+
+.team-sprite-sheet--arista {
+  animation: team-sprite-arista 6.4s step-end infinite;
+  aspect-ratio: 1155 / 1362;
+  background-image: url("/team/sprites/arista-animated.png?v=4");
+  background-size: 600% 100%;
+}
+
+.team-sprite-sheet--odin {
+  animation: team-sprite-odin 5.6s step-end -2.1s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/odin-animated.png?v=1");
+}
+
+.team-sprite-sheet--cal {
+  animation: team-sprite-cal 8.8s step-end -3.1s infinite;
+  aspect-ratio: 1180 / 1333;
+  background-image: url("/team/sprites/cal-animated.png?v=2");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--adam {
+  animation: team-sprite-blink 7.2s step-end -1.3s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/adam-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--jackie {
+  animation: team-sprite-blink 8.1s step-end -3.6s infinite;
+  aspect-ratio: 1199 / 1312;
+  background-image: url("/team/sprites/jackie-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--jason {
+  animation: team-sprite-blink 7.7s step-end -5s infinite;
+  aspect-ratio: 1180 / 1333;
+  background-image: url("/team/sprites/jason-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--scott {
+  animation: team-sprite-blink 8.5s step-end -2.2s infinite;
+  aspect-ratio: 1179 / 1334;
+  background-image: url("/team/sprites/scott-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--shuka {
+  animation: team-sprite-blink 7.4s step-end -6.1s infinite;
+  aspect-ratio: 1175 / 1338;
+  background-image: url("/team/sprites/shuka-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--steven {
+  animation: team-sprite-blink 8.9s step-end -4.4s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/steven-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+@keyframes team-sprite-steam {
+  0%,
+  23% {
+    background-position: 0 0;
+  }
+  24%,
+  48% {
+    background-position: 25% 0;
+  }
+  49%,
+  51% {
+    background-position: 50% 0;
+  }
+  52%,
+  75% {
+    background-position: 75% 0;
+  }
+  76%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-dj {
+  0%,
+  43% {
+    background-position: 0 0;
+  }
+  44%,
+  46% {
+    background-position: 16.6667% 0;
+  }
+  47%,
+  75% {
+    background-position: 100% 0;
+  }
+  76%,
+  78% {
+    background-position: 33.3333% 0;
+  }
+  79%,
+  81% {
+    background-position: 50% 0;
+  }
+  82%,
+  84% {
+    background-position: 66.6667% 0;
+  }
+  85%,
+  87% {
+    background-position: 83.3333% 0;
+  }
+  88%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes team-sprite-rob {
+  0%,
+  24% {
+    background-position: 0 0;
+  }
+  25%,
+  49% {
+    background-position: 25% 0;
+  }
+  50%,
+  52% {
+    background-position: 50% 0;
+  }
+  53%,
+  74% {
+    background-position: 75% 0;
+  }
+  75%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-arista {
+  0%,
+  26% {
+    background-position: 0 0;
+  }
+  27%,
+  29% {
+    background-position: 20% 0;
+  }
+  30%,
+  43% {
+    background-position: 40% 0;
+  }
+  44%,
+  57% {
+    background-position: 60% 0;
+  }
+  58%,
+  71% {
+    background-position: 80% 0;
+  }
+  72%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-odin {
+  0%,
+  24% {
+    background-position: 0 0;
+  }
+  25%,
+  49% {
+    background-position: 25% 0;
+  }
+  50%,
+  52% {
+    background-position: 50% 0;
+  }
+  53%,
+  74% {
+    background-position: 75% 0;
+  }
+  75%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-cal {
+  0%,
+  48% {
+    background-position: 0 0;
+  }
+  49%,
+  51% {
+    background-position: 100% 0;
+  }
+  52%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes team-sprite-blink {
+  0%,
+  47% {
+    background-position: 0 0;
+  }
+  48%,
+  50% {
+    background-position: 100% 0;
+  }
+  51%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-sprite-sheet--spruce,
+  .team-sprite-sheet--dj,
+  .team-sprite-sheet--rob,
+  .team-sprite-sheet--arista,
+  .team-sprite-sheet--odin,
+  .team-sprite-sheet--cal,
+  .team-sprite-sheet--adam,
+  .team-sprite-sheet--jackie,
+  .team-sprite-sheet--jason,
+  .team-sprite-sheet--scott,
+  .team-sprite-sheet--shuka,
+  .team-sprite-sheet--steven {
+    animation: none;
+  }
+}
+
 hr {
   border-color: #29292e;
 }
@@ -128,12 +409,12 @@ article h2 {
 }
 .markdown-wrapper p a,
 .markdown-wrapper li a {
-  color: var(--color-documentation);
+  color: var(--color-primary-color);
   filter: brightness(150%);
 }
 .markdown-wrapper p a:hover,
 .markdown-wrapper li a:hover {
-  color: var(--color-documentation);
+  color: var(--color-primary-color);
   text-decoration: underline;
   filter: brightness(200%);
 }

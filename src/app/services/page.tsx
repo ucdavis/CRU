@@ -1,6 +1,15 @@
 import PageHeader from "../components/pageheader";
-import Image from "next/image";
+import TeamPortrait from "../components/teamPortrait";
 import React from "react";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Services",
+  description:
+    "CRU provides help desk support, technology infrastructure, application development, and web services for UC Davis CAES.",
+  path: "/services",
+});
 
 export default function Services() {
   return (
@@ -35,24 +44,15 @@ export default function Services() {
               providing computer security consulting and remediation for the
               college under the Cyber-Safety Program.
             </p>
-            <div className="flex avatar-group -space-x-2 mt-2">
+            <div className="mt-2 flex -space-x-2">
               {[
-                { name: "Dj", src: "/team/dj.png" },
-                { name: "Jackie", src: "/team/jackie.png" },
-                { name: "Steven", src: "/team/steven.png" },
-                { name: "Shuka", src: "/team/shuka.png" },
-              ].map(({ name, src }) => (
-                <div key={name} className="avatar">
-                  <div className="w-8">
-                    <Image
-                      src={src}
-                      alt={`${name}'s avatar`}
-                      width={48}
-                      height={48}
-                      role="img"
-                      aria-label={`${name}'s avatar`}
-                    />
-                  </div>
+                { name: "DJ", slug: "darell" },
+                { name: "Jackie", slug: "jackie" },
+                { name: "Steven", slug: "steven" },
+                { name: "Shuka", slug: "shuka" },
+              ].map(({ name, slug }) => (
+                <div key={name}>
+                  <TeamPortrait className="h-8 w-8" name={name} slug={slug} />
                 </div>
               ))}
             </div>
@@ -69,25 +69,16 @@ export default function Services() {
               internal time reporting systems, to name a few. View our portfolio
               to see our entire catalog of projects.
             </p>
-            <div className="flex avatar-group -space-x-2 mt-2">
+            <div className="mt-2 flex -space-x-2">
               {[
-                { name: "Spruce", src: "/team/spruce.png" },
-                { name: "Rob", src: "/team/rob.png" },
-                { name: "Arista", src: "/team/arista.png" },
-                { name: "Jason", src: "/team/jason.png" },
-                { name: "Scott", src: "/team/scott.png" },
-              ].map(({ name, src }) => (
-                <div key={name} className="avatar">
-                  <div className="w-8">
-                    <Image
-                      src={src}
-                      alt={`${name}'s avatar`}
-                      width={48}
-                      height={48}
-                      role="img"
-                      aria-label={`${name}'s avatar`}
-                    />
-                  </div>
+                { name: "Spruce", slug: "spruce" },
+                { name: "Rob", slug: "rob" },
+                { name: "Arista", slug: "arista" },
+                { name: "Jason", slug: "jason" },
+                { name: "Scott", slug: "scott" },
+              ].map(({ name, slug }) => (
+                <div key={name}>
+                  <TeamPortrait className="h-8 w-8" name={name} slug={slug} />
                 </div>
               ))}
             </div>
@@ -101,19 +92,10 @@ export default function Services() {
               college homepage, Agricultural Sustainability Institute, Afghan
               Agricultural Project, Foods for Health Initiative, as examples.
             </p>
-            <div className="flex avatar-group -space-x-2 mt-2">
-              {[{ name: "Cal", src: "/team/cal.png" }].map(({ name, src }) => (
-                <div key={name} className="avatar">
-                  <div className="w-8">
-                    <Image
-                      src={src}
-                      alt={`${name}'s avatar`}
-                      width={48}
-                      height={48}
-                      role="img"
-                      aria-label={`${name}'s avatar`}
-                    />
-                  </div>
+            <div className="mt-2 flex -space-x-2">
+              {[{ name: "Cal", slug: "cal" }].map(({ name, slug }) => (
+                <div key={name}>
+                  <TeamPortrait className="h-8 w-8" name={name} slug={slug} />
                 </div>
               ))}
             </div>
@@ -124,7 +106,7 @@ export default function Services() {
             <div className="md:sticky md:top-20">
               <div className="card card-xl shadow-sm">
                 <div className="card-body">
-                  <h2 className="card-title text-services">Rates</h2>
+                  <h2 className="card-title text-primary-color">Rates</h2>
                   <p>
                     <b>$122/hr</b> - Project Planning and Management
                   </p>

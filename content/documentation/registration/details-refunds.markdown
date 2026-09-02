@@ -25,4 +25,4 @@ date: 2020-10-28
 - Undo does not have a "Confirmation" page. Please be careful that you click on the correct transaction.
 - A success message will be displayed at the top of the page.
 
-<div class="markdown-nav"><a href="/documentation/registration/details-reports" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a>  <a href="/documentation/registration/details-notifications" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/details-reports" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a>  <a href="/documentation/registration/details-notifications" class="btn btn-outline btn-primary">Next </a></div>

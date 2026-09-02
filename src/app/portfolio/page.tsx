@@ -4,10 +4,17 @@ import PageHeader from "../components/pageheader";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import TeamPortrait, { hasTeamPortrait } from "../components/teamPortrait";
 import { getAllPortfolio } from "@/lib/portfolio";
 import { getCurrentTeamMembers } from "@/lib/team";
+import { createPageMetadata } from "@/lib/siteMetadata";
 
-export const metadata: Metadata = { title: "Portfolio" };
+export const metadata: Metadata = createPageMetadata({
+  title: "Portfolio",
+  description:
+    "Selected web applications, websites, and technology projects built by the Computing Resources Unit.",
+  path: "/portfolio",
+});
 
 export default function Portfolio() {
   const items = getAllPortfolio();
@@ -38,10 +45,11 @@ export default function Portfolio() {
 
       <div className="container py-16">
         <div className="w-full mx-auto overflow-x-auto">
-          <table className="table">
+          <table aria-label="CRU portfolio projects" className="table min-w-[760px]">
+            <caption className="sr-only">CRU portfolio projects</caption>
             <thead className="text-base-content/65">
               <tr>
-                <th></th>
+                <th><span className="sr-only">Project logo</span></th>
                 <th>Info</th>
 
                 <th>Team</th>
@@ -79,7 +87,7 @@ export default function Portfolio() {
                           href={p.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="link link-hover text-ucd-arboretum"
+                          className="link link-hover text-primary-color"
                         >
                           {p.url}
                         </Link>
@@ -94,7 +102,7 @@ export default function Portfolio() {
                       <div
                         className={`flex ${
                           p.developers.length > 1
-                            ? "avatar-group -space-x-2 mt-2"
+                            ? "-space-x-2 mt-2"
                             : "items-center"
                         }`}
                       >
@@ -107,15 +115,13 @@ export default function Portfolio() {
                             .join("");
 
                           return (
-                            <div className="avatar" key={dev}>
-                              <div className="mask mask-squircle h-8 w-8 ring ring-base-100 ring-offset-1">
-                                {m?.image ? (
-                                  <Image
-                                    src={m.image}
-                                    alt={m.name}
-                                    width={32}
-                                    height={32}
-                                    className="object-cover"
+                            <div key={dev}>
+                              <div className="h-8 w-8">
+                                {m && hasTeamPortrait(m.slug) ? (
+                                  <TeamPortrait
+                                    className="h-8 w-8"
+                                    name={m.name}
+                                    slug={m.slug}
                                   />
                                 ) : (
                                   <div className="flex h-8 w-8 items-center justify-center bg-base-300 text-xs font-semibold">
@@ -139,10 +145,8 @@ export default function Portfolio() {
                           p.type.toLowerCase() === "web app"
                             ? "badge badge-outline badge-secondary"
                             : p.type.toLowerCase() === "static site"
-                            ? "badge badge-outline badge-info"
-                            : p.type.toLowerCase() === "sitefarm"
-                            ? "badge badge-outline badge-success"
-                            : "badge-ghost"
+                              ? "badge badge-outline badge-info"
+                              : "badge-ghost"
                         }`}
                       >
                         {p.type}

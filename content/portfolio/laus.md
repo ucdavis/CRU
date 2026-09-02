@@ -8,5 +8,4 @@ url: "https://github.com/ucdavis/labs"
 date: 2019-06-07
 developers:
   - Scott Kirkland
-  - River Holstege
 ---

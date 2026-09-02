@@ -1,7 +1,7 @@
 ---
 name: Rob Martinsen
 email: rmartinsen@ucdavis.edu
-role: Applications Developer
+role: Application Development
 title: default
 pronouns: he/him
 image: /team/rob.png

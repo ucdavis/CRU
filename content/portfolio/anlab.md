@@ -9,6 +9,5 @@ date: 2018-06-23
 developers:
   - Jason Sylvestre
   - Scott Kirkland
-  - Ken Taylor
   - Cal Doval
 ---

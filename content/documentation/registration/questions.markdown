@@ -35,4 +35,4 @@ date: 2020-07-31
 - Phone Number checks that the information is in a phone number format. These can be kind of tricky depending what kind of number is entered. Our recommendation would be to avoid this validator where possible.
 - Zip Code just does a basic format validation. If your end user it outside the US, this may cause problems.
 
-<div class="markdown-nav"><a href="/documentation/registration/question-sets" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a>  <a href="/documentation/registration/confirmation-template" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/question-sets" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a>  <a href="/documentation/registration/confirmation-template" class="btn btn-outline btn-primary">Next </a></div>

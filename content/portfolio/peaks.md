@@ -9,6 +9,5 @@ date: 2019-02-21
 developers:
   - Scott Kirkland
   - Jason Sylvestre
-  - River Holstege
   - Cal Doval
 ---

@@ -20,4 +20,4 @@ date: 2020-08-03
 - Notification can be resent. This will be covered in another help area.
 - You must save any changes to make for them to be used.
 
-<div class="markdown-nav"><a href="/documentation/registration/questions" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a>  <a href="/documentation/registration/coupons" class="btn btn-outline btn-error">Next </a></div>
+<div class="markdown-nav"><a href="/documentation/registration/questions" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a>  <a href="/documentation/registration/coupons" class="btn btn-outline btn-primary">Next </a></div>

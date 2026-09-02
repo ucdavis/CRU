@@ -1,7 +1,7 @@
 ---
 name: Spruce Weber-Milne
 email: swebermilne@ucdavis.edu
-role: Applications Developer
+role: Application Development
 pronouns: he/him
 image: /team/spruce.png
 categories:

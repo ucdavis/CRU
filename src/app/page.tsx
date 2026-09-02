@@ -2,8 +2,19 @@ import Diamond from "./components/diamond";
 import QuicklinkList from "./components/quicklinklist";
 import { getAllPortfolio } from "@/lib/portfolio";
 import { getCurrentTeamMembers } from "@/lib/team";
+import TeamPortrait, { hasTeamPortrait } from "./components/teamPortrait";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "CRU – Computing Resources Unit",
+  description:
+    "Application development, technology infrastructure, and customer service for UC Davis CAES.",
+  path: "/",
+  absoluteTitle: true,
+});
 
 export default function Home() {
   const projects = getAllPortfolio()
@@ -31,6 +42,19 @@ export default function Home() {
                 Top tier application development, <br /> technology
                 infrastructure, <br /> & customer service
               </h1>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  className="btn btn-primary btn-lg"
+                  href="https://caeshelp.ucdavis.edu/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Get Help
+                </a>
+                <Link className="btn btn-outline btn-lg" href="/documentation">
+                  Read the Docs
+                </Link>
+              </div>
             </div>
             <div>
               <Diamond />
@@ -44,7 +68,8 @@ export default function Home() {
           <div className="md:w-2/3 w-full">
             <h2>Recent Projects</h2>
             <div className="overflow-x-auto mt-4">
-              <table className="table">
+              <table aria-label="Recent projects" className="table min-w-[640px]">
+                <caption className="sr-only">Recent CRU projects</caption>
                 <tbody>
                   {projects.map((p) => (
                     <tr key={p.slug}>
@@ -93,7 +118,7 @@ export default function Home() {
                           <div
                             className={`flex ${
                               p.developers.length > 1
-                                ? "avatar-group -space-x-2 mt-2"
+                                ? "-space-x-2 mt-2"
                                 : "items-center"
                             }`}
                           >
@@ -108,15 +133,13 @@ export default function Home() {
                                 .join("");
 
                               return (
-                                <div className="avatar" key={dev}>
-                                  <div className="mask mask-squircle h-8 w-8 ring ring-base-100 ring-offset-1">
-                                    {m?.image ? (
-                                      <Image
-                                        src={m.image}
-                                        alt={m.name}
-                                        width={32}
-                                        height={32}
-                                        className="object-cover"
+                                <div key={dev}>
+                                  <div className="h-8 w-8">
+                                    {m && hasTeamPortrait(m.slug) ? (
+                                      <TeamPortrait
+                                        className="h-8 w-8"
+                                        name={m.name}
+                                        slug={m.slug}
                                       />
                                     ) : (
                                       <div className="flex h-8 w-8 items-center justify-center bg-base-300 text-xs font-semibold">

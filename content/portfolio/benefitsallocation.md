@@ -6,6 +6,4 @@ description: "A Project for Automating General Ledger Current Budget Adjustments
 image: "cru"
 url: "https://secure.caes.ucdavis.edu/BenefitsAllocationUpload"
 date: 2015-07-23
-developers:
-  - Ken Taylor
 ---

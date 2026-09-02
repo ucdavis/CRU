@@ -8,7 +8,6 @@ url: "https://give.ucdavis.edu/"
 date: 2015-01-22
 developers:
   - Scott Kirkland
-  - Ken Taylor
   - Jason Sylvestre
   - Cal Doval
 ---

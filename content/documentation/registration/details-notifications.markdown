@@ -28,4 +28,4 @@ Notifications are generated when a registration is "paid".
 - Select the Transaction report or a custom report you have created that has the information you want.
 - Quickly find the related information by entering information in the search field at the top right of the table.
 
-<div class="markdown-nav"><a href="/documentation/registration/details-refunds" class="btn btn-outline btn-error"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-error">Main Artice</a></div>
+<div class="markdown-nav"><a href="/documentation/registration/details-refunds" class="btn btn-outline btn-primary"> Previous</a> <a href="/documentation/registration/getting-started" class="btn btn-outline btn-primary">Main Artice</a></div>
