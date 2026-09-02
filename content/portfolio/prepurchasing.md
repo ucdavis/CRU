@@ -8,5 +8,5 @@ url: "https://prepurchasing.ucdavis.edu/"
 date: 2011-07-12
 developers:
   - Scott Kirkland
-  - Ken Taylor
+  - Jason Sylvestre
 ---

@@ -6,6 +6,5 @@ description: "System to analyze salaries among titles/personnel and formulate/pr
 image: "cru"
 date: 2011-05-21
 developers:
-  - Ken Taylor
   - Scott Kirkland
 ---

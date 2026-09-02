@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import {
   getAllDocumentation,
   getCategoryMetadata,
@@ -104,24 +105,9 @@ export default async function DocumentationPage({ params }: Props) {
   const author = teamMembers.find((m) => m.name === doc?.author);
 
   if (doc) {
-    const categorySlug = doc.category ?? doc.slug.split("/")[0]; // fallback to first folder
-
-    const categoryLabel =
-      categorySlug.charAt(0).toUpperCase() +
-      categorySlug.slice(1).replace(/-/g, " ");
-
     return (
       <article>
         <Breadcrumbs slugParts={slugArray} />
-
-        {categorySlug && (
-          <Link
-            className="btn btn-sm my-2 btn-primary tracking-wider uppercase"
-            href={`/documentation/${categorySlug}`}
-          >
-            {categoryLabel}
-          </Link>
-        )}
         <h1 className="mb-2">{doc.title}</h1>
         <p className="text-lg">{doc.description}</p>
 
@@ -204,6 +190,7 @@ export default async function DocumentationPage({ params }: Props) {
     categoryMeta[slugArray[0]]?.label ??
     sectionDocs[0]?.category ??
     slugArray[slugArray.length - 1].replace(/-/g, " ");
+  const categoryLink = categoryMeta[slugArray[0]]?.link;
 
   const featuredDocs = allDocs.filter(
     (d) =>
@@ -216,6 +203,22 @@ export default async function DocumentationPage({ params }: Props) {
       <Breadcrumbs slugParts={slugArray} />
       <div>
         <h1>{categoryName}</h1>
+        {categoryLink &&
+          slugArray[0] !== "helpdesk" &&
+          slugArray[0] !== "policies" && (
+            <a
+              className="text-lg text-primary-color/70 underline"
+              href={categoryLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {categoryLink.replace(/^https?:\/\//, "")}
+              <ArrowTopRightOnSquareIcon
+                aria-hidden="true"
+                className="ml-1 inline-block h-4 w-4"
+              />
+            </a>
+          )}
         <hr className="mt-4" />
         <br />
         <hr className="mb-6" />

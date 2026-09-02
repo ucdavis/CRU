@@ -8,6 +8,5 @@ url: "https://ptf.ucdavis.edu"
 date: 2017-10-30
 developers:
   - Scott Kirkland
-  - Ken Taylor
   - Cal Doval
 ---

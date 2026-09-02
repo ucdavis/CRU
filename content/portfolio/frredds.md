@@ -9,5 +9,4 @@ date: 2025-04-01
 developers:
   - Scott Kirkland
   - Cal Doval
-  - River Holstege
 ---

@@ -7,6 +7,5 @@ image: "cru"
 url: "https://eatfit.net"
 date: 2008-10-23
 developers:
-  - Ken Taylor
   - Cal Doval
 ---
