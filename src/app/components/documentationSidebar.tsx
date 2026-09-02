@@ -2,30 +2,23 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import DocumentationCategoryIcon from "./documentationCategoryIcon";
 import {
   AcademicCapIcon,
-  BookmarkSquareIcon,
-  BriefcaseIcon,
-  CalendarDaysIcon,
-  ComputerDesktopIcon,
-  CreditCardIcon,
-  CurrencyDollarIcon,
   DocumentIcon,
-  NumberedListIcon,
-  ShoppingCartIcon,
-  SunIcon,
 } from "@heroicons/react/24/outline";
 
 const quickNav = [
-  { href: "/documentation/helpdesk", label: "Help Desk", icon: ComputerDesktopIcon },
-  { href: "/documentation/finjector", label: "Finjector", icon: CurrencyDollarIcon },
-  { href: "/documentation/ace", label: "Ace", icon: BookmarkSquareIcon },
-  { href: "/documentation/purchasing", label: "Purchasing", icon: ShoppingCartIcon },
-  { href: "/documentation/peaks", label: "Peaks", icon: BriefcaseIcon },
-  { href: "/documentation/registration", label: "Registration", icon: CalendarDaysIcon },
-  { href: "/documentation/payments", label: "Payments", icon: CreditCardIcon },
-  { href: "/documentation/harvest", label: "Harvest", icon: SunIcon },
-  { href: "/documentation/policies", label: "Policies", icon: NumberedListIcon },
+  { href: "/documentation/helpdesk", label: "Help Desk", category: "helpdesk" },
+  { href: "/documentation/finjector", label: "Finjector", category: "finjector" },
+  { href: "/documentation/ace", label: "Ace", category: "ace" },
+  { href: "/documentation/purchasing", label: "Purchasing", category: "purchasing" },
+  { href: "/documentation/peaks", label: "Peaks", category: "peaks" },
+  { href: "/documentation/registration", label: "Registration", category: "registration" },
+  { href: "/documentation/payments", label: "Payments", category: "payments" },
+  { href: "/documentation/harvest", label: "Harvest", category: "harvest" },
+  { href: "/documentation/walter", label: "Walter", category: "walter" },
+  { href: "/documentation/policies", label: "Policies", category: "policies" },
 ];
 
 const DocumentationSidebar: React.FC = () => {
@@ -91,7 +84,7 @@ const DocumentationSidebar: React.FC = () => {
         </ul>
         <ul className="pt-6">
           <h4>Quick Nav</h4>
-          {quickNav.map(({ href, label, icon: Icon }) => {
+          {quickNav.map(({ href, label, category }) => {
             const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
             return (
@@ -101,7 +94,10 @@ const DocumentationSidebar: React.FC = () => {
                   className={`fancy-list ${isActive ? "text-primary" : ""}`}
                   href={href}
                 >
-                  <Icon className="mr-1 h-5 w-5" />
+                  <DocumentationCategoryIcon
+                    category={category}
+                    className="mr-1 h-5 w-5"
+                  />
                   {label}
                 </Link>
               </li>

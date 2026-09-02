@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   getAllDocumentation,
+  getCategoryMetadata,
   getDocumentationBySlug,
 } from "@/lib/documentation";
 import ReactMarkdown from "react-markdown";
@@ -96,6 +97,7 @@ export default async function DocumentationPage({ params }: Props) {
   const { slug: slugArray } = await params;
   const slug = slugArray.join("/");
   const allDocs = getAllDocumentation();
+  const categoryMeta = getCategoryMetadata();
 
   const doc = getDocumentationBySlug(slug);
   const teamMembers = getCurrentTeamMembers();
@@ -199,6 +201,7 @@ export default async function DocumentationPage({ params }: Props) {
   if (sectionDocs.length === 0) return notFound();
 
   const categoryName =
+    categoryMeta[slugArray[0]]?.label ??
     sectionDocs[0]?.category ??
     slugArray[slugArray.length - 1].replace(/-/g, " ");
 
@@ -212,7 +215,7 @@ export default async function DocumentationPage({ params }: Props) {
     <section>
       <Breadcrumbs slugParts={slugArray} />
       <div>
-        <h1>{categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}</h1>
+        <h1>{categoryName}</h1>
         <hr className="mt-4" />
         <br />
         <hr className="mb-6" />

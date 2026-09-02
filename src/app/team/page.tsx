@@ -20,6 +20,21 @@ const teamSprites = [
   { name: "DJ", src: "/team/isolated/dj.png?v=6", width: 1254, height: 1254, left: "69.97%", top: "23.90%", size: "44.88%", zIndex: 8 },
 ];
 
+const animatedSpriteNames = new Set([
+  "Adam",
+  "Arista",
+  "Cal",
+  "DJ",
+  "Jackie",
+  "Jason",
+  "Odin",
+  "Rob",
+  "Scott",
+  "Shuka",
+  "Spruce",
+  "Steven",
+]);
+
 export const metadata: Metadata = createPageMetadata({
   title: "Team",
   description: "Meet the Computing Resources Unit team at UC Davis CAES.",
@@ -67,7 +82,7 @@ export default async function TeamPage() {
                     zIndex: sprite.zIndex,
                   }}
                 >
-                  {sprite.name === "Odin" || sprite.name === "Spruce" || sprite.name === "DJ" || sprite.name === "Rob" || sprite.name === "Arista" || sprite.name === "Cal" ? (
+                  {animatedSpriteNames.has(sprite.name) ? (
                     <div
                       aria-hidden="true"
                       className={`team-sprite-sheet team-sprite-sheet--${sprite.name.toLowerCase()}`}

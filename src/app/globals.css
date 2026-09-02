@@ -166,6 +166,48 @@ b {
   background-size: 200% 100%;
 }
 
+.team-sprite-sheet--adam {
+  animation: team-sprite-blink 7.2s step-end -1.3s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/adam-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--jackie {
+  animation: team-sprite-blink 8.1s step-end -3.6s infinite;
+  aspect-ratio: 1199 / 1312;
+  background-image: url("/team/sprites/jackie-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--jason {
+  animation: team-sprite-blink 7.7s step-end -5s infinite;
+  aspect-ratio: 1180 / 1333;
+  background-image: url("/team/sprites/jason-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--scott {
+  animation: team-sprite-blink 8.5s step-end -2.2s infinite;
+  aspect-ratio: 1179 / 1334;
+  background-image: url("/team/sprites/scott-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--shuka {
+  animation: team-sprite-blink 7.4s step-end -6.1s infinite;
+  aspect-ratio: 1175 / 1338;
+  background-image: url("/team/sprites/shuka-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
+.team-sprite-sheet--steven {
+  animation: team-sprite-blink 8.9s step-end -4.4s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/steven-animated.png?v=1");
+  background-size: 200% 100%;
+}
+
 @keyframes team-sprite-steam {
   0%,
   23% {
@@ -312,13 +354,34 @@ b {
   }
 }
 
+@keyframes team-sprite-blink {
+  0%,
+  47% {
+    background-position: 0 0;
+  }
+  48%,
+  50% {
+    background-position: 100% 0;
+  }
+  51%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .team-sprite-sheet--spruce,
   .team-sprite-sheet--dj,
   .team-sprite-sheet--rob,
   .team-sprite-sheet--arista,
   .team-sprite-sheet--odin,
-  .team-sprite-sheet--cal {
+  .team-sprite-sheet--cal,
+  .team-sprite-sheet--adam,
+  .team-sprite-sheet--jackie,
+  .team-sprite-sheet--jason,
+  .team-sprite-sheet--scott,
+  .team-sprite-sheet--shuka,
+  .team-sprite-sheet--steven {
     animation: none;
   }
 }

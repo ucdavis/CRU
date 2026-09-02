@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { getAllDocumentation } from "@/lib/documentation";
 import { siteUrl } from "@/lib/siteMetadata";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const docs = getAllDocumentation();
   const documentationSections = new Set(
