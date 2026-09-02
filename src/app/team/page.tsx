@@ -4,7 +4,7 @@ import { getCurrentTeamMembers } from "@/lib/team";
 
 const teamSprites = [
   { name: "Odin", src: "/team/isolated/odin.png", width: 1254, height: 1254, left: "-5.35%", top: "8.04%", size: "25.26%", zIndex: 1 },
-  { name: "Arista", src: "/team/isolated/arista.png", width: 1155, height: 1362, left: "-10.44%", top: "19.43%", size: "38.14%", zIndex: 7 },
+  { name: "Arista", src: "/team/isolated/arista.png?v=2", width: 1155, height: 1362, left: "-10.44%", top: "19.43%", size: "38.14%", zIndex: 7 },
   { name: "Jason", src: "/team/isolated/jason.png?v=4", width: 1180, height: 1333, left: "-4.87%", top: "0.24%", size: "41.70%", zIndex: 4 },
   { name: "Spruce", src: "/team/isolated/spruce.png?v=9", width: 1124, height: 1399, left: "7.49%", top: "-2.66%", size: "38.67%", zIndex: 5 },
   { name: "Cal", src: "/team/isolated/cal.png?v=2", width: 1180, height: 1333, left: "2.09%", top: "18.57%", size: "40.17%", zIndex: 8 },
@@ -62,7 +62,7 @@ export default async function TeamPage() {
                     zIndex: sprite.zIndex,
                   }}
                 >
-                  {sprite.name === "Spruce" || sprite.name === "DJ" || sprite.name === "Rob" ? (
+                  {sprite.name === "Odin" || sprite.name === "Spruce" || sprite.name === "DJ" || sprite.name === "Rob" || sprite.name === "Arista" || sprite.name === "Cal" ? (
                     <div
                       aria-hidden="true"
                       className={`team-sprite-sheet team-sprite-sheet--${sprite.name.toLowerCase()}`}

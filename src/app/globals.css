@@ -145,6 +145,26 @@ b {
   background-image: url("/team/sprites/rob-animated.png?v=2");
 }
 
+.team-sprite-sheet--arista {
+  animation: team-sprite-arista 6.4s step-end infinite;
+  aspect-ratio: 1155 / 1362;
+  background-image: url("/team/sprites/arista-animated.png?v=4");
+  background-size: 600% 100%;
+}
+
+.team-sprite-sheet--odin {
+  animation: team-sprite-odin 5.6s step-end -2.1s infinite;
+  aspect-ratio: 1;
+  background-image: url("/team/sprites/odin-animated.png?v=1");
+}
+
+.team-sprite-sheet--cal {
+  animation: team-sprite-cal 8.8s step-end -3.1s infinite;
+  aspect-ratio: 1180 / 1333;
+  background-image: url("/team/sprites/cal-animated.png?v=2");
+  background-size: 200% 100%;
+}
+
 @keyframes team-sprite-steam {
   0%,
   23% {
@@ -226,10 +246,78 @@ b {
   }
 }
 
+@keyframes team-sprite-arista {
+  0%,
+  26% {
+    background-position: 0 0;
+  }
+  27%,
+  29% {
+    background-position: 20% 0;
+  }
+  30%,
+  43% {
+    background-position: 40% 0;
+  }
+  44%,
+  57% {
+    background-position: 60% 0;
+  }
+  58%,
+  71% {
+    background-position: 80% 0;
+  }
+  72%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-odin {
+  0%,
+  24% {
+    background-position: 0 0;
+  }
+  25%,
+  49% {
+    background-position: 25% 0;
+  }
+  50%,
+  52% {
+    background-position: 50% 0;
+  }
+  53%,
+  74% {
+    background-position: 75% 0;
+  }
+  75%,
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes team-sprite-cal {
+  0%,
+  48% {
+    background-position: 0 0;
+  }
+  49%,
+  51% {
+    background-position: 100% 0;
+  }
+  52%,
+  100% {
+    background-position: 0 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .team-sprite-sheet--spruce,
   .team-sprite-sheet--dj,
-  .team-sprite-sheet--rob {
+  .team-sprite-sheet--rob,
+  .team-sprite-sheet--arista,
+  .team-sprite-sheet--odin,
+  .team-sprite-sheet--cal {
     animation: none;
   }
 }
