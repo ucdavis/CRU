@@ -19,6 +19,7 @@ const quickNav = [
   { href: "/documentation/harvest", label: "Harvest", category: "harvest" },
   { href: "/documentation/walter", label: "Walter", category: "walter" },
   { href: "/documentation/policies", label: "Policies", category: "policies" },
+  { href: "/documentation/presentations", label: "Presentations", category: "presentations" },
 ];
 
 const DocumentationSidebar: React.FC = () => {

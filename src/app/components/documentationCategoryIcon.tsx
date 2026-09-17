@@ -6,6 +6,7 @@ const categoryIcons: Record<string, string> = {
   payments: "payments",
   peaks: "peaks",
   policies: "policies",
+  presentations: "presentations",
   purchasing: "prepurchasing",
   registration: "registration",
   walter: "walter",

@@ -410,13 +410,11 @@ article h2 {
 .markdown-wrapper p a,
 .markdown-wrapper li a {
   color: var(--color-primary-color);
-  filter: brightness(150%);
 }
 .markdown-wrapper p a:hover,
 .markdown-wrapper li a:hover {
   color: var(--color-primary-color);
   text-decoration: underline;
-  filter: brightness(200%);
 }
 .markdown-nav {
   margin-top: 2rem;
@@ -537,4 +535,82 @@ article h2 {
 
 .DocSearch.DocSearch-Button {
   display: none;
+}
+
+/* Presentation downloads and linked video previews. */
+.presentation-download {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid var(--color-cru-border);
+  border-radius: 0.75rem;
+  background: var(--color-base-200);
+}
+.presentation-download h2 {
+  margin-top: 0;
+}
+.presentation-download .presentation-download-note {
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+}
+.presentation-gallery {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+.presentation-clip {
+  overflow: hidden;
+  border: 1px solid var(--color-cru-border);
+  border-radius: 0.75rem;
+  background: var(--color-base-200);
+}
+.presentation-clip-link {
+  display: block;
+}
+.presentation-clip-link:hover h3 {
+  text-decoration: underline;
+}
+.presentation-clip-link:focus-visible {
+  outline: 3px solid var(--color-primary-color);
+  outline-offset: -3px;
+  border-radius: 0.75rem;
+}
+.presentation-gallery .presentation-clip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  border-radius: 0;
+}
+.presentation-clip-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  padding: 1rem 1rem 0;
+}
+.presentation-clip-heading h3 {
+  font-size: 1.35rem;
+}
+.presentation-clip-heading span {
+  font-size: 0.9rem;
+}
+.presentation-watch {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--color-primary-color);
+}
+.presentation-clip p {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+}
+@media (min-width: 640px) {
+  .presentation-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .presentation-clip-intro {
+    grid-column: 1 / -1;
+  }
 }
