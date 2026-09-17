@@ -410,13 +410,11 @@ article h2 {
 .markdown-wrapper p a,
 .markdown-wrapper li a {
   color: var(--color-primary-color);
-  filter: brightness(150%);
 }
 .markdown-wrapper p a:hover,
 .markdown-wrapper li a:hover {
   color: var(--color-primary-color);
   text-decoration: underline;
-  filter: brightness(200%);
 }
 .markdown-nav {
   margin-top: 2rem;
