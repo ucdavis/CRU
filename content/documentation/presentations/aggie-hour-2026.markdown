@@ -1,5 +1,5 @@
 ---
-title: "Aggie Hour: Meet CRU"
+title: "Aggie Hour 2026: Meet CRU AppDev"
 description: "The slides and team animations from our CA&ES Staff Spotlight."
 author: "Scott Kirkland"
 date: "2026-09-17T12:00:00-07:00"

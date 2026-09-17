@@ -21,14 +21,16 @@ export default function Documentation() {
     categoryMap[top] = (categoryMap[top] || 0) + 1;
   });
 
-  const sections = Object.entries(categoryMap).map(([slug, count]) => ({
-    slug,
-    count,
-    ...categoryMeta[slug],
-    label:
-      categoryMeta[slug]?.label ??
-      slug.charAt(0).toUpperCase() + slug.slice(1).replace(/-/g, " "),
-  }));
+  const sections = Object.entries(categoryMap)
+    .map(([slug, count]) => ({
+      slug,
+      count,
+      ...categoryMeta[slug],
+      label:
+        categoryMeta[slug]?.label ??
+        slug.charAt(0).toUpperCase() + slug.slice(1).replace(/-/g, " "),
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label, "en"));
 
   return (
     <>
