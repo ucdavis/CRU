@@ -2,6 +2,7 @@ const categoryIcons: Record<string, string> = {
   ace: "ace",
   finjector: "finjector",
   harvest: "harvest",
+  leaves: "leaves",
   helpdesk: "help",
   payments: "payments",
   peaks: "peaks",

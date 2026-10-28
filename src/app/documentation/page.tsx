@@ -16,6 +16,9 @@ export default function Documentation() {
 
   // Build category summary
   const categoryMap: Record<string, number> = {};
+  Object.keys(categoryMeta).forEach((slug) => {
+    categoryMap[slug] = 0;
+  });
   docs.forEach((doc) => {
     const top = doc.slug.split("/")[0];
     categoryMap[top] = (categoryMap[top] || 0) + 1;
