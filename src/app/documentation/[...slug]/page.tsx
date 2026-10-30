@@ -22,21 +22,23 @@ type Props = {
 
 export async function generateStaticParams() {
   const docs = getAllDocumentation();
+  const categoryMeta = getCategoryMetadata();
 
   const docPaths = docs.map((doc) => ({
     slug: doc.slug.split("/"),
   }));
 
   const sectionPaths = Array.from(
-    new Set(
-      docs
+    new Set([
+      ...Object.keys(categoryMeta),
+      ...docs
         .map((doc) => {
           const parts = doc.slug.split("/");
           parts.pop();
           return parts.join("/");
         })
         .filter(Boolean),
-    ),
+    ]),
   ).map((slug) => ({ slug: slug.split("/") }));
 
   return [...docPaths, ...sectionPaths];
@@ -48,9 +50,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const doc = getDocumentationBySlug(path);
 
   if (!doc) {
+    const category = getCategoryMetadata()[path];
     return createPageMetadata({
-      title: path.split("/").at(-1)?.replace(/-/g, " ") ?? "Documentation",
-      description: "Documentation from the CRU team at UC Davis CAES.",
+      title: category?.label ?? path.split("/").at(-1)?.replace(/-/g, " ") ?? "Documentation",
+      description: category?.description ?? "Documentation from the CRU team at UC Davis CAES.",
       path: `/documentation/${path}`,
     });
   }
@@ -184,7 +187,7 @@ export default async function DocumentationPage({ params }: Props) {
       d.slug.split("/").length === slug.split("/").length + 1,
   );
 
-  if (sectionDocs.length === 0) return notFound();
+  if (sectionDocs.length === 0 && !categoryMeta[slug]) return notFound();
 
   const categoryName =
     categoryMeta[slugArray[0]]?.label ??
@@ -246,6 +249,9 @@ export default async function DocumentationPage({ params }: Props) {
             ))}
           </div>
         </div>
+      )}
+      {sectionDocs.length === 0 && (
+        <p>Documentation is coming soon.</p>
       )}
       <ul>
         {sectionDocs.map((child) => (

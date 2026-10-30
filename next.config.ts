@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  // Keep production builds from replacing the running dev server's files.
+  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
   output: "export",
   outputFileTracingIncludes: {
     "/**/*": [path.resolve("./src/content/**/*")],
