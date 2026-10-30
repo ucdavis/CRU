@@ -19,11 +19,14 @@ Alternatively, you can start from the **calendar** on the dashboard. Select a si
 
 Complete the following steps to submit your leave report:
 
-- Select a **Type of Leave**, such as Vacation, Sick Leave, Professional Development, Sabbatical, or FMLA. Some leave types may have additional requirements. For FMLA, you will also need to select a pay type (No Pay, Vacation, or Sick Leave).
-- Choose **Single Day** or **Date Range**, then enter or confirm your leave dates.
-- If reporting a date range, select **Exclude weekends** and **Exclude university holidays** as appropriate. The form displays the total number of leave days.
-- Enter the **hours** taken for a single day, or for a date range, enter the hours taken **per day**.
-- Add a submission comment if needed. Then click **Submit Leave Report**.
+- Select a **Type of Leave**, such as Vacation, Sick Leave, Professional Development, Sabbatical, or FMLA.
+  - **Professional Development** is informational and does not require leave hours.
+  - **Sabbatical** and **FMLA** must first be approved in MyInfoVault. Confirm that approval in the form before submitting.
+  - For **FMLA**, you may optionally choose a pay type: No pay / decide later, Vacation, or Sick Leave.
+- For Vacation, Sick Leave, or FMLA, choose **Single Day** or **Date Range**, then enter or confirm your leave dates. Sabbatical is entered as a date range.
+- When shown, select **Exclude weekends** and **Exclude university holidays** as appropriate. The form displays the resulting number of leave days.
+- When required, enter the **hours** taken for a single day or the hours taken **per day** for a date range.
+- Add a submission comment if needed, then select **Submit Leave Report**.
 
 ![Completed Report Leave Taken form for a vacation date range.](/leaves/report-leave-form.png "Completed vacation leave report")
 
@@ -36,7 +39,7 @@ Once submitted, your report appears on the history page and **Recent Requests** 
 A request may have one of the following statuses:
 
 - **Pending Approval:** The request is awaiting review.
-- **Approved:** Depending on your department's approval settings, the request has either been manually or automatically approved.
+- **Approved:** Your request was approved automatically or by your department's reviewer, depending on its approval settings.
 - **Denied:** The request was not approved.
 
 Once your request has been approved or denied, you will receive an automated email. To find older requests or filter by leave type, open the **History** tab. You can also use **Show in calendar** to locate a reported leave period on the dashboard calendar.
