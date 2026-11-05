@@ -1,14 +1,15 @@
 import type { MetadataRoute } from "next";
-import { getAllDocumentation } from "@/lib/documentation";
+import { getAllDocumentation, getCategoryMetadata } from "@/lib/documentation";
 import { siteUrl } from "@/lib/siteMetadata";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const docs = getAllDocumentation();
-  const documentationSections = new Set(
-    docs.map((doc) => doc.slug.split("/")[0]).filter(Boolean),
-  );
+  const documentationSections = new Set([
+    ...Object.keys(getCategoryMetadata()),
+    ...docs.map((doc) => doc.slug.split("/")[0]).filter(Boolean),
+  ]);
 
   return [
     { url: siteUrl, changeFrequency: "monthly", priority: 1 },

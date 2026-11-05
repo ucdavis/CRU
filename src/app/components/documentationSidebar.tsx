@@ -17,6 +17,7 @@ const quickNav = [
   { href: "/documentation/registration", label: "Registration", category: "registration" },
   { href: "/documentation/payments", label: "Payments", category: "payments" },
   { href: "/documentation/harvest", label: "Harvest", category: "harvest" },
+  { href: "/documentation/leaves", label: "Leaves", category: "leaves" },
   { href: "/documentation/walter", label: "Walter", category: "walter" },
   { href: "/documentation/policies", label: "Policies", category: "policies" },
   { href: "/documentation/presentations", label: "Presentations", category: "presentations" },

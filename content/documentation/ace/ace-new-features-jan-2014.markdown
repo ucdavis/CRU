@@ -7,14 +7,14 @@ date:   2017-04-06
 
 ## Templates
 
-![](https://i.embed.ly/1/image?url=http%3A%2F%2Fucdavis.github.io%2FACE%2Fimages%2Ffaq%2FAceTemplateButton.png&key=afea23f29e5a4f63bd166897e3dc72df)
+[View Templates instructions](/documentation/ace/ace-templates)
 
 - You may now copy an existing template from within the Edit Template.
 - Template Questions are now editable.
 
 ## Pending/Open
 
-![](https://i.embed.ly/1/image?url=http%3A%2F%2Fucdavis.github.io%2FACE%2Fimages%2Ffaq%2FAcePendingOpenButton.png&key=afea23f29e5a4f63bd166897e3dc72df)
+[View Pending / Open instructions](/documentation/ace/ace-pending-open)
 
 - Bulk delete added.
 - Only selected evaluations on the current page will be deleted.
