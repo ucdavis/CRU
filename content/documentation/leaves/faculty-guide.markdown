@@ -1,5 +1,5 @@
 ---
-title: "Faculty guide v2"
+title: "Faculty guide"
 description: "Report leave, check your request status, and review your leave history."
 author: "Computing Resources Unit"
 date: "2026-11-05T12:00:00-08:00"

@@ -37,4 +37,4 @@ Your role and department or cluster assignments control what you can see. [Conta
 
 Check the message in the form and complete the required fields. When hours are required, enter more than zero and no more than 240 hours per request. If the message says your faculty record or reporting department is missing, contact Leaves support.
 
-For the main steps, see the [faculty guide](/documentation/leaves/faculty-guide-v2) or [Chair and CAO guide](/documentation/leaves/chair-and-cao-guide).
+For the main steps, see the [faculty guide](/documentation/leaves/faculty-guide) or [Chair and CAO guide](/documentation/leaves/chair-and-cao-guide).

@@ -14,7 +14,7 @@ Your **Dashboard** brings together **Report Leave**, recent requests, balances, 
 
 <a href="/leaves/guides/faculty-overview.png" target="_blank" rel="noopener noreferrer" title="Open screenshot in a new tab"><img src="/leaves/guides/faculty-overview.png" alt="Faculty dashboard with Report Leave, Recent Requests, and UCPath leave balances." /></a>
 
-The [faculty guide](/documentation/leaves/faculty-guide-v2) walks through reporting leave and checking your requests.
+The [faculty guide](/documentation/leaves/faculty-guide) walks through reporting leave and checking your requests.
 
 ## Review your team's leave
 
