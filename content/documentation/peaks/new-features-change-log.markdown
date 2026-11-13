@@ -2,8 +2,19 @@
 title: "New Features and Changes"
 description: "Stay up to date with all the new features and changes within PEAKS."
 author: "Jason Sylvestre"
-date: 2023-09-25
+date: 2026-11-13
 ---
+
+## Nov 13, 2026
+
+Highlights from Oct 23 through Nov 13, 2026:
+
+- Refreshed PEAKS with updated navigation, asset tables, forms, administration pages, and reports.
+- Improved equipment duplication: review the copied details, enter a new serial number, and optionally assign the new item before saving.
+- Added tags for individual key serials, with tag filtering, CSV import support for new serials, and a **Serial Tags** column available in key reports.
+- Expanded incomplete DocuSign reports to show **Declined**, **Sent**, and **Voided** counts, plus **Other** when needed.
+- Improved calendar controls and date validation, including a **Today** shortcut for people's start/end dates and report date fields.
+- Corrected bulk people editing and key expiration reminders; reminders now exclude lost, destroyed, and other inactive key serials.
 
 ## Sept 25, 2023
 
@@ -237,6 +248,8 @@ date: 2023-09-25
 
 ![Key Serial Sorting](/peaks/admin-keyserial-sorting.png "Key Serial Sorting")
 
+*Key serial sorting in the current interface (November 2026).*
+
 ## March 26, 2019
 
 - For Text Only emails (Non HTML) added more email details for Expiring and notification emails to more closely match what is in the HTML part of the emails. Most users will never see this part of the email, but it will be useful for those using old email readers.
@@ -253,6 +266,8 @@ date: 2023-09-25
 - The notification email may be specified in the Team Admin section:
 
 ![Notification Email](/peaks/admin-notify-email.png "Notification Email")
+
+*Notification settings in the current interface (November 2026).*
 
 ## March 15, 2019
 
@@ -299,6 +314,8 @@ Happy Pi Day.
 - Added a import results table that can be downloaded
 
 ![Key Import Results](/peaks/admin-key-import-results.png "Key Import Results")
+
+*Key import results in the current interface (November 2026).*
 
 ## Feb 20. 2019
 
