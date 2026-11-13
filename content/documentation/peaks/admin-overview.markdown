@@ -13,7 +13,7 @@ The screenshots show the current PEAKS interface with fictional sample data. The
 
 Open **Admin → Admin Home**, or select **Administer Team** on the home page, to open **Team settings**:
 
-![Admin Links](/peaks/admin-start.png "Admin Links")
+![Admin menu with an arrow pointing to Admin Home](/peaks/admin-start.png "Admin Links")
 
 ## Step 1
 
@@ -58,7 +58,7 @@ Tags are useful for filtering items on the individual asset pages. For example, 
 
 To manage your team's tags, open **Admin → Team Tags**:
 
-![Team Tags Link](/peaks/admin-tags-link.png "Team Tags Link")
+![Admin menu with an arrow pointing to Team Tags](/peaks/admin-tags-link.png "Team Tags Link")
 
 Use **Create tag** to add a tag, or **Edit** and **Delete** beside an existing tag.
 NOTE!!! If you delete or edit a tag, it doesn't change the tag that may be associated with an asset. But it will effect being able to search for it.
@@ -79,15 +79,15 @@ All Admins can see the Person tab, but only Departmental Admins and Person Manag
 
 Open **Admin → Team Permissions**, or click **Manage roles** on **Team settings**, to see your team's admins:
 
-![Manage Admins Link](/peaks/admin-roles-links.png "Manage Admins Link")
+![Team roles with arrows pointing to Assign role and Remove roles](/peaks/admin-roles-links.png "Manage Admins Link")
 
 Click **Assign role** to add an admin or another role for an existing admin. Choose the role, enter their UC Davis email address or Kerberos ID, and click **Assign role**:
 
-![Add Admins](/peaks/admin-roles-add.png "Add Admins")
+![Assign role form: 1 choose a role, 2 enter a UC Davis email or Kerberos ID, 3 click Assign role](/peaks/admin-roles-add.png "Add Admins")
 
 Click **Remove roles** beside an admin, select the roles to remove, and click **Remove selected roles**:
 
-![Remove Admins](/peaks/admin-roles-remove.png "Remove Admins")
+![Remove roles form: 1 select the roles, 2 click Remove selected roles](/peaks/admin-roles-remove.png "Remove Admins")
 
 ## Step 5
 

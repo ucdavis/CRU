@@ -7,7 +7,7 @@ date: 2026-11-13
 
 Departmental Admins and Person Managers can open **Admin → Bulk Edit People**:
 
-![Bulk Edit Menu](/peaks/admin-bulk-edit-menu.png "Bulk Edit Menu")
+![Admin menu with an arrow pointing to Bulk Edit People](/peaks/admin-bulk-edit-menu.png "Bulk Edit Menu")
 
 ## Selecting people to edit
 
@@ -16,7 +16,7 @@ Departmental Admins and Person Managers can open **Admin → Bulk Edit People**:
 - Click on the headings to sort. Type in the Search box to filter rows.
 - Click a row to select it. Hold Ctrl or Command while clicking to select or deselect multiple people, or hold Shift to select a range.
 
-![Select People](/peaks/admin-buld-edit-select-people.png "Select People")
+![Selecting people: 1 click the first row, 2 hold Ctrl or Command and click another row](/peaks/admin-buld-edit-select-people.png "Select People")
 
 ## Deleting selected people
 
@@ -35,4 +35,4 @@ Departmental Admins and Person Managers can open **Admin → Bulk Edit People**:
 - Click **Update selected people** to apply the checked changes.
 - After the selected people have been updated, you will return to this page with your options still selected.
 
-![Editable Fields](/peaks/admin-bulk-edit-fields.png "Editable Fields")
+![Bulk edit date controls: 1 enable the Update checkbox, 2 use Clear date, 3 open the calendar](/peaks/admin-bulk-edit-fields.png "Editable Fields")
