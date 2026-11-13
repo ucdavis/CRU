@@ -1,26 +1,26 @@
 ---
 title: "Bulk Edit People"
-description: "Learn how Departmental Admins can bulk edit people in their team"
+description: "Learn how Departmental Admins and Person Managers can bulk edit people in their team"
 author: "Jason Sylvestre"
-date: 2019-05-21
+date: 2026-11-13
 ---
 
-The bulk edit can be access from the admin menu:
+Departmental Admins and Person Managers can open **Admin → Bulk Edit People**:
 
 ![Bulk Edit Menu](/peaks/admin-bulk-edit-menu.png "Bulk Edit Menu")
 
 ## Selecting people to edit
 
-- If you scroll down, you can see a list of all active people in your team.
+- The **Select people** table at the top lists all active people in your team.
 - This list can be sorted and filtered
 - Click on the headings to sort. Type in the Search box to filter rows.
-- To select/unselect people to edit, click on the rows, ctrl+click or shift+click to select/unselect multiple rows.
+- Click a row to select it. Hold Ctrl or Command while clicking to select or deselect multiple people, or hold Shift to select a range.
 
 ![Select People](/peaks/admin-buld-edit-select-people.png "Select People")
 
 ## Deleting selected people
 
-- If you choose to delete people from your team, that is the only option you can choose.
+- Under **Changes to apply**, check **Delete Selected Users** to remove the selected people from your team. This hides the other update fields. Click **Update selected people** to apply the deletion.
 - Deleted people can be re-added (reactivated). But not from here. They would have to be added from the asset people page or the Bulk Load.
 - Deleted people can be viewed with the "Actions Against the People" report
 
@@ -28,10 +28,11 @@ The bulk edit can be access from the admin menu:
 
 ## Editable fields
 
-- Only fields that have the Update Checkbox checked will be changed
+- Under **Changes to apply**, only fields with their **Update** checkbox checked will be changed.
 - Category can be cleared out by selecting Not Set, otherwise the dropdown choice will be used, noting the above point.
-- If the Update checkbox is selected, but nothing is specified for the field, it will be clear out.
-- Date fields can be cleared out with the "x" depending on the browser used.
+- If the Update checkbox is selected, but nothing is specified for the field, its existing value will be cleared.
+- Enable the date field's Update checkbox, then use its **Clear date** button to clear it.
+- Click **Update selected people** to apply the checked changes.
 - After the selected people have been updated, you will return to this page with your options still selected.
 
 ![Editable Fields](/peaks/admin-bulk-edit-fields.png "Editable Fields")
