@@ -5,6 +5,7 @@ author: "Jason Sylvestre"
 date:   2019-06-18
 ---
 
+> **Note:** These videos show an earlier version of the PEAKS interface. The appearance may differ from the current version, but the underlying functionality is the same.
 
 ## Searching with tags
 

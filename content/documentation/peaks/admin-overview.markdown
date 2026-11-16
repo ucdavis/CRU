@@ -7,7 +7,9 @@ date: 2026-11-13
 
 # New team setup steps
 
-The screenshots show the current PEAKS interface with fictional sample data. The videos may show the previous layout.
+The screenshots show the current PEAKS interface with fictional sample data.
+
+> **Note:** These videos show an earlier version of the PEAKS interface. The appearance may differ from the current version, but the underlying functionality is the same.
 
 ## Configuration
 
