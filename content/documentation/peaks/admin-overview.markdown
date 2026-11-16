@@ -2,31 +2,33 @@
 title: "Admin Overview"
 description: "Information regarding the Admin section of PEAKS."
 author: "Jason Sylvestre"
-date: 2019-06-14
+date: 2026-11-13
 ---
 
 # New team setup steps
 
+The screenshots show the current PEAKS interface with fictional sample data. The videos may show the previous layout.
+
 ## Configuration
 
-First, you want to click on Admin -> Admin Home or Administer Team:
+Open **Admin → Admin Home**, or select **Administer Team** on the home page, to open **Team settings**:
 
-![Admin Links](/peaks/admin-start.png "Admin Links")
+![Admin menu with an arrow pointing to Admin Home](/peaks/admin-start.png "Admin Links")
 
 ## Step 1
 
 <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=1_jsak817i&flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_x5t2hkag" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Player"></iframe>
-Add FIS Orgs. This adds spaces to your team. Click Add new org code:
+Add FIS organizations to make their spaces available to your team. Under **FIS organizations**, click **Add organization**:
 
 ![FIS Org](/peaks/admin-orgs-link.png "Fis Org")
 
-From here specify the Chart (Almost always 3) and the org code. Then click Add org to team:
+Specify the Chart (almost always 3) and the org code. Then click **Add organization**:
 
 ![FIS Org](/peaks/admin-orgs-add.png "Fis Org")
 
 This will populate the spaces tab of your team assets. You may specify multiple orgs.
 
-You may also search for your orgs by the building name. If you use this method and need to add multiple orgs from this list you will have to search each time.
+You may also use **Find an organization by building** to search by all or part of a building name. Click **Add** beside an organization in the results. If you need to add multiple organizations, search again for each one.
 
 ![FIS Org](/peaks/admin-search-for-orgs.png "Fis Org")
 
@@ -36,11 +38,11 @@ You may also search for your orgs by the building name. If you use this method a
 
 Next, we would recommend bulk loading people in your department. This can be done later if you wish, or people may be added individually.
 
-To bulk load people, you need to first add one or more PPS Departments:
+To bulk load people, first open **Admin → Add PPS Department**, enter the department code, and click **Add department**. Repeat for any additional departments:
 
 ![PPS Dept](/peaks/admin-add-pps-dept.png "PPS Dept")
 
-Then open the Bulk load people form:
+Then open **Admin → Bulk Load People** and click **Load people from PPS**:
 
 ![Bulk Load People](/peaks/admin-bulk-load.png "Bulk Load People")
 
@@ -54,11 +56,11 @@ More information on the people asset can be found here :
 Adding Tags. This can be done later, but for tags to be available for other non departmental admins (Key Master for example) they will have to be added first.
 Tags are useful for filtering items on the individual asset pages. For example, you could create a "Student" tag and add that to all the person assets that are students.
 
-To get to the form to manage your team's tags, you must click menu and then team tags:
+To manage your team's tags, open **Admin → Team Tags**:
 
-![Team Tags Link](/peaks/admin-tags-link.png "Team Tags Link")
+![Admin menu with an arrow pointing to Team Tags](/peaks/admin-tags-link.png "Team Tags Link")
 
-From here you can Create, Edit, and Delete tags for your teams.
+Use **Create tag** to add a tag, or **Edit** and **Delete** beside an existing tag.
 NOTE!!! If you delete or edit a tag, it doesn't change the tag that may be associated with an asset. But it will effect being able to search for it.
 
 ![Team Tags manage](/peaks/admin-manage-tags.png "Team Tags Manage")
@@ -75,17 +77,17 @@ The other admin roles are fairly self evident with perhaps the exception of the 
 Admins may have multiple roles within a team.
 All Admins can see the Person tab, but only Departmental Admins and Person Managers may edit them.
 
-To add an admin, go here:
+Open **Admin → Team Permissions**, or click **Manage roles** on **Team settings**, to see your team's admins:
 
-![Manage Admins Link](/peaks/admin-roles-links.png "Manage Admins Link")
+![Team roles with arrows pointing to Assign role and Remove roles](/peaks/admin-roles-links.png "Manage Admins Link")
 
-To Add an admin, or add another admin role to an existing admin:
+Click **Assign role** to add an admin or another role for an existing admin. Choose the role, enter their UC Davis email address or Kerberos ID, and click **Assign role**:
 
-![Add Admins](/peaks/admin-roles-add.png "Add Admins")
+![Assign role form: 1 choose a role, 2 enter a UC Davis email or Kerberos ID, 3 click Assign role](/peaks/admin-roles-add.png "Add Admins")
 
-To remove an admin, or remove a admin role:
+Click **Remove roles** beside an admin, select the roles to remove, and click **Remove selected roles**:
 
-![Remove Admins](/peaks/admin-roles-remove.png "Remove Admins")
+![Remove roles form: 1 select the roles, 2 click Remove selected roles](/peaks/admin-roles-remove.png "Remove Admins")
 
 ## Step 5
 
